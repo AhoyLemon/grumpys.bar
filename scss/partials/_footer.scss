@@ -1,0 +1,27 @@
+footer { background: url(../svg/footer.svg); z-index: $z-footer; position: relative; background-size: cover;
+  .inner { @include flex-container(); padding: 12px 24px; }
+  .locations { @include flex-item(50%); @include flex-container(); }
+  .location { @include flex-item(33%); padding-top: 20px;
+    .name { font-size:1.6em; text-transform: uppercase; font-weight: $bold; margin-bottom: 0.15em;
+      a { color:$teal; }
+    }
+    address { font-style: normal; margin-bottom: 0.2em;
+      a { color:$white; text-decoration:none; }
+    }
+    .social {
+      a { width: 1.25em; height: 1.25em; display: inline-block; margin-right: 0.7em; color:$orange; }
+    }
+  }
+
+  .private-party { @include flex-item(25%); text-align: center;
+    img { max-width: 260px;}
+  }
+
+  .our-friends { @include flex-item(25%); 
+    .check { text-align: center; font-size:1.8em; color:$teal; font-weight: $bold; }
+    .both { @include flex-container(); }
+    .friend { @include flex-item(50%); text-align: center;  }
+    img { max-width: 130px;}
+  }
+
+}

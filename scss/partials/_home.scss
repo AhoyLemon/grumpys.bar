@@ -1,0 +1,35 @@
+main.home {
+  .locations { position: relative; z-index:$z-locations; margin-bottom: 20vh; @include flex-container();
+    .location { @include flex-item(33%) }
+    figure { height: 15vw; background-size:cover; background-position: center; position: relative;
+      a { @include position(absolute,0,0,0,0); }
+    }
+    figcaption { background:$black; color:$white; position: relative;
+      .inner { margin-left: auto; margin-right: auto; width:16em; padding-bottom: 1em; }
+    }
+    .name { font-family:$headline; color:$white; padding: 0.25em 0.5em; font-size:3rem; background-size:contain; background-position: center; background-repeat: no-repeat; display:inline-block; text-shadow: -2px 2px 0 $black; margin-top: -1em; margin-bottom: 0.25em;
+      &.downtown { background-image:url(../svg/ellipse/downtown.svg);  }
+      &.roseville { background-image:url(../svg/ellipse/roseville.svg);  }
+      &.northeast { background-image:url(../svg/ellipse/northeast.svg);  }
+    }
+    address { font-style: normal;
+      a { text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
+    }
+    .phone-and-social { @include flex-container();
+      .phone { @include flex-item(50%);
+        a { color:$white; text-decoration: none;
+          &:hover { text-decoration: underline; }
+        }
+      }
+      .social { @include flex-item(50%);
+        a { display: inline-block; width:1.25em; height: 1.25em; margin-right: 0.5em; color:$orange;
+          &:hover { color:$white; }
+        }
+      }
+      
+    }
+
+  }
+}

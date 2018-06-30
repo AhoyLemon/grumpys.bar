@@ -1,0 +1,47 @@
+- var testing = true
+- var siteTitle = "Grumpy's"
+- var siteURL = ""
+- var fPlusURL = false
+- var description = ""
+- var d = new Date()
+- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()
+
+doctype html
+html(lang="en")
+  head
+    include partials/_mixins.pug
+    include partials/_head.pug
+  body
+
+    img.triangle(src="svg/triangle.svg")
+
+
+    #app
+
+      header.home-header
+        img.logo(src="svg/logo_header.svg")
+        .tagline-stripe
+          span Twin Cities Best In Food and Booze Fer Years!
+
+      main.home
+        nav.locations
+
+          +location('Downtown',false,'downtown.jpg',null,'612-340-9738')
+            | 1111 Washington Avenue South
+            br
+            | Minneapolis, MN 55415
+
+          +location('Roseville',null,'roseville.jpg',null,'651-379-1180')
+            | 2801 Snelling Avenue
+            br
+            | Roseville, MN 55113
+
+          +location('Northeast',null,'nordeast.jpg',null,'612-789-7429')
+            | 2200 4th Street Northeast
+            | Minneapolis, MN 55418
+
+      include partials/_footer.pug
+
+
+    include partials/_javascripts.pug
+    //-include partials/_schema.pug

@@ -1,0 +1,9 @@
+[v-cloak] { display: none !important; }
+
+html { background-image: url(../svg/bg_desktop.svg); background-size:cover; background-position: top left; background-attachment: fixed; }
+body { font-family:$font; }
+svg {
+  * { fill:currentColor; }
+}
+
+.triangle { @include position(fixed,null,null,0,0); width: 28%; z-index: $z-triangle; }
