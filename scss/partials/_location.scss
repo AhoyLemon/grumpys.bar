@@ -1,20 +1,14 @@
 main.location { 
-  .bubble-boxes { @include position(absolute,0,null,null,0); height: 60vh; width: 38vw;  z-index: $z-bubbleboxes;
 
-    .box { position: absolute; background-size: contain; background-position: bottom center; background-repeat: no-repeat; height: 200%; width:65%; }
-
-    .brown { background-image:url(../svg/bubblebox-brown.svg); bottom:0; left:25%; animation: bubbleBoxMove 8s 103near infinite; }
-    .tan   { background-image:url(../svg/bubblebox-tan.svg); bottom:20%; left:-2%;  animation: bubbleBoxMove 5.6s linear infinite;  }
-    .red   { background-image:url(../svg/bubblebox-red.svg); bottom:35%; right:0;  background-position: bottom right; animation: bubbleBoxMove 4.2s linear infinite; }
+  .bubble-boxes {
+    .box { position: absolute; background-size: contain; background-position: bottom center; background-repeat: no-repeat; }
+    .brown { background-image:url(../svg/bubblebox-brown.svg); }
+    .tan { background-image:url(../svg/bubblebox-tan.svg); }
+    .red { background-image:url(../svg/bubblebox-red.svg); }
   }
 
-  .hero { position: relative; @include flex-container();
-    .details-holder { @include flex-item(33%,0); }
-    .image-holder { @include flex-item(66%);
-      figure { height: 45vh; margin-top:-60px; z-index: $z-hero-image; }
-    }
-  }
-  .details-holder { padding-left: 80px;
+  .hero { position: relative; }
+  .details-holder {
     .details { position: relative; z-index: $z-main;}
     .name { font-family:$headline; color:$yellow; font-size:400%; text-shadow: -3px 3px 0 $black; }
     .hours { @include flex-container(); margin-bottom: 1em;
@@ -64,4 +58,38 @@ footer { flex-shrink: 0; }
   0%   { transform: translateY(0); }
   33%  { transform: translateY(-20px); }
   66% { transform: translateY(10px); }
+}
+
+@media (max-width:$mobile-max) {
+  main.location { 
+    .bubble-boxes { @include position(absolute,0,0,null,0);
+      .box { background-size:cover; z-index: -1; }
+      .red { height: 160px; left:-20px; right:-20px;  }
+      .tan { height: 320px; left:-20px; right:-20px;  }
+    }
+
+    .calendar { display: none; }
+
+  }
+}
+
+@media (min-width:$desktop-min) {
+  main.location {
+    .bubble-boxes { @include position(absolute,0,null,null,0); height: 60vh; width: 38vw;  z-index: $z-bubbleboxes;
+
+      .box { height: 200%; width:65%; }
+  
+      .brown { bottom:0; left:25%; animation: bubbleBoxMove 8s linear infinite; }
+      .tan   { bottom:20%; left:-2%;  animation: bubbleBoxMove 5.6s linear infinite;  }
+      .red   { bottom:35%; right:0;  background-position: bottom right; animation: bubbleBoxMove 4.2s linear infinite; }
+    }
+
+    .hero { @include flex-container();
+      .details-holder { @include flex-item(33%,0); padding-left: 80px; }
+      .image-holder { @include flex-item(66%);
+        figure { height: 45vh; margin-top:-60px; z-index: $z-hero-image; }
+      }
+    }
+
+  }
 }

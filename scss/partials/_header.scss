@@ -1,16 +1,27 @@
-header {
-  .inner { display: table; width:100%; margin-top:90px; background: $black; margin-bottom: 60px; z-index: $z-header; position: relative; }
-  nav { display: table-row; }
-  .link, .logo-holder { display: table-cell; }
-  .link { text-align: center; text-transform: uppercase; padding-top: 0.6em; padding-bottom: 0.6em;
-    a { color:$yellow; font-weight: $bold; font-size:120%; }
-  }
-  .logo-holder { width:16%; position: relative;
-    .logo { position: absolute; z-index: $z-logo; left:0; right: 0; top:-60px; }
-    //.logo { position: absolute; width:160px; height: 160px; }
-  }
+@media (max-width:$mobile-max) {
+  header.desktop { display: none; }
 
-  //.logo { width:320px; @include }
+  header.mobile { color:$yellow; position: relative; height: 135px;
+    .inner { background: $black; @include flex-container(); margin-top: 30px; }
+    .hamburger { @include flex-item(15%); font-size:260%; }
+    .logo-holder { @include flex-item(70%); }
+    .logo { height: 140px; @include position(absolute,0,0); }
+  }
+}
 
+@media (min-width:$desktop-min) {
+  header.mobile { display: none; }
+
+  header {
+    .inner { display: table; width:100%; margin-top:90px; background: $black; margin-bottom: 60px; z-index: $z-header; position: relative; }
+    nav { display: table-row; }
+    .link, .logo-holder { display: table-cell; }
+    .link { text-align: center; text-transform: uppercase; padding-top: 0.6em; padding-bottom: 0.6em;
+      a { color:$yellow; font-weight: $bold; font-size:120%; }
+    }
+    .logo-holder { width:16%; position: relative;
+      .logo { position: absolute; z-index: $z-logo; left:0; right: 0; top:-60px; }
+    }
+  }
 
 }

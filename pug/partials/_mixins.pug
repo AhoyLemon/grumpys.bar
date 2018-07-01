@@ -46,15 +46,18 @@ mixin location(name,url,image,map,phone)
             +iconFacebook
             +iconTwitter
 
-mixin footerLocation(name,url,map)
+mixin footerLocation(name,url,phone)
   .location
     .name
       a(href=url)= name
-    address
-      a(href=map)
-        block
+    if (name == "Downtown")
+      +address('downtown')
+    else 
+      address
+        a(href='/')
+          block
     .phone
-      a.tel(href=phone)
+      a.tel(href=phone)= phone
     .social
       +iconEmail
       +iconFacebook

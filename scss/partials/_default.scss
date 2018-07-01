@@ -1,6 +1,7 @@
 [v-cloak] { display: none !important; }
 
-html { background-image: url(../svg/bg_desktop.svg); background-size:cover; background-position: top left; background-attachment: fixed; }
+//html { background-image: url(../svg/bg_desktop.svg); background-size:cover; background-position: top left; background-attachment: fixed; }
+html { background: $yellow; }
 body { font-family:$font; }
 svg {
   * { fill:currentColor; }

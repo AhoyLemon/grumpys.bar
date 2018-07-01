@@ -175,10 +175,7 @@ svg {
   display: none !important; }
 
 html {
-  background-image: url(../svg/bg_desktop.svg);
-  background-size: cover;
-  background-position: top left;
-  background-attachment: fixed; }
+  background: #FBF2C0; }
 
 body {
   font-family: "Signika", sans-serif; }
@@ -193,40 +190,92 @@ svg * {
   width: 28%;
   z-index: 2; }
 
-header .inner {
-  display: table;
-  width: 100%;
-  margin-top: 90px;
-  background: #414042;
-  margin-bottom: 60px;
-  z-index: 4;
-  position: relative; }
-
-header nav {
-  display: table-row; }
-
-header .link, header .logo-holder {
-  display: table-cell; }
-
-header .link {
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em; }
-  header .link a {
+@media (max-width: 600px) {
+  header.desktop {
+    display: none; }
+  header.mobile {
     color: #FBF2C0;
-    font-weight: 900;
-    font-size: 120%; }
+    position: relative;
+    height: 135px; }
+    header.mobile .inner {
+      background: #414042;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      margin-top: 30px; }
+    header.mobile .hamburger {
+      -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      font-size: 260%; }
+    header.mobile .logo-holder {
+      -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+    header.mobile .logo {
+      height: 140px;
+      position: absolute;
+      top: 0;
+      right: 0; } }
 
-header .logo-holder {
-  width: 16%;
-  position: relative; }
-  header .logo-holder .logo {
-    position: absolute;
-    z-index: 7;
-    left: 0;
-    right: 0;
-    top: -60px; }
+@media (min-width: 601px) {
+  header.mobile {
+    display: none; }
+  header .inner {
+    display: table;
+    width: 100%;
+    margin-top: 90px;
+    background: #414042;
+    margin-bottom: 60px;
+    z-index: 4;
+    position: relative; }
+  header nav {
+    display: table-row; }
+  header .link, header .logo-holder {
+    display: table-cell; }
+  header .link {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em; }
+    header .link a {
+      color: #FBF2C0;
+      font-weight: 900;
+      font-size: 120%; }
+  header .logo-holder {
+    width: 16%;
+    position: relative; }
+    header .logo-holder .logo {
+      position: absolute;
+      z-index: 7;
+      left: 0;
+      right: 0;
+      top: -60px; } }
 
 footer {
   background: url(../svg/footer.svg);
@@ -252,15 +301,6 @@ footer {
     align-items: stretch;
     padding: 12px 24px; }
   footer .locations {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -ms-flex-item-align: auto;
-    align-self: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -278,15 +318,6 @@ footer {
     -ms-flex-align: stretch;
     align-items: stretch; }
   footer .location {
-    -ms-flex-preferred-size: 33%;
-    flex-basis: 33%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -ms-flex-item-align: auto;
-    align-self: auto;
     padding-top: 20px; }
     footer .location .name {
       font-size: 1.6em;
@@ -294,11 +325,12 @@ footer {
       font-weight: 900;
       margin-bottom: 0.15em; }
       footer .location .name a {
-        color: #00B0B3; }
-    footer .location address {
+        color: #00B0B3;
+        text-decoration: none; }
+    footer .location address, footer .location .phone {
       font-style: normal;
       margin-bottom: 0.2em; }
-      footer .location address a {
+      footer .location address a, footer .location .phone a {
         color: #fff;
         text-decoration: none; }
     footer .location .social a {
@@ -366,31 +398,41 @@ footer {
     footer .our-friends img {
       max-width: 130px; }
 
+@media (max-width: 600px) {
+  footer .location {
+    position: relative;
+    width: 100%; }
+    footer .location .social {
+      width: 7em;
+      position: absolute;
+      top: 2em;
+      right: 0;
+      text-align: right; } }
+
+@media (min-width: 601px) {
+  footer .locations {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -ms-flex-item-align: auto;
+    align-self: auto; }
+  footer .location {
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -ms-flex-item-align: auto;
+    align-self: auto; } }
+
 .home-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
   position: relative; }
-  .home-header .tagline-stripe {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #414042;
-    height: 70px; }
   .home-header .logo-holder {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -454,35 +496,8 @@ footer {
 
 main.home .locations {
   position: relative;
-  z-index: 3;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
-  main.home .locations .location {
-    -ms-flex-preferred-size: 33%;
-    flex-basis: 33%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -ms-flex-item-align: auto;
-    align-self: auto; }
+  z-index: 3; }
   main.home .locations figure {
-    height: 15vw;
     background-size: cover;
     background-position: center;
     position: relative; }
@@ -523,9 +538,11 @@ main.home .locations {
     main.home .locations .name[href]:hover {
       text-decoration: underline; }
   main.home .locations address {
-    font-style: normal; }
+    font-style: normal;
+    margin-bottom: 1em; }
     main.home .locations address a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: currentColor; }
       main.home .locations address a:hover {
         text-decoration: underline; }
   main.home .locations .phone-and-social {
@@ -579,116 +596,25 @@ main.home .locations {
         main.home .locations .phone-and-social .social a:hover {
           color: #fff; }
 
-#app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100vh; }
+@media (max-width: 600px) {
+  html.home {
+    background-image: url(../svg/backgrounds/mobile_home.svg);
+    background-size: cover;
+    background-position: top center; }
+  .home-header {
+    padding-top: 35px; }
+    .home-header .tagline-holder, .home-header .tagline-stripe {
+      display: none; }
+  .locations figure {
+    height: 50vw; } }
 
-main.home, header.home-header {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  -ms-flex-item-align: stretch;
-  align-self: stretch; }
-
-footer {
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
-
-main.location .bubble-boxes {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 60vh;
-  width: 38vw;
-  z-index: 3; }
-  main.location .bubble-boxes .box {
-    position: absolute;
-    background-size: contain;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    height: 200%;
-    width: 65%; }
-  main.location .bubble-boxes .brown {
-    background-image: url(../svg/bubblebox-brown.svg);
-    bottom: 0;
-    left: 25%;
-    -webkit-animation: bubbleBoxMove 8s 103near infinite;
-    animation: bubbleBoxMove 8s 103near infinite; }
-  main.location .bubble-boxes .tan {
-    background-image: url(../svg/bubblebox-tan.svg);
-    bottom: 20%;
-    left: -2%;
-    -webkit-animation: bubbleBoxMove 5.6s linear infinite;
-    animation: bubbleBoxMove 5.6s linear infinite; }
-  main.location .bubble-boxes .red {
-    background-image: url(../svg/bubblebox-red.svg);
-    bottom: 35%;
-    right: 0;
-    background-position: bottom right;
-    -webkit-animation: bubbleBoxMove 4.2s linear infinite;
-    animation: bubbleBoxMove 4.2s linear infinite; }
-
-main.location .hero {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
-  main.location .hero .details-holder {
-    width: 33%;
-    -ms-flex-preferred-size: 33%;
-    flex-basis: 33%;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -ms-flex-item-align: auto;
-    align-self: auto; }
-  main.location .hero .image-holder {
-    -ms-flex-preferred-size: 66%;
-    flex-basis: 66%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    -ms-flex-item-align: auto;
-    align-self: auto; }
-    main.location .hero .image-holder figure {
-      height: 45vh;
-      margin-top: -60px;
-      z-index: 2; }
-
-main.location .details-holder {
-  padding-left: 80px; }
-  main.location .details-holder .details {
-    position: relative;
-    z-index: 4; }
-  main.location .details-holder .name {
-    font-family: "Oleo Script", cursive;
-    color: #FBF2C0;
-    font-size: 400%;
-    text-shadow: -3px 3px 0 #414042; }
-  main.location .details-holder .hours {
+@media (min-width: 601px) {
+  html.home {
+    background-image: url(../svg/bg_desktop.svg);
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed; }
+  .home-header {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -704,22 +630,124 @@ main.location .details-holder {
     flex-wrap: wrap;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
-    align-items: stretch;
-    margin-bottom: 1em; }
-    main.location .details-holder .hours .label {
-      font-weight: 900;
-      font-size: 150%; }
-    main.location .details-holder .hours .info {
-      padding-left: 0.5em; }
-  main.location .details-holder address {
-    font-style: normal;
-    margin-bottom: 1em; }
-    main.location .details-holder address a {
-      color: currentColor;
-      text-decoration: none; }
-  main.location .details-holder .phone a {
+    align-items: stretch; }
+    .home-header .tagline-stripe {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #414042;
+      height: 70px; }
+  .locations {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    .locations .location {
+      -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+    .locations figure {
+      height: 15vw; }
+  #app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh; }
+  main.home, header.home-header {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -ms-flex-item-align: stretch;
+    align-self: stretch; }
+  footer {
+    -ms-flex-negative: 0;
+    flex-shrink: 0; } }
+
+main.location .bubble-boxes .box {
+  position: absolute;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+
+main.location .bubble-boxes .brown {
+  background-image: url(../svg/bubblebox-brown.svg); }
+
+main.location .bubble-boxes .tan {
+  background-image: url(../svg/bubblebox-tan.svg); }
+
+main.location .bubble-boxes .red {
+  background-image: url(../svg/bubblebox-red.svg); }
+
+main.location .hero {
+  position: relative; }
+
+main.location .details-holder .details {
+  position: relative;
+  z-index: 4; }
+
+main.location .details-holder .name {
+  font-family: "Oleo Script", cursive;
+  color: #FBF2C0;
+  font-size: 400%;
+  text-shadow: -3px 3px 0 #414042; }
+
+main.location .details-holder .hours {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-bottom: 1em; }
+  main.location .details-holder .hours .label {
+    font-weight: 900;
+    font-size: 150%; }
+  main.location .details-holder .hours .info {
+    padding-left: 0.5em; }
+
+main.location .details-holder address {
+  font-style: normal;
+  margin-bottom: 1em; }
+  main.location .details-holder address a {
     color: currentColor;
     text-decoration: none; }
+
+main.location .details-holder .phone a {
+  color: currentColor;
+  text-decoration: none; }
 
 main.location .calendar {
   display: -webkit-box;
@@ -880,5 +908,96 @@ footer {
   66% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px); } }
+
+@media (max-width: 600px) {
+  main.location .bubble-boxes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; }
+    main.location .bubble-boxes .box {
+      background-size: cover;
+      z-index: -1; }
+    main.location .bubble-boxes .red {
+      height: 160px;
+      left: -20px;
+      right: -20px; }
+    main.location .bubble-boxes .tan {
+      height: 320px;
+      left: -20px;
+      right: -20px; }
+  main.location .calendar {
+    display: none; } }
+
+@media (min-width: 601px) {
+  main.location .bubble-boxes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 38vw;
+    z-index: 3; }
+    main.location .bubble-boxes .box {
+      height: 200%;
+      width: 65%; }
+    main.location .bubble-boxes .brown {
+      bottom: 0;
+      left: 25%;
+      -webkit-animation: bubbleBoxMove 8s linear infinite;
+      animation: bubbleBoxMove 8s linear infinite; }
+    main.location .bubble-boxes .tan {
+      bottom: 20%;
+      left: -2%;
+      -webkit-animation: bubbleBoxMove 5.6s linear infinite;
+      animation: bubbleBoxMove 5.6s linear infinite; }
+    main.location .bubble-boxes .red {
+      bottom: 35%;
+      right: 0;
+      background-position: bottom right;
+      -webkit-animation: bubbleBoxMove 4.2s linear infinite;
+      animation: bubbleBoxMove 4.2s linear infinite; }
+  main.location .hero {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    main.location .hero .details-holder {
+      width: 33%;
+      -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      padding-left: 80px; }
+    main.location .hero .image-holder {
+      -ms-flex-preferred-size: 66%;
+      flex-basis: 66%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+      main.location .hero .image-holder figure {
+        height: 45vh;
+        margin-top: -60px;
+        z-index: 2; } }
 
 /*# sourceMappingURL=grumpys.css.map */

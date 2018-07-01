@@ -1,21 +1,15 @@
-.home-header {
-  //.logo { width:22%; z-index: $z-logo; @include position(absolute,3vh,null,null,2vw); }
-  //.tagline-stripe { background: $black; color:$white; margin-top: 16.5vh; padding-left: 27%; font-family: $headline; font-size:2.5em; padding-top: 0.25em; padding-bottom: 0.25em; }
-  @include flex-container(); position: relative;
-  .tagline-stripe { @include position(absolute,null,0,0,0); background: $black; height: 70px; }
+.home-header { position: relative;
   .logo-holder { @include flex-item(25%); }
   .logo { z-index: $z-logo; position: relative; }
   .tagline-holder { @include flex-item(75%); @include flex-container(); justify-items: flex-end; align-self: flex-end; position: relative; z-index: $z-tagline;
     span { @include flex-item(100%); color:$white;  font-family: $headline; font-size:2.5em; padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.5em; }
 
   }
-
 }
 
 main.home {
-  .locations { position: relative; z-index:$z-locations; @include flex-container();
-    .location { @include flex-item(33%) }
-    figure { height: 15vw; background-size:cover; background-position: center; position: relative;
+  .locations { position: relative; z-index:$z-locations; 
+    figure { background-size:cover; background-position: center; position: relative;
       a { @include position(absolute,0,0,0,0); }
     }
     figcaption { background:$black; color:$white; position: relative;
@@ -28,8 +22,8 @@ main.home {
       &.northeast { background-image:url(../svg/ellipse/northeast.svg);  }
       &[href]:hover { text-decoration: underline; }
     }
-    address { font-style: normal;
-      a { text-decoration: none;
+    address { font-style: normal; margin-bottom: 1em;
+      a { text-decoration: none; color:currentColor;
         &:hover { text-decoration: underline; }
       }
     }
@@ -48,6 +42,32 @@ main.home {
   }
 }
 
-#app { display: flex; flex-direction: column; height: 100vh; }
-main.home, header.home-header { flex: 1 0 auto; align-self: stretch; }
-footer { flex-shrink: 0; }
+@media (max-width:$mobile-max) {
+
+  html.home { background-image:url(../svg/backgrounds/mobile_home.svg); background-size:cover; background-position: top center; }
+
+  .home-header { padding-top: 35px;
+    .tagline-holder, .tagline-stripe { display: none; }
+  }
+
+  .locations {
+    figure { height: 50vw; }
+  }
+
+}
+@media (min-width:$desktop-min) {
+  html.home { background-image: url(../svg/bg_desktop.svg); background-size:cover; background-position: top left; background-attachment: fixed; }
+  .home-header { @include flex-container();
+    .tagline-stripe { @include position(absolute,null,0,0,0); background: $black; height: 70px; }
+  }
+
+  .locations { @include flex-container();
+    .location { @include flex-item(33%); }
+    figure { height: 15vw; }
+  }
+
+  #app { display: flex; flex-direction: column; height: 100vh; }
+  main.home, header.home-header { flex: 1 0 auto; align-self: stretch;  }
+  footer { flex-shrink: 0; }
+
+}
