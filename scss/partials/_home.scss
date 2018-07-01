@@ -1,5 +1,19 @@
+.home-header {
+  //.logo { width:22%; z-index: $z-logo; @include position(absolute,3vh,null,null,2vw); }
+  //.tagline-stripe { background: $black; color:$white; margin-top: 16.5vh; padding-left: 27%; font-family: $headline; font-size:2.5em; padding-top: 0.25em; padding-bottom: 0.25em; }
+  @include flex-container(); position: relative;
+  .tagline-stripe { @include position(absolute,null,0,0,0); background: $black; height: 70px; }
+  .logo-holder { @include flex-item(25%); }
+  .logo { z-index: $z-logo; position: relative; }
+  .tagline-holder { @include flex-item(75%); @include flex-container(); justify-items: flex-end; align-self: flex-end; position: relative; z-index: $z-tagline;
+    span { @include flex-item(100%); color:$white;  font-family: $headline; font-size:2.5em; padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.5em; }
+
+  }
+
+}
+
 main.home {
-  .locations { position: relative; z-index:$z-locations; margin-bottom: 20vh; @include flex-container();
+  .locations { position: relative; z-index:$z-locations; @include flex-container();
     .location { @include flex-item(33%) }
     figure { height: 15vw; background-size:cover; background-position: center; position: relative;
       a { @include position(absolute,0,0,0,0); }
@@ -8,9 +22,11 @@ main.home {
       .inner { margin-left: auto; margin-right: auto; width:16em; padding-bottom: 1em; }
     }
     .name { font-family:$headline; color:$white; padding: 0.25em 0.5em; font-size:3rem; background-size:contain; background-position: center; background-repeat: no-repeat; display:inline-block; text-shadow: -2px 2px 0 $black; margin-top: -1em; margin-bottom: 0.25em;
+      text-decoration: none;
       &.downtown { background-image:url(../svg/ellipse/downtown.svg);  }
       &.roseville { background-image:url(../svg/ellipse/roseville.svg);  }
       &.northeast { background-image:url(../svg/ellipse/northeast.svg);  }
+      &[href]:hover { text-decoration: underline; }
     }
     address { font-style: normal;
       a { text-decoration: none;
@@ -27,9 +43,11 @@ main.home {
         a { display: inline-block; width:1.25em; height: 1.25em; margin-right: 0.5em; color:$orange;
           &:hover { color:$white; }
         }
-      }
-      
+      } 
     }
-
   }
 }
+
+#app { display: flex; flex-direction: column; height: 100vh; }
+main.home, header.home-header { flex: 1 0 auto; align-self: stretch; }
+footer { flex-shrink: 0; }

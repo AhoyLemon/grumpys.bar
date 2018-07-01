@@ -1,0 +1,174 @@
+- var testing = true
+- var siteTitle = "Grumpy's"
+- var pageTitle = "Downtown"
+- var siteURL = ""
+- var fPlusURL = false
+- var description = ""
+- var d = new Date()
+- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()
+
+doctype html
+html(lang="en")
+  head
+    include partials/_mixins.pug
+    include partials/_head.pug
+  body
+
+    #app
+
+      main.location.downtown
+        header.location-header.downtown
+          .inner
+            nav
+              .link
+                a Menu
+              .link
+                a Contact
+              .logo-holder
+                img.logo(src="svg/logo_header.svg")
+              .link
+                a northeast
+              .link
+                a roseville
+              .link
+                a downtown
+
+        .bubble-boxes
+          .box.brown
+          .box.tan
+          .box.red
+
+        .hero
+          .details-holder
+            .details  
+              .name Downtown
+              .hours
+                .label
+                  span HOURS:
+                .info
+                  | Sun - Mon: 11am to midnight
+                  br
+                  | Tue - Sat: 11am to 2am
+              +address('downtown')
+              +phone('downtown')
+          .image-holder
+            figure(style="background-image:url(https://picsum.photos/1230/500?random)")
+
+        .calendar
+          .featured-event
+            figure(style="background-image:url(https://picsum.photos/450/450?random)")
+              figcaption
+                .title April Residency
+                .description  
+                  b Gay Witch Abortion
+                  br
+                  | April 7, 2018
+                  br
+                  | Doors at 10pm | Free
+          .day
+            figure(style="background-image:url(https://picsum.photos/400/400?random)")
+              figcaption
+                .title Today
+                .items 
+                  .item
+                    .when 11 am:  Grumpy's Brunch
+                    .what
+                      span Try the 666 - six sour cream pancakes, six sausage links, and six ounces of maple syrup
+                  .item
+                    .when 10 pm: 21 Bingo
+                    .what
+                      span It's our way of leeting you have a chance at winning back some of your drinking money
+          .day.with-link
+            figure(style="background-image:url(https://picsum.photos/350/350?random)")
+              figcaption
+                .title Tomorrow
+                .items 
+                  .item
+                    .when 3pm to 7pm
+                    .what
+                      | $1 off beer, cocktails, and appetizers; $4.50 wings
+                  .item
+                    .when 5pm: Minnesota Mondays
+                    .what
+                      | All Minnesota beers half price
+                  .item
+                    .when 8pm to 11pm
+                    .what
+                      | Half priced bottles of wine
+                  .item
+                    .when 8pm: Drinky Drive-In
+                    .what
+                      | Movies and boozahol
+            a.see-full-calendar(href="/")
+              span See Full Calendar
+
+        .calendar
+          .day
+            figure(style="background-image:url(https://picsum.photos/400/400?random)")
+              figcaption
+                .title Today
+                .items 
+                  .item
+                    .when 11 am:  Grumpy's Brunch
+                    .what
+                      span Try the 666 - six sour cream pancakes, six sausage links, and six ounces of maple syrup
+                  .item
+                    .when 10 pm: 21 Bingo
+                    .what
+                      span It's our way of leeting you have a chance at winning back some of your drinking money
+          .day
+            figure(style="background-image:url(https://picsum.photos/350/350?random)")
+              figcaption
+                .title Tomorrow
+                .items 
+                  .item
+                    .when 3pm to 7pm
+                    .what
+                      | $1 off beer, cocktails, and appetizers; $4.50 wings
+                  .item
+                    .when 5pm: Minnesota Mondays
+                    .what
+                      | All Minnesota beers half price
+                  .item
+                    .when 8pm to 11pm
+                    .what
+                      | Half priced bottles of wine
+                  .item
+                    .when 8pm: Drinky Drive-In
+                    .what
+                      | Movies and boozahol
+          .day.with-link
+            figure(style="background-image:url(https://picsum.photos/349/349?random)")
+              figcaption
+                .title Tuesday
+                .items 
+                  .item
+                    .when 3pm to 7pm
+                    .what
+                      | $1 off beer, cocktails, and appetizers; $4.50 wings
+                  .item
+                    .when 5pm: Minnesota Mondays
+                    .what
+                      | All Minnesota beers half price
+                  .item
+                    .when 8pm to 11pm
+                    .what
+                      | Half priced bottles of wine
+                  .item
+                    .when 8pm: Drinky Drive-In
+                    .what
+                      | Movies and boozahol
+            a.see-full-calendar(href="/")
+              span See Full Calendar
+
+
+
+
+              
+
+
+      include partials/_footer.pug
+
+
+    include partials/_javascripts.pug
+    //-include partials/_schema.pug

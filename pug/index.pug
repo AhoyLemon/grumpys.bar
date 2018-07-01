@@ -1,5 +1,6 @@
 - var testing = true
 - var siteTitle = "Grumpy's"
+- var pageTitle = "Home"
 - var siteURL = ""
 - var fPlusURL = false
 - var description = ""
@@ -15,21 +16,20 @@ html(lang="en")
 
     img.triangle(src="svg/triangle.svg")
 
-
     #app
 
-      header.home-header
-        img.logo(src="svg/logo_header.svg")
+      .home-header
         .tagline-stripe
+        .logo-holder
+          img.logo(src="svg/logo_header.svg")
+        .tagline-holder
           span Twin Cities Best In Food and Booze Fer Years!
 
       main.home
         nav.locations
 
-          +location('Downtown',false,'downtown.jpg',null,'612-340-9738')
-            | 1111 Washington Avenue South
-            br
-            | Minneapolis, MN 55415
+          +location('Downtown','downtown.html','downtown.jpg',null,'612-340-9738')
+            +address('downtown')
 
           +location('Roseville',null,'roseville.jpg',null,'651-379-1180')
             | 2801 Snelling Avenue

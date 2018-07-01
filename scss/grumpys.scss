@@ -3,7 +3,6 @@
 @import "globals/_variables";
 @import "globals/_mixins";
 @import "globals/_extends";
-@import "globals/_z-index";
 
 // SITE SPECIFIC
 @import "partials/_variables";
@@ -15,3 +14,5 @@
 @import "partials/_footer";
 
 @import "partials/_home";
+@import "partials/_location";
+

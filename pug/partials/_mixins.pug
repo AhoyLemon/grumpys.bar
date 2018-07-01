@@ -13,10 +13,18 @@ mixin iconTwitter(url)
     svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32")
       path(d="M.8 25.2c2.7 1.8 6 2.8 9.5 2.8 11.5 0 18-9.7 17.6-18.4 1.2-.9 2.3-2 3.1-3.2-1.1.5-2.3.8-3.6 1 1.3-.8 2.3-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.1-1.2-2.7-2-4.5-2-4 0-6.9 3.7-6 7.6-5.2-.3-9.7-2.7-12.8-6.5C1.3 7.4 2 11 4.8 12.8c-1 0-2-.3-2.8-.8-.1 2.9 2 5.6 5 6.2-.9.2-1.8.3-2.8.1.8 2.5 3.1 4.3 5.8 4.3-2.7 2.1-5.9 3-9.2 2.6z")
 
-mixin address(url)
+mixin address(location, url)
   address
-    a(href=url)
-      block
+    if (location == 'downtown')
+      a(href="https://goo.gl/maps/ZoMzCxZn8r82")
+        | 1111 Washington Avenue South
+        br
+        | Minneapolis, MN 55415
+
+mixin phone(location)
+  .phone
+    if (location == 'downtown')
+      a.tel(href="tel:6123409738") 612-340-9738
 
 
 
@@ -26,7 +34,7 @@ mixin location(name,url,image,map,phone)
       a(href=url)
     figcaption
       .inner
-        a.name(class=name.toLowerCase())= name
+        a.name(class=name.toLowerCase() href=url)= name
         address
           a.map(href=map)
             block

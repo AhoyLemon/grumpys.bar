@@ -1,5 +1,16 @@
-.home-header {
-  .logo { width:22%; z-index: $z-logo; @include position(absolute,3vh,null,null,2vw); }
-  .tagline-stripe { background: $black; color:$white; margin-top: 16.5vh; padding-left: 27%; font-family: $headline; font-size:2.5em; padding-top: 0.25em; padding-bottom: 0.25em; }
+header {
+  .inner { display: table; width:100%; margin-top:90px; background: $black; margin-bottom: 60px; z-index: $z-header; position: relative; }
+  nav { display: table-row; }
+  .link, .logo-holder { display: table-cell; }
+  .link { text-align: center; text-transform: uppercase; padding-top: 0.6em; padding-bottom: 0.6em;
+    a { color:$yellow; font-weight: $bold; font-size:120%; }
+  }
+  .logo-holder { width:16%; position: relative;
+    .logo { position: absolute; z-index: $z-logo; left:0; right: 0; top:-60px; }
+    //.logo { position: absolute; width:160px; height: 160px; }
+  }
+
+  //.logo { width:320px; @include }
+
 
 }

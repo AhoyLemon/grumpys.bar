@@ -1,0 +1,67 @@
+main.location { 
+  .bubble-boxes { @include position(absolute,0,null,null,0); height: 60vh; width: 38vw;  z-index: $z-bubbleboxes;
+
+    .box { position: absolute; background-size: contain; background-position: bottom center; background-repeat: no-repeat; height: 200%; width:65%; }
+
+    .brown { background-image:url(../svg/bubblebox-brown.svg); bottom:0; left:25%; animation: bubbleBoxMove 8s 103near infinite; }
+    .tan   { background-image:url(../svg/bubblebox-tan.svg); bottom:20%; left:-2%;  animation: bubbleBoxMove 5.6s linear infinite;  }
+    .red   { background-image:url(../svg/bubblebox-red.svg); bottom:35%; right:0;  background-position: bottom right; animation: bubbleBoxMove 4.2s linear infinite; }
+  }
+
+  .hero { position: relative; @include flex-container();
+    .details-holder { @include flex-item(33%,0); }
+    .image-holder { @include flex-item(66%);
+      figure { height: 45vh; margin-top:-60px; z-index: $z-hero-image; }
+    }
+  }
+  .details-holder { padding-left: 80px;
+    .details { position: relative; z-index: $z-main;}
+    .name { font-family:$headline; color:$yellow; font-size:400%; text-shadow: -3px 3px 0 $black; }
+    .hours { @include flex-container(); margin-bottom: 1em;
+      .label { font-weight: $bold; font-size:150%; }
+      .info { padding-left: 0.5em; }
+    }
+    address { font-style: normal; margin-bottom: 1em;
+      a { color:currentColor; text-decoration: none; }
+    }
+    .phone {
+      a { color:currentColor; text-decoration: none; }
+    }
+  }
+
+  .calendar {@include flex-container(); width:100%; margin-top: 3em;
+    figure { height: 22vw; background-size:cover; background-position: center; position: relative; }
+    .featured-event { @include flex-item(33%);
+      figcaption { background:$white; @include position(absolute,1em,null,null,0); padding: 1em;
+        .title { color:$teal; font-size:250%; font-weight: $bold; }
+      }
+    }
+    .day { @include flex-item(33%);
+      figcaption { @include position(absolute,null,0,0,0); background-color:rgba($white,0.7); padding: 1em;
+        .title { color:$yellow; font-size:3vw; margin-top:-1em; font-weight: $bold; text-shadow: -2px 2px 0 $black, 1px -1px 1px $black; }
+        .items { @include flex-container();
+          .item { @include flex-item(50%); margin-bottom: 1em; }
+        }
+        .when { font-size:1.25em; font-weight: $bold; }
+      }
+      &.with-link {
+        figure { height: 16vw; }
+
+      }
+    }
+    .see-full-calendar { background-image:url(../svg/forward-arrow.svg); display: block; background-size:cover; background-position: center right; height: 6vw; text-decoration: none; text-align: right;
+      span { color:$white; text-shadow: -2px 2px 0 $black; font-size:3vw; padding-right: 1em; font-weight: $bold; line-height: 6vw; }
+    }
+  }
+
+}
+
+#app { display: flex; flex-direction: column; height: 100vh; align-items: stretch; }
+main, header { flex: 1 0 auto; }
+footer { flex-shrink: 0; }
+
+@keyframes bubbleBoxMove {
+  0%   { transform: translateY(0); }
+  33%  { transform: translateY(-20px); }
+  66% { transform: translateY(10px); }
+}
