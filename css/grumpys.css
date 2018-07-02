@@ -865,28 +865,6 @@ main.location .calendar {
       font-weight: 900;
       line-height: 6vw; }
 
-#app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100vh;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
-
-main, header {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto; }
-
-footer {
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
-
 @-webkit-keyframes bubbleBoxMove {
   0% {
     -webkit-transform: translateY(0);
@@ -923,9 +901,40 @@ footer {
       left: -20px;
       right: -20px; }
     main.location .bubble-boxes .tan {
-      height: 320px;
+      height: 300px;
+      left: -20px;
+      right: -30px; }
+    main.location .bubble-boxes .brown {
+      height: 360px;
       left: -20px;
       right: -20px; }
+  main.location .hero .details {
+    padding-left: 20px;
+    padding-right: 20px; }
+    main.location .hero .details address {
+      display: none; }
+    main.location .hero .details .phone {
+      font-size: 185%;
+      color: #FBF2C0;
+      margin-top: 1em; }
+    main.location .hero .details .find-us {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #FBF2C0;
+      color: #00B0B3;
+      font-size: 250%;
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 50%;
+      line-height: 70%;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 0.7em;
+      font-weight: 900;
+      border: 1px solid #00B0B3; }
+  main.location .hero figure {
+    height: 44vw; }
   main.location .calendar {
     display: none; } }
 

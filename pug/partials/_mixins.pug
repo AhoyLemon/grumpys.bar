@@ -1,3 +1,5 @@
+include _variables.pug
+
 mixin iconEmail(address)
   a.email(href="mailto:"+address)
     svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32")
@@ -16,7 +18,7 @@ mixin iconTwitter(url)
 mixin address(location, url)
   address
     if (location == 'downtown')
-      a(href="https://goo.gl/maps/ZoMzCxZn8r82")
+      a(href=map.downtown)
         | 1111 Washington Avenue South
         br
         | Minneapolis, MN 55415
