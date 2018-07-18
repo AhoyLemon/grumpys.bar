@@ -43,114 +43,109 @@ html(lang="en")
           .image-holder
             figure(style="background-image:url(https://picsum.photos/1230/500?random)")
 
-        .calendar
-          .featured-event
-            figure(style="background-image:url(https://picsum.photos/450/450?random)")
-              figcaption
-                .title April Residency
-                .description  
-                  b Gay Witch Abortion
-                  br
-                  | April 7, 2018
-                  br
-                  | Doors at 10pm | Free
-          .day
-            figure(style="background-image:url(https://picsum.photos/400/400?random)")
-              figcaption
-                .title Today
-                .items 
-                  .item
-                    .when 11 am:  Grumpy's Brunch
-                    .what
-                      span Try the 666 - six sour cream pancakes, six sausage links, and six ounces of maple syrup
-                  .item
-                    .when 10 pm: 21 Bingo
-                    .what
-                      span It's our way of leeting you have a chance at winning back some of your drinking money
-          .day.with-link
-            figure(style="background-image:url(https://picsum.photos/350/350?random)")
-              figcaption
-                .title Tomorrow
-                .items 
-                  .item
-                    .when 3pm to 7pm
-                    .what
-                      | $1 off beer, cocktails, and appetizers; $4.50 wings
-                  .item
-                    .when 5pm: Minnesota Mondays
-                    .what
-                      | All Minnesota beers half price
-                  .item
-                    .when 8pm to 11pm
-                    .what
-                      | Half priced bottles of wine
-                  .item
-                    .when 8pm: Drinky Drive-In
-                    .what
-                      | Movies and boozahol
-            a.see-full-calendar(href="/")
-              span See Full Calendar
+        section.calendar
+          +day('Today')
+            .item
+              .when 3pm to 7pm
+              .desc $1 off beer, cocktails and appetizers; $4.50 wings
+            .item
+              .when 9pm to 11pm
+              .name Trivia Mafia
+            .item
+              .when 9pm to 2am
+              .desc Half priced bottles of wine, $2.50 PBR, $3.50 rail drinks
+          
+          +day("Tomorrow")
+            .item
+              .when 11am to 7pm
+              .desc $1 off beer, cocktails and appetizers; $2 domestic bottles and cans; $3 rail drinks; $4.50 wings
+            .item
+              .when 10pm to 1am
+              .name Death Comedy Jam
+              .desc Test your material or just sit back and heckle the newbies. It makes no difference to these guys whether you laugh or cry.
+            .item
+              .when 9pm to 2am
+              .desc $2.50 PBR tall boys, $4 Stoli drinks, $4.50 Red Breast Whiskey
 
-        .calendar
-          .day
-            figure(style="background-image:url(https://picsum.photos/400/400?random)")
-              figcaption
-                .title Today
-                .items 
-                  .item
-                    .when 11 am:  Grumpy's Brunch
-                    .what
-                      span Try the 666 - six sour cream pancakes, six sausage links, and six ounces of maple syrup
-                  .item
-                    .when 10 pm: 21 Bingo
-                    .what
-                      span It's our way of leeting you have a chance at winning back some of your drinking money
-          .day
-            figure(style="background-image:url(https://picsum.photos/350/350?random)")
-              figcaption
-                .title Tomorrow
-                .items 
-                  .item
-                    .when 3pm to 7pm
-                    .what
-                      | $1 off beer, cocktails, and appetizers; $4.50 wings
-                  .item
-                    .when 5pm: Minnesota Mondays
-                    .what
-                      | All Minnesota beers half price
-                  .item
-                    .when 8pm to 11pm
-                    .what
-                      | Half priced bottles of wine
-                  .item
-                    .when 8pm: Drinky Drive-In
-                    .what
-                      | Movies and boozahol
-          .day.with-link
-            figure(style="background-image:url(https://picsum.photos/349/349?random)")
-              figcaption
-                .title Tuesday
-                .items 
-                  .item
-                    .when 3pm to 7pm
-                    .what
-                      | $1 off beer, cocktails, and appetizers; $4.50 wings
-                  .item
-                    .when 5pm: Minnesota Mondays
-                    .what
-                      | All Minnesota beers half price
-                  .item
-                    .when 8pm to 11pm
-                    .what
-                      | Half priced bottles of wine
-                  .item
-                    .when 8pm: Drinky Drive-In
-                    .what
-                      | Movies and boozahol
-            a.see-full-calendar(href="/")
-              span See Full Calendar
+          +day("Thursday")
+            .item
+              .when 3pm to 7pm
+              .desc $1 off beer, cocktails and appetizers; $4.50 wings
+            .item
+              .when 10pm to 2am
+              .name Karaoke
+              .desc PLUS: Music Appreciation Night with live DJ’s!
+            .item
+              .when 9pm to 2am
+              .desc $2.50 tall boys
 
+          +day("Friday")
+            .item
+              .when 3pm to 7pm
+              .desc $1 off beer, cocktails and appetizers; $4.50 wings
 
+          +day("Saturday")
+            .item
+              .when 11am
+              .name Grumpy's Brunch
+              .desc Tired of standing in line for a couple of eggs over easy? Try our Barnyard brunch.
+            .item
+              .when 10pm to 2am
+              .name Residency
+
+          +day("Sunday")
+            .item
+              .when 11am
+              .name Grumpy's Brunch
+              .desc Try the 666—six sour cream pancakes, six sausage links and six ounces of maple syrup
+            .item
+              .when 10pm
+              .name 21 Bingo
+              .desc It's our way of letting you have a chance at winning back some of your drinking money
+
+        .tap-list
+          .headline Beers on tap...
+
+          .taps
+            +tap("Emily's Dream #30 Blood Orange Sour", "LTD Brewing", "Sour Ale")
+            +tap("Fuzzi Lil Pucker", "56 Brewing", "Sour Ale")
+            +tap("Short Pants", "Bauhaus Brew Labs", "Radler")
+            +tap("Dakota Soul", "Summit", "Pilsner")
+            +tap("B-Side Pils", "Indeed", "Pilsner")
+            +tap("Pils", "Fair State", "Pilsner")
+            +tap("Hamm's", "Miller", "Lager")
+            +tap("Pils", "Lagunitas", "Pilsner")
+            +tap("Coors Light", "Coors", "Lager")
+            +tap("Summer Crush", "Castle Danger", "Pale Ale")
+            +tap("WacTown Wheat", "Waconia Brewing Co", "Pale Wheat")
+            +tap("Oberon", "Bell's", "Pale Wheat")
+            +tap("Xtra Citra", "Surly", "Pale Ale")
+            +tap("Tea Break Blonde", "Bent Paddle", "Blonde Ale")
+            +tap("EPA", "Summit", "Pale Ale")
+            +tap("Mango Blonde", "Lift Bridge", "Blonde")
+            +tap("Lonely Blonde", "Fulton", "Blonde")
+            +tap("Fathom", "Ballast Point", "IPA")
+            +tap("300", "Fulton", "IPA")
+            +tap("Two Hearted", "Bell's", "IPA")
+            +tap("Furious", "Surly", "IPA")
+            +tap("Nitro Oatmeal Stout", "Founders")
+            +tap("Outcider", "2 Towns Ciderhouse", "Cider")
+            +tap("Paulaner Hefewizen", "Paulaner", "Hefeweisen")
+
+            a.untappd-link
+              .content
+                img(src="img/untappd-logo.png")
+
+        section.menu-stripe
+          .diamonds
+            .orange
+            .teal
+          a.figures(href="#")
+            figure(style="background-image:url(https://picsum.photos/160/160?random)")
+            figure(style="background-image:url(svg/see-full-menu.svg)")
+            figure(style="background-image:url(https://picsum.photos/162/162?random)")
+            figure(style="background-image:url(https://picsum.photos/163/163?random)")
+            figure(style="background-image:url(https://picsum.photos/164/164?random)")
 
 
               

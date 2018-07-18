@@ -23,6 +23,7 @@ main.location {
     }
   }
 
+  /*
   .calendar {@include flex-container(); width:100%; margin-top: 3em;
     figure { height: 22vw; background-size:cover; background-position: center; position: relative; }
     .featured-event { @include flex-item(33%);
@@ -47,6 +48,7 @@ main.location {
       span { color:$white; text-shadow: -2px 2px 0 $black; font-size:3vw; padding-right: 1em; font-weight: $bold; line-height: 6vw; }
     }
   }
+  */
 
 }
 
@@ -74,8 +76,6 @@ main.location {
       figure { height: 44vw;}
     }
 
-    .calendar { display: none; }
-
   }
 }
 
@@ -92,9 +92,16 @@ main.location {
 
     .hero { @include flex-container();
       .details-holder { @include flex-item(33%,0); padding-left: 80px; }
+      
+      address, .phone { font-size:135%; }
+      address a:hover, .phone a:hover { background:$teal; }
+      
+
+
       .image-holder { @include flex-item(66%);
         figure { height: 45vh; margin-top:-60px; z-index: $z-hero-image; }
       }
+      .find-us { display: none; }
     }
 
   }

@@ -1,0 +1,24 @@
+.menu-stripe { 
+  .diamonds { height:6.2vw; position: relative;
+    .teal, .orange { background-size:cover; background-position: top center; background-repeat: no-repeat; @include position(absolute,0,0,0,0); }
+  }
+  
+  .teal {  background:url(../svg/menu-decoration-teal.svg); animation:tealDiamondsMove 5s linear infinite; }
+  .orange { background:url(../svg/menu-decoration-orange.svg); animation:orangeDiamondsMove 7s linear infinite; }
+
+  .figures { @include flex-container(); position: relative; z-index: $z-menu-figures;
+    figure { @include flex-item(15%); height:19.5vw; background-size:cover; background-position: center; background-repeat: no-repeat; }
+  }
+}
+
+@keyframes orangeDiamondsMove {
+  0%   { transform: translateY(0); }
+  70%  { transform: translateY(14px); }
+  99% { transform: translateY(0); }
+}
+
+@keyframes tealDiamondsMove {
+  0%   { transform: translateY(0); }
+  33%  { transform: translateY(26px); }
+  99% { transform: translateY(0); }
+}

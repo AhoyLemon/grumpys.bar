@@ -64,3 +64,25 @@ mixin footerLocation(name,url,phone)
       +iconEmail
       +iconFacebook
       +iconTwitter
+
+mixin tap(name,brewery,style,price,pour)
+  .tap
+    .content
+      if name
+        .name= name
+      if brewery
+        .brewery= brewery
+      if style
+        .style= style
+      if price && pour
+        .price #{price} for #{pour}
+      else if price
+        .price #{price}
+
+
+mixin day(name)
+  .day
+    .inner
+      .title= name
+      .items
+        block

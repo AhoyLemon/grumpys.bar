@@ -1,0 +1,7 @@
+.calendar-beta { padding-right:50px;
+  .slick-prev { display: none; }
+  .slick-next { @include position(absolute,50%,0); height:50px; width:50px; display: block; background:url(../svg/slick-next.svg); background-size:contain; border:none; cursor: pointer; }
+  .slick-slide { padding:20px; }
+}
+
+.slick-next {  }

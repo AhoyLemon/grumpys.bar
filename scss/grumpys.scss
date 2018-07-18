@@ -4,6 +4,10 @@
 @import "globals/_mixins";
 @import "globals/_extends";
 
+// LIBRARIES
+@import "libraries/slick";
+@import "libraries/slick-theme";
+
 // SITE SPECIFIC
 @import "partials/_variables";
 @import "partials/_z-index";
@@ -15,4 +19,6 @@
 
 @import "partials/_home";
 @import "partials/_location";
-
+@import "partials/_calendar";
+@import "partials/_drinks";
+@import "partials/_menu";
