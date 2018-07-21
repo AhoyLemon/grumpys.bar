@@ -247,11 +247,11 @@ svg {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.calendar-beta {
+.calendar {
   padding-right: 50px; }
-  .calendar-beta .slick-prev {
+  .calendar .slick-prev {
     display: none; }
-  .calendar-beta .slick-next {
+  .calendar .slick-next {
     position: absolute;
     top: 50%;
     right: 0;
@@ -262,7 +262,7 @@ svg {
     background-size: contain;
     border: none;
     cursor: pointer; }
-  .calendar-beta .slick-slide {
+  .calendar .slick-slide {
     padding: 20px; }
 
 [v-cloak] {
@@ -360,7 +360,12 @@ svg * {
     header .link a {
       color: #FBF2C0;
       font-weight: 900;
-      font-size: 120%; }
+      font-size: 120%;
+      text-decoration: none; }
+    header .link.active {
+      background: #FBF2C0; }
+      header .link.active a {
+        color: #414042; }
   header .logo-holder {
     width: 16%;
     position: relative; }

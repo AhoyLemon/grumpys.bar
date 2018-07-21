@@ -8,12 +8,13 @@ header.desktop
       .logo-holder
         a(href="/")
           img.logo(src="svg/logo_header.svg")
-      .link
-        a northeast
-      .link
-        a roseville
-      .link
-        a downtown
+      each location in locations
+        if location.title == pageTitle
+          .link.active
+            a.active(href=location.url)= location.title
+        else
+          .link
+            a(href=location.url)= location.title
 
 header.mobile
   .inner

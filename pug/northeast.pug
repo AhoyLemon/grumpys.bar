@@ -1,0 +1,148 @@
+- const pageTitle = "Northeast"
+- var description = ""
+
+doctype html
+html(lang="en")
+  head
+    include partials/_mixins.pug
+    include partials/_head.pug
+  body
+
+    #app
+
+      include partials/_header.pug
+
+      main.location.downtown
+
+        .bubble-boxes
+          .box.brown
+          .box.tan
+          .box.red
+
+        .hero
+          .details-holder
+            .details  
+              .name= pageTitle
+              .hours
+                .label
+                  span HOURS:
+                .info !{locations.northeast.hours}
+              +address(locations.northeast)
+              +phone(locations.northeast)
+              a.find-us(href=locations.northeast.map)
+                span Find us
+          .image-holder
+            figure(style="background-image:url(https://picsum.photos/1230/500?random)")
+
+        section.calendar
+          +day('Today')
+            .item
+              .when 2pm to 6pm
+              .desc $1 off anything that pours
+            .item
+              .when 4pm to 9pm
+              .name Firkin Fridays
+              .desc Fresh and rare cask beers from Indeed, Surly, Fulton, Thornbridge and Bell’s PLUS free food like octopus on a stick or hop-smoked cheese to pair with your pint
+          
+          +day("Tomorrow")
+            .item
+              .when All Day
+              .desc $3 taps from all breweries within a stone’s throw (includes Indeed, Fulton, Surly, Northgate, 612 Brew and Sociable Cider)
+
+          +day("Sunday")
+            .item
+              .when All Day
+              .desc $2 tall boys from our vast selection
+            .item
+              .when 4pm to 8pm
+              .desc Half-priced bottles of wine
+            .item
+              .when 7pm to 9pm
+              .name T-Bone Bingo
+              .desc Play Bingo and win meat from Sentyrz Market in Northeast
+
+          +day("Monday")
+            .item
+              .when 2pm to 6pm
+              .desc $1 off anything that pours
+            .item
+              .when 7pm to 9pm
+              .name MN Music Listening Party
+              .desc Local music and more spun by folks that go to way more shows than you do
+
+          +day("Tuesday")
+            .item
+              .when 2pm to 6pm
+              .desc $1 off anything that pours
+            .item
+              .when 5pm to whenever
+              .desc Hotdish is a buck a bowl until we run Outcider
+
+          +day("Wednesday")
+            .item
+              .when 2pm to 6pm
+              .desc $1 off anything that pours
+            .item
+              .when 8pm to 10pm 
+              .name Trailer Park Trivia with Berni the Trailer Park Queen
+              .desc This fills up, so get here early to grab a seat and a $2 PBR tall boy to make you smarter
+          
+          +day("Thursday")
+            .item
+              .when 2pm to 6pm
+              .desc $1 off anything that pours
+            .item
+              .when 2pm to 6pm
+              .desc $3 for two domestic bottles
+            .item
+              .when 6pm to 10pm 
+              .name Vino Vinyl
+              .desc Bring in a vinyl record to play and get a free drink; two-for-one glasses of wine
+
+        .tap-list
+          .headline Beers on tap...
+
+          .taps
+            +tap("Emily's Dream #30 Blood Orange Sour", "LTD Brewing", "Sour Ale")
+            +tap("Fuzzi Lil Pucker", "56 Brewing", "Sour Ale")
+            +tap("Short Pants", "Bauhaus Brew Labs", "Radler")
+            +tap("Dakota Soul", "Summit", "Pilsner")
+            +tap("B-Side Pils", "Indeed", "Pilsner")
+            +tap("Pils", "Fair State", "Pilsner")
+            +tap("Hamm's", "Miller", "Lager")
+            +tap("Pils", "Lagunitas", "Pilsner")
+            +tap("Coors Light", "Coors", "Lager")
+            +tap("Summer Crush", "Castle Danger", "Pale Ale")
+            +tap("WacTown Wheat", "Waconia Brewing Co", "Pale Wheat")
+            +tap("Oberon", "Bell's", "Pale Wheat")
+            +tap("Xtra Citra", "Surly", "Pale Ale")
+            +tap("Tea Break Blonde", "Bent Paddle", "Blonde Ale")
+            +tap("EPA", "Summit", "Pale Ale")
+            +tap("Mango Blonde", "Lift Bridge", "Blonde")
+            +tap("Lonely Blonde", "Fulton", "Blonde")
+            +tap("Fathom", "Ballast Point", "IPA")
+            +tap("300", "Fulton", "IPA")
+            +tap("Two Hearted", "Bell's", "IPA")
+            +tap("Furious", "Surly", "IPA")
+            +tap("Nitro Oatmeal Stout", "Founders")
+            +tap("Outcider", "2 Towns Ciderhouse", "Cider")
+            +tap("Paulaner Hefewizen", "Paulaner", "Hefeweisen")
+
+            a.untappd-link(href="https://untappd.com/v/grumpys-bar/7406")
+              .content
+                img(src="img/untappd-logo.png")
+
+        section.menu-stripe
+          .diamonds
+            .orange
+            .teal
+
+
+              
+
+
+      include partials/_footer.pug
+
+
+    include partials/_javascripts.pug
+    //-include partials/_schema.pug

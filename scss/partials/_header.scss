@@ -17,7 +17,10 @@
     nav { display: table-row; }
     .link, .logo-holder { display: table-cell; }
     .link { text-align: center; text-transform: uppercase; padding-top: 0.6em; padding-bottom: 0.6em;
-      a { color:$yellow; font-weight: $bold; font-size:120%; }
+      a { color:$yellow; font-weight: $bold; font-size:120%; text-decoration: none; }
+      &.active { background:$yellow;
+        a { color:$black; }
+      }
     }
     .logo-holder { width:16%; position: relative;
       .logo { position: absolute; z-index: $z-logo; left:0; right: 0; top:-60px; }
