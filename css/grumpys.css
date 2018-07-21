@@ -1049,14 +1049,15 @@ main.location {
     padding: 0; } }
 
 .tap-list {
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 40px;
+  padding-right: 40px; }
   .tap-list .headline {
-    padding-left: 1em;
+    padding-left: 0.5em;
     font-family: "Oleo Script", cursive;
     font-size: 5vw;
     font-weight: 900;
-    text-shadow: -0.04em 0.04em 0 #00B0B3; }
+    color: #ee2a2a;
+    text-shadow: -0.03em 0.03em 0 #fff, -0.06em 0.06em 0 #414042; }
   .tap-list .taps {
     display: grid;
     grid-gap: 20px; }
@@ -1269,5 +1270,144 @@ main.location {
   99% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
+
+.full-menu {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 2em; }
+  .full-menu h2 {
+    font-family: "Oleo Script", cursive;
+    font-size: 5vw;
+    color: #00B0B3;
+    text-shadow: -0.03em 0.03em 0 #fff, -0.06em 0.06em 0 #414042;
+    padding-left: 0.5em;
+    position: relative;
+    z-index: 7;
+    position: relative; }
+    .full-menu h2:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 16vw;
+      content: ' ';
+      display: block;
+      height: 7vw;
+      background-image: url(../svg/menu-sparkle.svg);
+      background-size: contain;
+      background-position: top left;
+      background-repeat: no-repeat; }
+  .full-menu .inner {
+    background: #DA5C5C;
+    padding: 10px;
+    position: relative; }
+    .full-menu .inner:before {
+      position: absolute;
+      top: -6vw;
+      right: 0;
+      left: 0;
+      height: 6vw;
+      content: ' ';
+      display: block;
+      background-image: url(../svg/menu-backboard.svg);
+      background-size: cover;
+      background-position: top center; }
+  .full-menu .page {
+    background: #fff;
+    padding: 2rem; }
+  .full-menu .section-title {
+    font-size: 150%;
+    color: #00B0B3;
+    font-weight: 900;
+    margin-bottom: 0.25em; }
+  .full-menu .section-text {
+    text-align: center;
+    font-size: 110%; }
+  .full-menu .menu-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0.5rem; }
+    .full-menu .menu-item .name {
+      -ms-flex-preferred-size: calc(100% - 6rem);
+      flex-basis: calc(100% - 6rem);
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+    .full-menu .menu-item .price {
+      -ms-flex-preferred-size: 6rem;
+      flex-basis: 6rem;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+    .full-menu .menu-item .desc {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      padding-left: 1.5em;
+      padding-right: 6rem;
+      font-size: 90%;
+      padding-top: 0.5em; }
+    .full-menu .menu-item:nth-child(even) {
+      background-color: rgba(198, 148, 59, 0.3); }
+  .full-menu .page.food {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px; }
+  .full-menu .page.booze {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px; }
+    .full-menu .page.booze .name {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+    .full-menu .page.booze .options {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+      .full-menu .page.booze .options li {
+        list-style: disc;
+        margin-left: 1.5em; }
+  .full-menu .menu-section {
+    margin-bottom: 2em; }
 
 /*# sourceMappingURL=grumpys.css.map */

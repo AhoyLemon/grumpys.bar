@@ -49,22 +49,21 @@ mixin location(name,url,image,map,phone)
             +iconFacebook
             +iconTwitter
 
-mixin footerLocation(name,url,phone)
+mixin footerLocation(location)
   .location
     .name
-      a(href=url)= name
-    if (name == "Downtown")
-      +address('downtown')
-    else 
-      address
-        a(href='/')
-          block
+      a(href=location.url)= location.title
+    address
+      a(href=location.map)
+        span= location.streetAddress
+        br
+        span #{location.city}, #{location.state} #{location.zip}
     .phone
-      a.tel(href=phone)= phone
+      a.tel(href=location.phone)= phone
     .social
-      +iconEmail
-      +iconFacebook
-      +iconTwitter
+      +iconEmail(location.email)
+      +iconFacebook(location.facebook)
+      +iconTwitter(location.twitter)
 
 mixin tap(name,brewery,style,price,pour)
   .tap
@@ -80,10 +79,27 @@ mixin tap(name,brewery,style,price,pour)
       else if price
         .price #{price}
 
-
 mixin day(name)
   .day
     .inner
       .title= name
       .items
+        block
+
+mixin menuItem(name,price)
+  .menu-item
+    .name= name
+    if price
+      .price $#{price.toFixed(2)}
+    else
+      .price
+    if block
+      .desc
+        block
+
+mixin booze(booze)
+  .menu-item
+    .name= booze
+    if block
+      ul.options
         block

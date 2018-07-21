@@ -1,4 +1,4 @@
-- const pageTitle = "Downtown"
+- const pageTitle = "Roseville"
 - var description = ""
 
 doctype html
@@ -12,7 +12,7 @@ html(lang="en")
 
       include partials/_header.pug
 
-      main.location.downtown
+      main.location.northeast
 
         .bubble-boxes
           .box.brown
@@ -22,17 +22,14 @@ html(lang="en")
         .hero
           .details-holder
             .details  
-              .name Downtown
+              .name= pageTitle
               .hours
                 .label
                   span HOURS:
-                .info
-                  | Sun - Mon: 11am to midnight
-                  br
-                  | Tue - Sat: 11am to 2am
-              +address('downtown')
-              +phone('downtown')
-              a.find-us(href=map.downtown)
+                .info !{locations.roseville.hours}
+              +address(locations.roseville)
+              +phone(locations.roseville)
+              a.find-us(href=locations.roseville.map)
                 span Find us
           .image-holder
             figure(style="background-image:url(https://picsum.photos/1230/500?random)")
@@ -40,62 +37,75 @@ html(lang="en")
         section.calendar
           +day('Today')
             .item
-              .when 3pm to 7pm
-              .desc $1 off beer, cocktails and appetizers; $4.50 wings
+              .when 11am to 3pm
+              .name Breakfast Menu
+              .desc $4 BYO Bloody Mary bar
             .item
-              .when 9pm to 11pm
-              .name Trivia Mafia
+              .when 7pm to 10pm
+              .name Summit Saturday
+              .desc $3 Summit taps (exceptions apply) 
             .item
-              .when 9pm to 2am
-              .desc Half priced bottles of wine, $2.50 PBR, $3.50 rail drinks
+              .when 10pm to close
+              .name Karaoke
           
           +day("Tomorrow")
             .item
-              .when 11am to 7pm
-              .desc $1 off beer, cocktails and appetizers; $2 domestic bottles and cans; $3 rail drinks; $4.50 wings
+              .when 11am to 3pm
+              .name Breakfast Menu
+              .desc $4 BYO Bloody Mary bar
             .item
-              .when 10pm to 1am
-              .name Death Comedy Jam
-              .desc Test your material or just sit back and heckle the newbies. It makes no difference to these guys whether you laugh or cry.
+              .when 7pm to 10pm 
+              .desc Half-priced appetizers, $4 tap beer (exceptions apply)
             .item
-              .when 9pm to 2am
-              .desc $2.50 PBR tall boys, $4 Stoli drinks, $4.50 Red Breast Whiskey
+              .when 9pm
+              .name Rock 'n Roll Bingo
+              .desc Progressive Pot (free to play)
+
+          +day("Monday")
+            .item
+              .when 7pm to 10pm
+              .name $6.99 BYO Burgers
+            .item
+              .when 7pm to 10pm
+              .name Minnesota Mondays
+              .desc Any Minnesota beer for $3 (exceptions apply), $1 off Minnesota food
+          
+          +day("Tuesday")
+            .item
+              .when 7pm to 10pm
+              .name Tallboy Tuesdays
+              .desc $2.00 tallboys (PBR, Hamms, Lone Star, Rolling Rock & Coors) 1/2 priced wings 
+            .item
+              .when 10pm to close
+              .name Karaoke
+          
+          +day("Wednesday")
+            .item
+              .when 9pm
+              .name Trivia
+              .desc $25 gift certificate for first place, plus other prizes
 
           +day("Thursday")
             .item
-              .when 3pm to 7pm
-              .desc $1 off beer, cocktails and appetizers; $4.50 wings
-            .item
-              .when 10pm to 2am
-              .name Karaoke
-              .desc PLUS: Music Appreciation Night with live DJ’s!
-            .item
-              .when 9pm to 2am
-              .desc $2.50 tall boys
-
-          +day("Friday")
-            .item
-              .when 3pm to 7pm
-              .desc $1 off beer, cocktails and appetizers; $4.50 wings
-
-          +day("Saturday")
-            .item
-              .when 11am
-              .name Grumpy's Brunch
-              .desc Tired of standing in line for a couple of eggs over easy? Try our Barnyard brunch.
-            .item
-              .when 10pm to 2am
-              .name Residency
-
-          +day("Sunday")
-            .item
-              .when 11am
-              .name Grumpy's Brunch
-              .desc Try the 666—six sour cream pancakes, six sausage links and six ounces of maple syrup
+              .when 7pm to 10pm
+              .name Tex Mex Thursday
+              .desc $3 off: nachos, tex-mex rolls, quesadilla gordo; $1 off: Corona Corona Light, Pacifico & Dos Equis 
             .item
               .when 10pm
-              .name 21 Bingo
-              .desc It's our way of letting you have a chance at winning back some of your drinking money
+              .name Bar Bingo
+              .desc Progressive pot (free to play)
+          
+          +day("Friday")
+            .item
+              .when 4pm
+              .name all you can eat fish fry
+            .item
+              .when 7pm to 10pm
+              .name Furious Friday
+              .desc $3 Surly Furious on tap 
+            .item
+              .when 9pm
+              .name Beanbag Tourney
 
         .tap-list
           .headline Beers on tap...
@@ -126,21 +136,17 @@ html(lang="en")
             +tap("Outcider", "2 Towns Ciderhouse", "Cider")
             +tap("Paulaner Hefewizen", "Paulaner", "Hefeweisen")
 
-            a.untappd-link
+            a.untappd-link(href="https://untappd.com/v/grumpys-bar-grill/35755")
               .content
                 img(src="img/untappd-logo.png")
 
         include partials/_menu.pug
-          //-a.figures(href="#")
-            figure(style="background-image:url(https://picsum.photos/160/160?random)")
-            figure(style="background-image:url(svg/see-full-menu.svg)")
-            figure(style="background-image:url(https://picsum.photos/162/162?random)")
-            figure(style="background-image:url(https://picsum.photos/163/163?random)")
-            figure(style="background-image:url(https://picsum.photos/164/164?random)")
+
         section.menu-stripe
           .diamonds
             .orange
             .teal
+
 
               
 

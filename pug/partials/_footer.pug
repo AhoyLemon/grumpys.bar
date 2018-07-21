@@ -1,15 +1,9 @@
 footer
   .inner
     .locations
-      +footerLocation("Northeast",null,'612-789-7429')
-        | 2200 4th Street Northeast
-        br
-        | Minneapolis, MN 55418
-      +footerLocation("Downtown",'downtown.html','612-340-9738')
-      +footerLocation("Roseville",null,'651-379-1180')
-        | 2801 Snelling Avenue
-        br
-        | Roseville, MN 55113
+      +footerLocation(locations.northeast)
+      +footerLocation(locations.downtown)
+      +footerLocation(locations.roseville)
 
     .private-party
       img(src="img/private-party.png")
