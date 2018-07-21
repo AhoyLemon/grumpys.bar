@@ -1377,13 +1377,32 @@ main.location {
     .full-menu .menu-item:nth-child(even) {
       background-color: rgba(198, 148, 59, 0.3); }
   .full-menu .page.food {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px; }
+    grid-gap: 40px;
+    display: grid; }
+    @media (min-width: 1381px) {
+      .full-menu .page.food {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (min-width: 961px) and (max-width: 1380px) {
+      .full-menu .page.food {
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 960px) {
+      .full-menu .page.food {
+        grid-template-columns: 1fr; } }
   .full-menu .page.booze {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 40px; }
+    @media (min-width: 1681px) {
+      .full-menu .page.booze {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+    @media (min-width: 1361px) and (max-width: 1680px) {
+      .full-menu .page.booze {
+        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    @media (min-width: 1045px) and (max-width: 1360px) {
+      .full-menu .page.booze {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 644px) {
+      .full-menu .page.booze {
+        grid-template-columns: 1fr; } }
     .full-menu .page.booze .name {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%;

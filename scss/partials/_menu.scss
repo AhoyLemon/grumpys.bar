@@ -49,8 +49,18 @@ $priceWidth: 6rem;
 
   //.page { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 40px; }
   .page { //column-count: 3; column-gap: 40px;
-    &.food { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 40px; }
-    &.booze { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-gap: 40px;
+    &.food {  grid-gap: 40px; display: grid; 
+      @media (min-width:1381px)                       { grid-template-columns: 1fr 1fr 1fr; }
+      @media (min-width:961px) and (max-width:1380px) { grid-template-columns: 1fr 1fr; }
+      @media (max-width:960px)                        { grid-template-columns: 1fr; }
+    }
+    &.booze { display: grid; grid-gap: 40px;
+      @media (min-width:1681px)                        { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+      @media (min-width:1361px) and (max-width:1680px) { grid-template-columns: 1fr 1fr 1fr 1fr; }
+      @media (min-width:1045px) and (max-width:1360px) { grid-template-columns: 1fr 1fr 1fr; }
+      //@media ()                                         { grid-template-columns: 1fr 1fr; }
+      @media (max-width:644px)                         { grid-template-columns: 1fr; }
+
       .name { @include flex-item(100%); }
       .options { @include flex-item(100%);
         li { list-style: disc; margin-left: 1.5em; }
