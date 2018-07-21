@@ -31,19 +31,17 @@ mixin phone(location)
     a.tel(href="tel:"+location.phone)
       | #{location.phone}
 
-mixin location(name,url,image,map,phone)
+mixin location(location,image)
   .location
     figure(style="background-image:url(img/fpo/"+image+")")
-      a(href=url)
+      a(href=location.url)
     figcaption
       .inner
-        a.name(class=name.toLowerCase() href=url)= name
-        address
-          a.map(href=map)
-            block
+        a.name(class=location.class href=location.url)= location.title
+        +address(location)
         .phone-and-social
           .phone
-            a.tel(href="tel:"+phone)= phone
+            a.tel(href="tel:"+location.phone)= location.phone
           .social
             +iconEmail
             +iconFacebook

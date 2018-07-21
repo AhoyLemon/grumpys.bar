@@ -1,11 +1,5 @@
-- var testing = true
-- var siteTitle = "Grumpy's"
 - var pageTitle = "Home"
-- var siteURL = ""
-- var fPlusURL = false
 - var description = ""
-- var d = new Date()
-- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()
 
 doctype html
 html.home(lang="en")
@@ -28,17 +22,12 @@ html.home(lang="en")
       main.home
         nav.locations
 
-          +location('Downtown','downtown.html','downtown.jpg',null,'612-340-9738')
-            +address('downtown')
+          +location(locations.downtown, 'downtown.jpg')
+            //-+address('downtown')
 
-          +location('Roseville',null,'roseville.jpg',null,'651-379-1180')
-            | 2801 Snelling Avenue
-            br
-            | Roseville, MN 55113
+          +location(locations.roseville, 'roseville.jpg')
 
-          +location('Northeast',null,'nordeast.jpg',null,'612-789-7429')
-            | 2200 4th Street Northeast
-            | Minneapolis, MN 55418
+          +location(locations.northeast, 'nordeast.jpg')
 
       include partials/_footer.pug
 
