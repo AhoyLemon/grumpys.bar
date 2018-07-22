@@ -13,19 +13,18 @@
 
     }
 
-  }
+    .hamburger-bar { @include position(fixed,0,0,null,0); padding-left: 20px; background:$black; color:$white; z-index: $z-mobile-nav-bar; padding-top:20px; padding-bottom: 10px;
+    }
+    nav { padding-top: 120px; @include flex-container(); position: fixed;  z-index: $z-mobile-nav; background:$black; left:0; right:0; transform: translateY(-105%); transition:transform 1s ease;
+      .link { text-align: center; @include flex-item(33%); margin-bottom: 1em; }
+      a { font-size:1.25em; color:$white; text-decoration: none; padding-left:2em; padding-right: 2em;  }
+    }
+  
+    &.active {
+      nav { transform: translateY(0); }
+    }
 
-  .hamburger-bar { @include position(fixed,0,0,null,0); padding-left: 20px; background:$black; color:$white; z-index: $z-mobile-nav-bar; padding-top:20px; padding-bottom: 10px;
   }
-  nav { padding-top: 120px; @include flex-container(); position: fixed;  z-index: $z-mobile-nav; background:$black; left:0; right:0; transform: translateY(-105%); transition:transform 1s ease;
-    .link { text-align: center; @include flex-item(33%); margin-bottom: 1em; }
-    a { font-size:1.25em; color:$white; text-decoration: none; padding-left:2em; padding-right: 2em;  }
-  }
-
-  &.active {
-    nav { transform: translateY(0); }
-  }
-
 
 }
 
