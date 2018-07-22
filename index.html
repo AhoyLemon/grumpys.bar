@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta http-equiv="last-modified" content="2018-06-21@10:48:12">
+    <meta http-equiv="last-modified" content="2018-06-22@12:43:10">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Signika:400,600,700" rel="stylesheet">
-    <link href="css/grumpys.css?lastUpdated=2018-06-21@10:48:12" rel="stylesheet">
+    <link href="css/grumpys.css?lastUpdated=2018-06-22@12:43:10" rel="stylesheet">
   </head>
   <body><img class="triangle" src="svg/triangle.svg">
     <div id="app">
@@ -23,7 +23,7 @@
                 <figure style="background-image:url(img/fpo/downtown.jpg)"><a href="downtown.html"></a></figure>
                 <figcaption>
                   <div class="inner"><a class="name downtown" href="downtown.html">Downtown</a>
-                        <address><a><span class="street-address">1111 S Washington Ave</span><br><span class="city">Minneapolis</span>, <span class="state">MN</span> <span class="zip">55415</span></a></address>
+                        <address><a href="https://goo.gl/maps/xTtEWzqfqa92"><span class="street-address">1111 S Washington Ave</span><br><span class="city">Minneapolis</span>, <span class="state">MN</span> <span class="zip">55415</span></a></address>
                     <div class="phone-and-social">
                       <div class="phone"><a class="tel" href="tel:(612) 340-9738">(612) 340-9738</a></div>
                       <div class="social"><a class="email" href="mailto:undefined">
@@ -108,7 +108,7 @@
                 </div>
                 <div class="location">
                   <div class="name"><a href="downtown.html">Downtown</a></div>
-                  <address><a><span>1111 S Washington Ave</span><br><span>Minneapolis, MN 55415</span></a></address>
+                  <address><a href="https://goo.gl/maps/xTtEWzqfqa92"><span>1111 S Washington Ave</span><br><span>Minneapolis, MN 55415</span></a></address>
                   <div class="phone"><a class="tel" href="(612) 340-9738"></a></div>
                   <div class="social"><a class="email" href="mailto:johnny@grumpys-bar.com">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -144,7 +144,6 @@
             <div class="check">Check Out Our Friends:</div>
             <div class="both">
               <div class="friend rose-vine"><a href="http://rosevinehall.com"><img src="svg/rosevine-footer.svg"></a></div>
-              <div class="friend shoxop"><a href="http://shoxop.com"><img src="svg/shoxop-footer.svg"></a></div>
             </div>
           </div>
         </div>
@@ -154,6 +153,11 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script>
+        $('.hamburger').click(function() {
+          $('header.mobile').toggleClass('active');
+        });
+        
+        
         let cal = $('.calendar');
         const singleSlideWidth = 820;
         
@@ -183,6 +187,14 @@
           ]
         });
         
+        $('.image-carousel').slick({
+          infinite: true,
+          slidesToShow: 1,
+          arrows: false,
+          dots: true
+        });
+        
+        
         function matchCalendarHeight() {
         
           if ($(window).width > singleSlideWidth) {
@@ -196,6 +208,20 @@
             });
           }
         }
+        
+        $("a[scroll-to]").click(function() {
+        
+          let o = 0;
+          if (window.innerWidth < 601) {
+            o = 120
+          }
+        
+          let t = $(this).attr('scroll-to');
+          $('header.mobile').removeClass('active');
+          $([document.documentElement, document.body]).animate({
+            scrollTop: $('a[name='+t+']').offset().top - o
+          }, 350);
+        });
       </script>
     </div>
   </body>

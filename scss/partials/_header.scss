@@ -1,12 +1,32 @@
 @media (max-width:$mobile-max) {
   header.desktop { display: none; }
 
-  header.mobile { color:$yellow; position: relative; height: 135px;
-    .inner { background: $black; @include flex-container(); margin-top: 30px; }
-    .hamburger { @include flex-item(15%); font-size:260%; }
-    .logo-holder { @include flex-item(70%); }
-    .logo { height: 140px; @include position(absolute,0,0); }
+  header.mobile { color:$yellow; position: relative;
+    //.logo-holder { @include flex-item(70%); }
+    .logo-holder { @include position(fixed,0,10px,null,120px); z-index: $z-logo; text-align: right;
+      img { height: 110px; }
+    }
+
+    a.hamburger-toggle { 
+      svg { width:2em; height: 2em;}
+      .close { opacity: 0; }
+
+    }
+
   }
+
+  .hamburger-bar { @include position(fixed,0,0,null,0); padding-left: 20px; background:$black; color:$white; z-index: $z-mobile-nav-bar; padding-top:20px; padding-bottom: 10px;
+  }
+  nav { padding-top: 120px; @include flex-container(); position: fixed;  z-index: $z-mobile-nav; background:$black; left:0; right:0; transform: translateY(-105%); transition:transform 1s ease;
+    .link { text-align: center; @include flex-item(33%); margin-bottom: 1em; }
+    a { font-size:1.25em; color:$white; text-decoration: none; padding-left:2em; padding-right: 2em;  }
+  }
+
+  &.active {
+    nav { transform: translateY(0); }
+  }
+
+
 }
 
 @media (min-width:$desktop-min) {
@@ -16,10 +36,13 @@
     .inner { display: table; width:100%; margin-top:90px; background: $black; margin-bottom: 60px; z-index: $z-header; position: relative; }
     nav { display: table-row; }
     .link, .logo-holder { display: table-cell; }
-    .link { text-align: center; text-transform: uppercase; padding-top: 0.6em; padding-bottom: 0.6em;
-      a { color:$yellow; font-weight: $bold; font-size:120%; text-decoration: none; }
-      &.active { background:$yellow;
+    .link { text-align: center; text-transform: uppercase;
+      &:hover { background: $teal;
         a { color:$black; }
+      }
+      a { color:$yellow; font-weight: $bold; font-size:120%; text-decoration: none; cursor: pointer; display: block; padding-top: 0.6em; padding-bottom: 0.6em; }
+      &.active { background:$yellow;
+        a { color:$black; cursor: default; }
       }
     }
     .logo-holder { width:16%; position: relative;

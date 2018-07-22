@@ -14,7 +14,7 @@ html(lang="en")
 
       main.location.downtown
 
-        .bubble-boxes
+        //-.bubble-boxes
           .box.brown
           .box.tan
           .box.red
@@ -26,17 +26,22 @@ html(lang="en")
               .hours
                 .label
                   span HOURS:
-                .info
-                  | Sun - Mon: 11am to midnight
-                  br
-                  | Tue - Sat: 11am to 2am
-              +address('downtown')
-              +phone('downtown')
-              a.find-us(href=map.downtown)
+                .info(style="font-size:150%;")= locations.downtown.hours
+              +address(locations.downtown)
+              +phone(locations.downtown)
+              a.find-us(href=locations.downtown.map)
                 span Find us
           .image-holder
-            figure(style="background-image:url(https://picsum.photos/1230/500?random)")
+            .image-carousel
+              figure(style="background-image:url(https://picsum.photos/1230/500?random)")
+              figure(style="background-image:url(https://picsum.photos/1231/501?random)")
 
+          .social-links
+            +iconTwitter(locations.downtown.twitter)
+            +iconFacebook(locations.downtown.facebook)
+            +iconEmail(locations.downtown.email)
+
+        a(name="calendar")
         section.calendar
           +day('Today')
             .item
@@ -97,6 +102,7 @@ html(lang="en")
               .name 21 Bingo
               .desc It's our way of letting you have a chance at winning back some of your drinking money
 
+        a(name="taps")
         .tap-list
           .headline Beers on tap...
 

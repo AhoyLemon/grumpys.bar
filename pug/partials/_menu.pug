@@ -1,4 +1,6 @@
-section.menu.full-menu
+if pageTitle != "Northeast"
+  a(name="food")
+  section.menu.full-menu
   h2 Food
   .inner
     .page.food
@@ -108,6 +110,7 @@ section.menu.full-menu
         +menuItem("Paddy Melt", 10.99)
         +menuItem("Build Your Onw Fuckin' Burger", 10.99)
 
+a(name="booze")
 section.menu.full-menu
   h2 Booze
   .inner

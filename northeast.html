@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta http-equiv="last-modified" content="2018-06-20@21:01:21">
+    <meta http-equiv="last-modified" content="2018-06-22@12:44:50">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Signika:400,600,700" rel="stylesheet">
-    <link href="css/grumpys.css?lastUpdated=2018-06-20@21:01:21" rel="stylesheet">
+    <link href="css/grumpys.css?lastUpdated=2018-06-22@12:44:50" rel="stylesheet">
   </head>
   <body>
     <div id="app">
       <header class="desktop">
         <div class="inner">
           <nav>
-            <div class="link"><a>Menu</a></div>
-            <div class="link"><a>Contact</a></div>
+            <div class="link"><a scroll-to="calendar">Calendar</a></div>
+            <div class="link"><a scroll-to="taps">Taps</a></div>
+            <div class="link"><a scroll-to="booze">Booze</a></div>
             <div class="logo-holder"><a href="/"><img class="logo" src="svg/logo_header.svg"></a></div>
             <div class="link active"><a class="active" href="northeast.html">Northeast</a></div>
             <div class="link"><a href="roseville.html">Roseville</a></div>
@@ -25,12 +26,24 @@
         </div>
       </header>
       <header class="mobile">
-        <div class="inner">
-          <div class="hamburger">= </div>
-          <div class="logo-holder"><a href="/"><img class="logo" src="svg/logo_header.svg"></a></div>
+        <div class="inner hamburger-bar">
+          <div class="hamburger"><a class="hamburger-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path class="open" d="M29.5 5.3h-27C1.1 5.3 0 4.2 0 2.8v-.3C0 1.1 1.1 0 2.5 0h27C30.9 0 32 1.1 32 2.5v.3c0 1.4-1.1 2.5-2.5 2.5zM29.5 31.3h-27c-1.4 0-2.5-1.1-2.5-2.5v-.3C0 27.1 1.1 26 2.5 26h27c1.4 0 2.5 1.1 2.5 2.5v.3c0 1.4-1.1 2.5-2.5 2.5zM29.5 18.3h-27c-1.4 0-2.5-1.1-2.5-2.5v-.3C0 14.1 1.1 13 2.5 13h27c1.4 0 2.5 1.1 2.5 2.5v.3c0 1.4-1.1 2.5-2.5 2.5z"></path>
+                <path class="close" d="M20.7 15.7l9.4-9.4c1.2-1.2 1.2-3.2 0-4.4l-.3-.3c-1.2-1.2-3.2-1.2-4.4 0L16 11 6.6 1.6C5.4.4 3.4.4 2.2 1.6l-.3.3C.7 3.1.7 5 1.9 6.2l9.4 9.4L1.9 25c-1.2 1.2-1.2 3.2 0 4.4l.3.3c1.2 1.2 3.2 1.2 4.4 0l9.4-9.4 9.4 9.4c1.2 1.2 3.2 1.2 4.4 0l.3-.3c1.2-1.2 1.2-3.2 0-4.4l-9.4-9.3z"></path>
+              </svg></a></div>
         </div>
+        <nav class="mobile-links">
+          <div class="link"><a scroll-to="calendar">Calendar</a></div>
+          <div class="link"><a scroll-to="taps">Taps</a></div>
+          <div class="link"><a scroll-to="booze">Booze</a></div>
+          <div class="link active"><a class="active" href="northeast.html">Northeast</a></div>
+          <div class="link"><a href="roseville.html">Roseville</a></div>
+          <div class="link"><a href="downtown.html">Downtown</a></div>
+        </nav>
+        <div class="logo-holder"><a href="/"><img class="logo" src="svg/logo_header.svg"></a></div>
       </header>
-      <main class="location downtown">
+      <main class="location northeast">
         <div class="bubble-boxes">
           <div class="box brown"></div>
           <div class="box tan"></div>
@@ -51,7 +64,7 @@
           <div class="image-holder">
             <figure style="background-image:url(https://picsum.photos/1230/500?random)"></figure>
           </div>
-        </div>
+        </div><a name="calendar"></a>
         <section class="calendar">
               <div class="day">
                 <div class="inner">
@@ -167,7 +180,7 @@
                   </div>
                 </div>
               </div>
-        </section>
+        </section><a name="taps"></a>
         <div class="tap-list">
           <div class="headline">Beers on tap...</div>
           <div class="taps">
@@ -340,7 +353,269 @@
                 </div><a class="untappd-link" href="https://untappd.com/v/grumpys-bar/7406">
               <div class="content"><img src="img/untappd-logo.png"></div></a>
           </div>
-        </div>
+        </div><a name="booze"></a>
+        <section class="menu full-menu">
+          <h2>Booze</h2>
+          <div class="inner">
+            <div class="page booze">
+              <div class="menu-section">
+                <div class="section-title">Whiskey</div>
+                    <div class="menu-item">
+                      <div class="name">Bulliet Rye</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Crown Royal</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">High West</div>
+                      <ul class="options">
+                        <li>2x Rye</li>
+                        <li>Campfire</li>
+                        <li>White Whiskey</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Jack Daniels</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Jameson</div>
+                      <ul class="options">
+                        <li>Black Barrel</li>
+                        <li>Cask Mates</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Jim Beam Rye</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Knob Creek</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Powers</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Seagrams 7</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Windsor</div>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Bourbon</div>
+                    <div class="menu-item">
+                      <div class="name">Bookers</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Bulleit Bourbon</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Knob Creek</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Jim Beam</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Wild Turkey</div>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Scotch</div>
+                    <div class="menu-item">
+                      <div class="name">Aberlour 12</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Dewars</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Glenfarclas</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Glenlivet</div>
+                      <ul class="options">
+                        <li>Nadurra</li>
+                        <li>Oloroso</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Laphroiag</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">MacCallan 12</div>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Vodka</div>
+                    <div class="menu-item">
+                      <div class="name">Absolut</div>
+                      <ul class="options">
+                        <li>Citron</li>
+                        <li>Peppar</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Grey Goose</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">High West</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">J. Carver</div>
+                      <ul class="options">
+                        <li>Lake House</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Ketel One</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Stoli</div>
+                      <ul class="options">
+                        <li>Blueberry</li>
+                        <li>Orange</li>
+                        <li>Raspberry</li>
+                        <li>Vanilla</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Titos</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Van Gogh</div>
+                      <ul class="options">
+                        <li>Espresso</li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Gin</div>
+                    <div class="menu-item">
+                      <div class="name">Bombay Sapphire</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Hendricks</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">J. Carver</div>
+                      <ul class="options">
+                        <li>Grimm Farm</li>
+                        <li>Barrel Aged</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Tanqueray</div>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Aquavit</div>
+                    <div class="menu-item">
+                      <div class="name">Gamle Ode Aquavit</div>
+                      <ul class="options">
+                        <li>Celebration</li>
+                        <li>Dill</li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Rum</div>
+                    <div class="menu-item">
+                      <div class="name">Bacardi</div>
+                      <ul class="options">
+                        <li>Limon</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Captain Morgan</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Meyers Dark</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Sailor Jerry</div>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Tequila</div>
+                    <div class="menu-item">
+                      <div class="name">Altos Silver</div>
+                      <ul class="options">
+                        <li>Respasado</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Avion Silver</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Cazadores Blanco</div>
+                      <ul class="options">
+                        <li>Resposado</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Casamigos Blanco</div>
+                      <ul class="options">
+                        <li>Resposado</li>
+                        <li>Anejo</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Patron</div>
+                      <ul class="options">
+                        <li>Citronge</li>
+                        <li>XO Campfire</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Sauza Gold</div>
+                    </div>
+              </div>
+              <div class="menu-section">
+                <div class="section-title">Liqueurs</div>
+                    <div class="menu-item">
+                      <div class="name">Brady's Irish Cream</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Campari</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Cruzan Coconut</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Fernet Branca</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Khalua</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Midori</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Pimms</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Polish Brandy</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">RumChata</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Rumpleminze</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Sambuca</div>
+                      <ul class="options">
+                        <li>Black</li>
+                      </ul>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Sloe Gin</div>
+                    </div>
+                    <div class="menu-item">
+                      <div class="name">Southern Comfort</div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="menu-stripe">
           <div class="diamonds">
             <div class="orange"></div>
@@ -352,16 +627,16 @@
         <div class="inner">
           <div class="locations">
                 <div class="location">
-                  <div class="name"><a>Northeast</a></div>
-                  <address><a href="/">2200 4th Street Northeast<br>Minneapolis, MN 55418</a></address>
-                  <div class="phone"><a class="tel" href="612-789-7429">612-789-7429</a></div>
-                  <div class="social"><a class="email" href="mailto:undefined">
+                  <div class="name"><a href="northeast.html">Northeast</a></div>
+                  <address><a href="https://goo.gl/maps/eSDad6BRep42"><span>2200 4th St NE</span><br><span>Minneapolis, MN 55418</span></a></address>
+                  <div class="phone"><a class="tel" href="(612) 789-7429"></a></div>
+                  <div class="social"><a class="email" href="mailto:pat@grumpys-bar.com">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M1.4 6.1v20.8h29.8V6.1H1.4zm26 1.5L16.3 18.3 5.1 7.6h22.3zm2.3 17.8H2.9V7.6H3l13.3 12.7L29.6 7.6h.1v17.8z"></path>
-                          </svg></a><a class="facebook">
+                          </svg></a><a class="facebook" href="https://www.facebook.com/pages/Grumpys-Northeast/122463474468748">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M0 0v32h19.2V21.4h-3.9v-4.5h3.9v-3.3c0-3.9 2.4-6 5.8-6 1.7 0 3.1.1 3.5.2v4h-2.4c-1.9 0-2.2.9-2.2 2.2v2.9h4.5l-.6 4.5h-3.9V32H32V0H0z"></path>
-                          </svg></a><a class="twitter">
+                          </svg></a><a class="twitter" href="https://twitter.com/grumpysne">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M.8 25.2c2.7 1.8 6 2.8 9.5 2.8 11.5 0 18-9.7 17.6-18.4 1.2-.9 2.3-2 3.1-3.2-1.1.5-2.3.8-3.6 1 1.3-.8 2.3-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.1-1.2-2.7-2-4.5-2-4 0-6.9 3.7-6 7.6-5.2-.3-9.7-2.7-12.8-6.5C1.3 7.4 2 11 4.8 12.8c-1 0-2-.3-2.8-.8-.1 2.9 2 5.6 5 6.2-.9.2-1.8.3-2.8.1.8 2.5 3.1 4.3 5.8 4.3-2.7 2.1-5.9 3-9.2 2.6z"></path>
                           </svg></a>
@@ -369,31 +644,31 @@
                 </div>
                 <div class="location">
                   <div class="name"><a href="downtown.html">Downtown</a></div>
-                      <address><a><span class="street-address"></span><br><span class="city"></span>, <span class="state"></span> <span class="zip"></span></a></address>
-                  <div class="phone"><a class="tel" href="612-340-9738">612-340-9738</a></div>
-                  <div class="social"><a class="email" href="mailto:undefined">
+                  <address><a href="https://goo.gl/maps/xTtEWzqfqa92"><span>1111 S Washington Ave</span><br><span>Minneapolis, MN 55415</span></a></address>
+                  <div class="phone"><a class="tel" href="(612) 340-9738"></a></div>
+                  <div class="social"><a class="email" href="mailto:johnny@grumpys-bar.com">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M1.4 6.1v20.8h29.8V6.1H1.4zm26 1.5L16.3 18.3 5.1 7.6h22.3zm2.3 17.8H2.9V7.6H3l13.3 12.7L29.6 7.6h.1v17.8z"></path>
-                          </svg></a><a class="facebook">
+                          </svg></a><a class="facebook" href="https://www.facebook.com/grumpysdt">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M0 0v32h19.2V21.4h-3.9v-4.5h3.9v-3.3c0-3.9 2.4-6 5.8-6 1.7 0 3.1.1 3.5.2v4h-2.4c-1.9 0-2.2.9-2.2 2.2v2.9h4.5l-.6 4.5h-3.9V32H32V0H0z"></path>
-                          </svg></a><a class="twitter">
+                          </svg></a><a class="twitter" href="https://twitter.com/grumpysdt">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M.8 25.2c2.7 1.8 6 2.8 9.5 2.8 11.5 0 18-9.7 17.6-18.4 1.2-.9 2.3-2 3.1-3.2-1.1.5-2.3.8-3.6 1 1.3-.8 2.3-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.1-1.2-2.7-2-4.5-2-4 0-6.9 3.7-6 7.6-5.2-.3-9.7-2.7-12.8-6.5C1.3 7.4 2 11 4.8 12.8c-1 0-2-.3-2.8-.8-.1 2.9 2 5.6 5 6.2-.9.2-1.8.3-2.8.1.8 2.5 3.1 4.3 5.8 4.3-2.7 2.1-5.9 3-9.2 2.6z"></path>
                           </svg></a>
                   </div>
                 </div>
                 <div class="location">
-                  <div class="name"><a>Roseville</a></div>
-                  <address><a href="/">2801 Snelling Avenue<br>Roseville, MN 55113</a></address>
-                  <div class="phone"><a class="tel" href="651-379-1180">651-379-1180</a></div>
-                  <div class="social"><a class="email" href="mailto:undefined">
+                  <div class="name"><a href="roseville.html">Roseville</a></div>
+                  <address><a href="https://goo.gl/maps/xKkYckTq9gy"><span>2801 Snelling Ave</span><br><span>Roseville, MN 55113</span></a></address>
+                  <div class="phone"><a class="tel" href="(651) 379-1180"></a></div>
+                  <div class="social"><a class="email" href="mailto:rosevinehall@gmail.com">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M1.4 6.1v20.8h29.8V6.1H1.4zm26 1.5L16.3 18.3 5.1 7.6h22.3zm2.3 17.8H2.9V7.6H3l13.3 12.7L29.6 7.6h.1v17.8z"></path>
-                          </svg></a><a class="facebook">
+                          </svg></a><a class="facebook" href="https://www.facebook.com/pages/Grumpys-Bar-Grill-Roseville/159254314094923">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M0 0v32h19.2V21.4h-3.9v-4.5h3.9v-3.3c0-3.9 2.4-6 5.8-6 1.7 0 3.1.1 3.5.2v4h-2.4c-1.9 0-2.2.9-2.2 2.2v2.9h4.5l-.6 4.5h-3.9V32H32V0H0z"></path>
-                          </svg></a><a class="twitter">
+                          </svg></a><a class="twitter" href="https://twitter.com/grumpys_rv">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path d="M.8 25.2c2.7 1.8 6 2.8 9.5 2.8 11.5 0 18-9.7 17.6-18.4 1.2-.9 2.3-2 3.1-3.2-1.1.5-2.3.8-3.6 1 1.3-.8 2.3-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.1-1.2-2.7-2-4.5-2-4 0-6.9 3.7-6 7.6-5.2-.3-9.7-2.7-12.8-6.5C1.3 7.4 2 11 4.8 12.8c-1 0-2-.3-2.8-.8-.1 2.9 2 5.6 5 6.2-.9.2-1.8.3-2.8.1.8 2.5 3.1 4.3 5.8 4.3-2.7 2.1-5.9 3-9.2 2.6z"></path>
                           </svg></a>
@@ -405,7 +680,6 @@
             <div class="check">Check Out Our Friends:</div>
             <div class="both">
               <div class="friend rose-vine"><a href="http://rosevinehall.com"><img src="svg/rosevine-footer.svg"></a></div>
-              <div class="friend shoxop"><a href="http://shoxop.com"><img src="svg/shoxop-footer.svg"></a></div>
             </div>
           </div>
         </div>
@@ -415,6 +689,11 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script>
+        $('.hamburger').click(function() {
+          $('header.mobile').toggleClass('active');
+        });
+        
+        
         let cal = $('.calendar');
         const singleSlideWidth = 820;
         
@@ -444,6 +723,14 @@
           ]
         });
         
+        $('.image-carousel').slick({
+          infinite: true,
+          slidesToShow: 1,
+          arrows: false,
+          dots: true
+        });
+        
+        
         function matchCalendarHeight() {
         
           if ($(window).width > singleSlideWidth) {
@@ -457,6 +744,20 @@
             });
           }
         }
+        
+        $("a[scroll-to]").click(function() {
+        
+          let o = 0;
+          if (window.innerWidth < 601) {
+            o = 120
+          }
+        
+          let t = $(this).attr('scroll-to');
+          $('header.mobile').removeClass('active');
+          $([document.documentElement, document.body]).animate({
+            scrollTop: $('a[name='+t+']').offset().top - o
+          }, 350);
+        });
       </script>
     </div>
   </body>

@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta http-equiv="last-modified" content="2018-06-21@10:45:57">
+    <meta http-equiv="last-modified" content="2018-06-22@10:23:13">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Signika:400,600,700" rel="stylesheet">
-    <link href="css/grumpys.css?lastUpdated=2018-06-21@10:45:57" rel="stylesheet">
+    <link href="css/grumpys.css?lastUpdated=2018-06-22@10:23:13" rel="stylesheet">
   </head>
   <body>
     <div id="app">
       <header class="desktop">
         <div class="inner">
           <nav>
-            <div class="link"><a>Menu</a></div>
-            <div class="link"><a>Contact</a></div>
+            <div class="link"><a scroll-to="calendar">Calendar</a></div>
+            <div class="link"><a scroll-to="taps">Taps</a></div>
+            <div class="link"><a scroll-to="booze">Booze</a></div>
             <div class="logo-holder"><a href="/"><img class="logo" src="svg/logo_header.svg"></a></div>
             <div class="link active"><a class="active" href="northeast.html">Northeast</a></div>
             <div class="link"><a href="roseville.html">Roseville</a></div>
@@ -405,7 +406,6 @@
             <div class="check">Check Out Our Friends:</div>
             <div class="both">
               <div class="friend rose-vine"><a href="http://rosevinehall.com"><img src="svg/rosevine-footer.svg"></a></div>
-              <div class="friend shoxop"><a href="http://shoxop.com"><img src="svg/shoxop-footer.svg"></a></div>
             </div>
           </div>
         </div>
@@ -457,6 +457,13 @@
             });
           }
         }
+        
+        $("a[scroll-to]").click(function() {
+          let t = $(this).attr('scroll-to');
+          $([document.documentElement, document.body]).animate({
+            scrollTop: $('a[name='+t+']').offset().top
+          }, 350);
+        });
       </script>
     </div>
   </body>

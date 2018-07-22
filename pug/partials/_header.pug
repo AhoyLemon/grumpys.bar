@@ -1,10 +1,14 @@
 header.desktop
   .inner
     nav
-      .link
-        a Menu
-      .link
-        a Contact
+      - let sections = [ { title:"Calendar", anchor: "calendar" }, { title:"Taps", anchor: "taps" }, { title:"Food", anchor: "food" }, { title:"Booze", anchor:"booze" } ]
+      each val,index in sections
+        if pageTitle == "Northeast" && val.title == "Food"
+          //- Do nothing
+        else
+          .link
+            a(scroll-to=val.anchor)= val.title
+      
       .logo-holder
         a(href="/")
           img.logo(src="svg/logo_header.svg")
@@ -17,9 +21,30 @@ header.desktop
             a(href=location.url)= location.title
 
 header.mobile
-  .inner
+
+  .inner.hamburger-bar
     .hamburger
-      | = 
-    .logo-holder
+      a.hamburger-toggle
+        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32")
+          path.open(d="M29.5 5.3h-27C1.1 5.3 0 4.2 0 2.8v-.3C0 1.1 1.1 0 2.5 0h27C30.9 0 32 1.1 32 2.5v.3c0 1.4-1.1 2.5-2.5 2.5zM29.5 31.3h-27c-1.4 0-2.5-1.1-2.5-2.5v-.3C0 27.1 1.1 26 2.5 26h27c1.4 0 2.5 1.1 2.5 2.5v.3c0 1.4-1.1 2.5-2.5 2.5zM29.5 18.3h-27c-1.4 0-2.5-1.1-2.5-2.5v-.3C0 14.1 1.1 13 2.5 13h27c1.4 0 2.5 1.1 2.5 2.5v.3c0 1.4-1.1 2.5-2.5 2.5z")
+          path.close(d="M20.7 15.7l9.4-9.4c1.2-1.2 1.2-3.2 0-4.4l-.3-.3c-1.2-1.2-3.2-1.2-4.4 0L16 11 6.6 1.6C5.4.4 3.4.4 2.2 1.6l-.3.3C.7 3.1.7 5 1.9 6.2l9.4 9.4L1.9 25c-1.2 1.2-1.2 3.2 0 4.4l.3.3c1.2 1.2 3.2 1.2 4.4 0l9.4-9.4 9.4 9.4c1.2 1.2 3.2 1.2 4.4 0l.3-.3c1.2-1.2 1.2-3.2 0-4.4l-9.4-9.3z")
+          
+  nav.mobile-links
+    each val,index in sections
+      if pageTitle == "Northeast" && val.title == "Food"
+        //- Do nothing
+      else
+        .link
+          a(scroll-to=val.anchor)= val.title
+    
+    each location in locations
+      if location.title == pageTitle
+        .link.active
+          a.active(href=location.url)= location.title
+      else
+        .link
+          a(href=location.url)= location.title
+
+  .logo-holder
       a(href="/")
         img.logo(src="svg/logo_header.svg")

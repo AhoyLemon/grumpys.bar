@@ -3,6 +3,9 @@
   script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
   script.
 
+    $('.hamburger').click(function() {
+      $('header.mobile').toggleClass('active');
+    });
 
 
     let cal = $('.calendar');
@@ -34,6 +37,14 @@
       ]
     });
 
+    $('.image-carousel').slick({
+      infinite: true,
+      slidesToShow: 1,
+      arrows: false,
+      dots: true
+    });
+    
+
     function matchCalendarHeight() {
 
       if ($(window).width > singleSlideWidth) {
@@ -47,3 +58,17 @@
         });
       }
     }
+
+    $("a[scroll-to]").click(function() {
+
+      let o = 0;
+      if (window.innerWidth < 601) {
+        o = 120
+      }
+
+      let t = $(this).attr('scroll-to');
+      $('header.mobile').removeClass('active');
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $('a[name='+t+']').offset().top - o
+      }, 350);
+    });

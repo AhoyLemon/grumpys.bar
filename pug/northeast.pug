@@ -7,7 +7,7 @@ html(lang="en")
     include partials/_mixins.pug
     include partials/_head.pug
   body
-
+  
     #app
 
       include partials/_header.pug
@@ -34,6 +34,7 @@ html(lang="en")
           .image-holder
             figure(style="background-image:url(https://picsum.photos/1230/500?random)")
 
+        a(name="calendar")
         section.calendar
           +day('Today')
             .item
@@ -99,6 +100,7 @@ html(lang="en")
               .name Vino Vinyl
               .desc Bring in a vinyl record to play and get a free drink; two-for-one glasses of wine
 
+        a(name="taps")
         .tap-list
           .headline Beers on tap...
 
@@ -132,14 +134,11 @@ html(lang="en")
               .content
                 img(src="img/untappd-logo.png")
 
+        include partials/_menu.pug
         section.menu-stripe
           .diamonds
             .orange
             .teal
-
-
-              
-
 
       include partials/_footer.pug
 

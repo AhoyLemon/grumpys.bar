@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta http-equiv="last-modified" content="2018-06-21@10:45:57">
+    <meta http-equiv="last-modified" content="2018-06-22@12:44:25">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Signika:400,600,700" rel="stylesheet">
-    <link href="css/grumpys.css?lastUpdated=2018-06-21@10:45:57" rel="stylesheet">
+    <link href="css/grumpys.css?lastUpdated=2018-06-22@12:44:25" rel="stylesheet">
   </head>
   <body>
     <div id="app">
       <header class="desktop">
         <div class="inner">
           <nav>
-            <div class="link"><a>Menu</a></div>
-            <div class="link"><a>Contact</a></div>
+            <div class="link"><a scroll-to="calendar">Calendar</a></div>
+            <div class="link"><a scroll-to="taps">Taps</a></div>
+            <div class="link"><a scroll-to="food">Food</a></div>
+            <div class="link"><a scroll-to="booze">Booze</a></div>
             <div class="logo-holder"><a href="/"><img class="logo" src="svg/logo_header.svg"></a></div>
             <div class="link"><a href="northeast.html">Northeast</a></div>
             <div class="link"><a href="roseville.html">Roseville</a></div>
@@ -25,33 +27,55 @@
         </div>
       </header>
       <header class="mobile">
-        <div class="inner">
-          <div class="hamburger">= </div>
-          <div class="logo-holder"><a href="/"><img class="logo" src="svg/logo_header.svg"></a></div>
+        <div class="inner hamburger-bar">
+          <div class="hamburger"><a class="hamburger-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path class="open" d="M29.5 5.3h-27C1.1 5.3 0 4.2 0 2.8v-.3C0 1.1 1.1 0 2.5 0h27C30.9 0 32 1.1 32 2.5v.3c0 1.4-1.1 2.5-2.5 2.5zM29.5 31.3h-27c-1.4 0-2.5-1.1-2.5-2.5v-.3C0 27.1 1.1 26 2.5 26h27c1.4 0 2.5 1.1 2.5 2.5v.3c0 1.4-1.1 2.5-2.5 2.5zM29.5 18.3h-27c-1.4 0-2.5-1.1-2.5-2.5v-.3C0 14.1 1.1 13 2.5 13h27c1.4 0 2.5 1.1 2.5 2.5v.3c0 1.4-1.1 2.5-2.5 2.5z"></path>
+                <path class="close" d="M20.7 15.7l9.4-9.4c1.2-1.2 1.2-3.2 0-4.4l-.3-.3c-1.2-1.2-3.2-1.2-4.4 0L16 11 6.6 1.6C5.4.4 3.4.4 2.2 1.6l-.3.3C.7 3.1.7 5 1.9 6.2l9.4 9.4L1.9 25c-1.2 1.2-1.2 3.2 0 4.4l.3.3c1.2 1.2 3.2 1.2 4.4 0l9.4-9.4 9.4 9.4c1.2 1.2 3.2 1.2 4.4 0l.3-.3c1.2-1.2 1.2-3.2 0-4.4l-9.4-9.3z"></path>
+              </svg></a></div>
         </div>
+        <nav class="mobile-links">
+          <div class="link"><a scroll-to="calendar">Calendar</a></div>
+          <div class="link"><a scroll-to="taps">Taps</a></div>
+          <div class="link"><a scroll-to="food">Food</a></div>
+          <div class="link"><a scroll-to="booze">Booze</a></div>
+          <div class="link"><a href="northeast.html">Northeast</a></div>
+          <div class="link"><a href="roseville.html">Roseville</a></div>
+          <div class="link active"><a class="active" href="downtown.html">Downtown</a></div>
+        </nav>
+        <div class="logo-holder"><a href="/"><img class="logo" src="svg/logo_header.svg"></a></div>
       </header>
       <main class="location downtown">
-        <div class="bubble-boxes">
-          <div class="box brown"></div>
-          <div class="box tan"></div>
-          <div class="box red"></div>
-        </div>
         <div class="hero">
           <div class="details-holder">
             <div class="details"> 
               <div class="name">Downtown</div>
               <div class="hours">
                 <div class="label"><span>HOURS:</span></div>
-                <div class="info">Sun - Mon: 11am to midnight<br>Tue - Sat: 11am to 2am</div>
+                <div class="info" style="font-size:150%;">Every Day: 11AM to 2AM</div>
               </div>
-                  <address><a><span class="street-address"></span><br><span class="city"></span>, <span class="state"></span> <span class="zip"></span></a></address>
-                  <div class="phone"><a class="tel" href="tel:undefined"></a></div><a class="find-us" href="https://goo.gl/maps/ZoMzCxZn8r82"><span>Find us</span></a>
+                  <address><a href="https://goo.gl/maps/xTtEWzqfqa92"><span class="street-address">1111 S Washington Ave</span><br><span class="city">Minneapolis</span>, <span class="state">MN</span> <span class="zip">55415</span></a></address>
+                  <div class="phone"><a class="tel" href="tel:(612) 340-9738">(612) 340-9738</a></div><a class="find-us" href="https://goo.gl/maps/xTtEWzqfqa92"><span>Find us</span></a>
             </div>
           </div>
           <div class="image-holder">
-            <figure style="background-image:url(https://picsum.photos/1230/500?random)"></figure>
+            <div class="image-carousel">
+              <figure style="background-image:url(https://picsum.photos/1230/500?random)"></figure>
+              <figure style="background-image:url(https://picsum.photos/1231/501?random)"></figure>
+            </div>
           </div>
-        </div>
+          <div class="social-links"><a class="twitter" href="https://twitter.com/grumpysdt">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M.8 25.2c2.7 1.8 6 2.8 9.5 2.8 11.5 0 18-9.7 17.6-18.4 1.2-.9 2.3-2 3.1-3.2-1.1.5-2.3.8-3.6 1 1.3-.8 2.3-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.1-1.2-2.7-2-4.5-2-4 0-6.9 3.7-6 7.6-5.2-.3-9.7-2.7-12.8-6.5C1.3 7.4 2 11 4.8 12.8c-1 0-2-.3-2.8-.8-.1 2.9 2 5.6 5 6.2-.9.2-1.8.3-2.8.1.8 2.5 3.1 4.3 5.8 4.3-2.7 2.1-5.9 3-9.2 2.6z"></path>
+                  </svg></a><a class="facebook" href="https://www.facebook.com/grumpysdt">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M0 0v32h19.2V21.4h-3.9v-4.5h3.9v-3.3c0-3.9 2.4-6 5.8-6 1.7 0 3.1.1 3.5.2v4h-2.4c-1.9 0-2.2.9-2.2 2.2v2.9h4.5l-.6 4.5h-3.9V32H32V0H0z"></path>
+                  </svg></a><a class="email" href="mailto:johnny@grumpys-bar.com">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M1.4 6.1v20.8h29.8V6.1H1.4zm26 1.5L16.3 18.3 5.1 7.6h22.3zm2.3 17.8H2.9V7.6H3l13.3 12.7L29.6 7.6h.1v17.8z"></path>
+                  </svg></a>
+          </div>
+        </div><a name="calendar"></a>
         <section class="calendar">
               <div class="day">
                 <div class="inner">
@@ -156,7 +180,7 @@
                   </div>
                 </div>
               </div>
-        </section>
+        </section><a name="taps"></a>
         <div class="tap-list">
           <div class="headline">Beers on tap...</div>
           <div class="taps">
@@ -329,284 +353,283 @@
                 </div><a class="untappd-link">
               <div class="content"><img src="img/untappd-logo.png"></div></a>
           </div>
-        </div>
-        <section class="menu full-menu">
-          <h2>Food</h2>
-          <div class="inner">
-            <div class="page food">
-              <div class="menu-section"> 
-                <div class="section-title">Appetizers</div>
-                    <div class="menu-item">
-                      <div class="name">Grumpy's Drummies</div>
-                      <div class="price">$10.99</div>
-                      <div class="desc">Wing flavors are available in: Buffalo: Mild, Medium or Hot, Honey Sriracha, Thai Peanut, BBQ, Surly Furious BBQ or Teriyaki 
-                      </div>
+        </div><a name="food"></a>
+        <section class="menu full-menu"></section>
+        <h2>Food</h2>
+        <div class="inner">
+          <div class="page food">
+            <div class="menu-section"> 
+              <div class="section-title">Appetizers</div>
+                  <div class="menu-item">
+                    <div class="name">Grumpy's Drummies</div>
+                    <div class="price">$10.99</div>
+                    <div class="desc">Wing flavors are available in: Buffalo: Mild, Medium or Hot, Honey Sriracha, Thai Peanut, BBQ, Surly Furious BBQ or Teriyaki 
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Pork and Kimchi Fries</div>
-                      <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Pork and Kimchi Fries</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Quesadillas</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Potato Skins</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Queso Rolls</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Beer Battered Onion Rings</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Tots</div>
+                    <div class="price">$4.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Nachos El Grumpy</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Cream Cheese Rolls</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Chicken Fingers</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Poutine</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Mini Corndogs</div>
+                    <div class="price">$8.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Cheese Curds</div>
+                    <div class="price">$8.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Mac &amp; Cheese Bies</div>
+                    <div class="price">$8.99</div>
+                  </div>
+            </div>
+            <div class="menu-section">
+              <div class="section-title">Salads</div>
+                  <div class="menu-item">
+                    <div class="name">Taco Salad</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Garlicky BLT Salad</div>
+                    <div class="price">$10.99</div>
+                    <div class="desc">Deconstructed  to  garlicky  goodness.  Romaine  lightly dressed in a creamy parmesan and garlic dressing, covered in chopped bacon and cherry tomatoes.
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Quesadillas</div>
-                      <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Thai Peanut Salad</div>
+                    <div class="price">$8.99</div>
+                    <div class="desc">Mixed  greens  drizzled  with  a  Thai  Peanut  dressing, topped with peapods and peanuts.
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Potato Skins</div>
-                      <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Caesar A La Grumpy</div>
+                    <div class="price">$8.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Seasonal Greens</div>
+                    <div class="price">$7.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Soup &amp; Salad</div>
+                    <div class="price">$6.99</div>
+                    <div class="desc">Grumpys side dinner salad and a cup of the Soup ‘O The Day help keep Mr. Spare Tire away. Served with Texas Toast
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Queso Rolls</div>
-                      <div class="price">$9.99</div>
+                  </div>
+            </div>
+            <div class="menu-section">
+              <div class="section-title">Soups</div>
+              <div class="section-text"><b>Cup: </b> $4.99,  <b>Bowl: </b> $5.99</div>
+                  <div class="menu-item">
+                    <div class="name">Grumpys Mac 'N Cheese</div>
+                    <div class="price"></div>
+                    <div class="desc">Ya take yer Mac ’N Cheese, add some brats to counter the  carbs  and  you’ll  keep  warm  all  night.  Served  with  texas toast. Mmmmmm!
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Beer Battered Onion Rings</div>
-                      <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Grumpy's Soup</div>
+                    <div class="price"></div>
+                    <div class="desc">They’re  different  every  day,  always  made  from  scratch and will have you upending your bowl for every last drop. Served with texas toast
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Tots</div>
-                      <div class="price">$4.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Beer Cheese Soup</div>
+                    <div class="price"></div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Mom's Homemade Chili</div>
+                    <div class="price"></div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Vegan Chili</div>
+                    <div class="price"></div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Soup &amp; ½ Sandwich</div>
+                    <div class="price">$8.99</div>
+                  </div>
+            </div>
+            <div class="menu-section">
+              <div class="section-title">Sandwiches</div>
+                  <div class="menu-item">
+                    <div class="name">Grilld Cheese</div>
+                    <div class="price">$7.99</div>
+                    <div class="desc">Make it a ham & cheese for $2 more
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Nachos El Grumpy</div>
-                      <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Hot Pastrami</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Grilled Reuben</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">BBQ Chicken Sandwich</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Cajun Chicken Sandwich</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Buffalo Wing Chicken Sandwich</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">BLT</div>
+                    <div class="price">$8.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Hammerhead Hoagie</div>
+                    <div class="price">$8.99</div>
+                    <div class="desc">Provolone and mayo on top of tender and slow roasted rib meat tossed in our famous Surly Furious BBQ sauce
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Cream Cheese Rolls</div>
-                      <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">The Cuban</div>
+                    <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Kim Chi Mock Duck Banh Mi</div>
+                    <div class="price">$8.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Veggie Sandwich</div>
+                    <div class="price">$8.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Pork Cake Sliders</div>
+                    <div class="price">$10.99</div>
+                    <div class="desc">Who needs crab when you can have our delicious pulled pork? Fried with an array of spices, topped with melted provlone and mayo.
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Chicken Fingers</div>
-                      <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Hot Beef 'N Cheddar</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Southwestern Turkey</div>
+                    <div class="price">$10.99</div>
+                  </div>
+              <div class="section-text">Served with a pickle spear and potato chips<br>Substitute fries, tater tots, or veggies for $1.99<br>Or onion rings for $2.45<br>Add a side of seasoned sour cream for $1.25</div>
+            </div>
+            <div class="menu-section">
+              <div class="section-title">Specialty Hot Dogs</div>
+                  <div class="menu-item">
+                    <div class="name">Seattle Dogs</div>
+                    <div class="price">$9.99</div>
+                    <div class="desc">Two all beef franks slathered in our bacon, green onion and cream cheese mix
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Poutine</div>
-                      <div class="price">$9.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Coney Dogs St. Paul Style</div>
+                    <div class="price"></div>
+                    <div class="desc">THIS AIN’T NO CHILI DOG! Grilled buns, Nathans dogs, shredded cheddar jack, a dash of mustard and onions on the side
                     </div>
-                    <div class="menu-item">
-                      <div class="name">Mini Corndogs</div>
-                      <div class="price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Cheese Curds</div>
-                      <div class="price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Mac &amp; Cheese Bies</div>
-                      <div class="price">$8.99</div>
-                    </div>
-              </div>
-              <div class="menu-section">
-                <div class="section-title">Salads</div>
-                    <div class="menu-item">
-                      <div class="name">Taco Salad</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Garlicky BLT Salad</div>
-                      <div class="price">$10.99</div>
-                      <div class="desc">Deconstructed  to  garlicky  goodness.  Romaine  lightly dressed in a creamy parmesan and garlic dressing, covered in chopped bacon and cherry tomatoes.
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Thai Peanut Salad</div>
-                      <div class="price">$8.99</div>
-                      <div class="desc">Mixed  greens  drizzled  with  a  Thai  Peanut  dressing, topped with peapods and peanuts.
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Caesar A La Grumpy</div>
-                      <div class="price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Seasonal Greens</div>
-                      <div class="price">$7.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Soup &amp; Salad</div>
-                      <div class="price">$6.99</div>
-                      <div class="desc">Grumpys side dinner salad and a cup of the Soup ‘O The Day help keep Mr. Spare Tire away. Served with Texas Toast
-                      </div>
-                    </div>
-              </div>
-              <div class="menu-section">
-                <div class="section-title">Soups</div>
-                <div class="section-text"><b>Cup: </b> $4.99,  <b>Bowl: </b> $5.99</div>
-                    <div class="menu-item">
-                      <div class="name">Grumpys Mac 'N Cheese</div>
-                      <div class="price"></div>
-                      <div class="desc">Ya take yer Mac ’N Cheese, add some brats to counter the  carbs  and  you’ll  keep  warm  all  night.  Served  with  texas toast. Mmmmmm!
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Grumpy's Soup</div>
-                      <div class="price"></div>
-                      <div class="desc">They’re  different  every  day,  always  made  from  scratch and will have you upending your bowl for every last drop. Served with texas toast
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Beer Cheese Soup</div>
-                      <div class="price"></div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Mom's Homemade Chili</div>
-                      <div class="price"></div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Vegan Chili</div>
-                      <div class="price"></div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Soup &amp; ½ Sandwich</div>
-                      <div class="price">$8.99</div>
-                    </div>
-              </div>
-              <div class="menu-section">
-                <div class="section-title">Sandwiches</div>
-                    <div class="menu-item">
-                      <div class="name">Grilld Cheese</div>
-                      <div class="price">$7.99</div>
-                      <div class="desc">Make it a ham & cheese for $2 more
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Hot Pastrami</div>
-                      <div class="price">$9.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Grilled Reuben</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">BBQ Chicken Sandwich</div>
-                      <div class="price">$9.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Cajun Chicken Sandwich</div>
-                      <div class="price">$9.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Buffalo Wing Chicken Sandwich</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">BLT</div>
-                      <div class="price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Hammerhead Hoagie</div>
-                      <div class="price">$8.99</div>
-                      <div class="desc">Provolone and mayo on top of tender and slow roasted rib meat tossed in our famous Surly Furious BBQ sauce
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">The Cuban</div>
-                      <div class="price">$9.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Kim Chi Mock Duck Banh Mi</div>
-                      <div class="price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Veggie Sandwich</div>
-                      <div class="price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Pork Cake Sliders</div>
-                      <div class="price">$10.99</div>
-                      <div class="desc">Who needs crab when you can have our delicious pulled pork? Fried with an array of spices, topped with melted provlone and mayo.
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Hot Beef 'N Cheddar</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Southwestern Turkey</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                <div class="section-text">Served with a pickle spear and potato chips<br>Substitute fries, tater tots, or veggies for $1.99<br>Or onion rings for $2.45<br>Add a side of seasoned sour cream for $1.25</div>
-              </div>
-              <div class="menu-section">
-                <div class="section-title">Specialty Hot Dogs</div>
-                    <div class="menu-item">
-                      <div class="name">Seattle Dogs</div>
-                      <div class="price">$9.99</div>
-                      <div class="desc">Two all beef franks slathered in our bacon, green onion and cream cheese mix
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Coney Dogs St. Paul Style</div>
-                      <div class="price"></div>
-                      <div class="desc">THIS AIN’T NO CHILI DOG! Grilled buns, Nathans dogs, shredded cheddar jack, a dash of mustard and onions on the side
-                      </div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">The Southside</div>
-                      <div class="price">$9.99</div>
-                    </div>
-              </div>
-              <div class="menu-section">
-                <div class="section-title">Big Burgers</div>
-                    <div class="menu-item">
-                      <div class="name">Garlic Cheesy Burger</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Lil' Grumpy Burgers or Chicken Sliders</div>
-                      <div class="price">$7.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Big Assed Breakfast Burger</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Spud Burger</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Veggie Burger</div>
-                      <div class="price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Mac 'N Chili Burger</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Grumpy's Garlic Bomb Burger</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Slow Burn Burger</div>
-                      <div class="price">$11.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">The Burgermeister</div>
-                      <div class="price">$11.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Juicy Lucy</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Cream Cheese Burger</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">The Elvis</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Paddy Melt</div>
-                      <div class="price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                      <div class="name">Build Your Onw Fuckin' Burger</div>
-                      <div class="price">$10.99</div>
-                    </div>
-              </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">The Southside</div>
+                    <div class="price">$9.99</div>
+                  </div>
+            </div>
+            <div class="menu-section">
+              <div class="section-title">Big Burgers</div>
+                  <div class="menu-item">
+                    <div class="name">Garlic Cheesy Burger</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Lil' Grumpy Burgers or Chicken Sliders</div>
+                    <div class="price">$7.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Big Assed Breakfast Burger</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Spud Burger</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Veggie Burger</div>
+                    <div class="price">$8.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Mac 'N Chili Burger</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Grumpy's Garlic Bomb Burger</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Slow Burn Burger</div>
+                    <div class="price">$11.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">The Burgermeister</div>
+                    <div class="price">$11.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Juicy Lucy</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Cream Cheese Burger</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">The Elvis</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Paddy Melt</div>
+                    <div class="price">$10.99</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="name">Build Your Onw Fuckin' Burger</div>
+                    <div class="price">$10.99</div>
+                  </div>
             </div>
           </div>
-        </section>
+        </div><a name="booze"></a>
         <section class="menu full-menu">
           <h2>Booze</h2>
           <div class="inner">
@@ -897,7 +920,7 @@
                 </div>
                 <div class="location">
                   <div class="name"><a href="downtown.html">Downtown</a></div>
-                  <address><a><span>1111 S Washington Ave</span><br><span>Minneapolis, MN 55415</span></a></address>
+                  <address><a href="https://goo.gl/maps/xTtEWzqfqa92"><span>1111 S Washington Ave</span><br><span>Minneapolis, MN 55415</span></a></address>
                   <div class="phone"><a class="tel" href="(612) 340-9738"></a></div>
                   <div class="social"><a class="email" href="mailto:johnny@grumpys-bar.com">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -933,7 +956,6 @@
             <div class="check">Check Out Our Friends:</div>
             <div class="both">
               <div class="friend rose-vine"><a href="http://rosevinehall.com"><img src="svg/rosevine-footer.svg"></a></div>
-              <div class="friend shoxop"><a href="http://shoxop.com"><img src="svg/shoxop-footer.svg"></a></div>
             </div>
           </div>
         </div>
@@ -943,6 +965,11 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script>
+        $('.hamburger').click(function() {
+          $('header.mobile').toggleClass('active');
+        });
+        
+        
         let cal = $('.calendar');
         const singleSlideWidth = 820;
         
@@ -972,6 +999,14 @@
           ]
         });
         
+        $('.image-carousel').slick({
+          infinite: true,
+          slidesToShow: 1,
+          arrows: false,
+          dots: true
+        });
+        
+        
         function matchCalendarHeight() {
         
           if ($(window).width > singleSlideWidth) {
@@ -985,6 +1020,20 @@
             });
           }
         }
+        
+        $("a[scroll-to]").click(function() {
+        
+          let o = 0;
+          if (window.innerWidth < 601) {
+            o = 120
+          }
+        
+          let t = $(this).attr('scroll-to');
+          $('header.mobile').removeClass('active');
+          $([document.documentElement, document.body]).animate({
+            scrollTop: $('a[name='+t+']').offset().top - o
+          }, 350);
+        });
       </script>
     </div>
   </body>
