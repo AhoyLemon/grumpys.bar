@@ -1,0 +1,87 @@
+.menu-stripe { 
+  .diamonds { height:6.2vw; position: relative;
+    .teal, .orange { background-size:cover; background-position: top center; background-repeat: no-repeat; @include position(absolute,0,0,0,0); }
+  }
+  
+  .teal {  background:url(../svg/menu-decoration-teal.svg); animation:tealDiamondsMove 5s linear infinite; }
+  .orange { background:url(../svg/menu-decoration-orange.svg); animation:orangeDiamondsMove 7s linear infinite; }
+
+  .figures { @include flex-container(); position: relative; z-index: $z-menu-figures;
+    figure { @include flex-item(15%); height:19.5vw; background-size:cover; background-position: center; background-repeat: no-repeat; }
+  }
+}
+
+@keyframes orangeDiamondsMove {
+  0%   { transform: translateY(0); }
+  70%  { transform: translateY(14px); }
+  99% { transform: translateY(0); }
+}
+
+@keyframes tealDiamondsMove {
+  0%   { transform: translateY(0); }
+  33%  { transform: translateY(26px); }
+  99% { transform: translateY(0); }
+}
+
+$priceWidth: 6rem;
+
+.full-menu { margin-bottom: 2em; 
+
+  @media (min-width:1200px) { padding-left: 40px; padding-right: 40px; }
+  @media (max-width:1199px) { padding-left: 20px; padding-right: 20px; }
+
+  h2 { font-family: $headline;  color:$teal; text-shadow: -0.03em 0.03em 0 $white, -0.06em 0.06em 0 $black; padding-left: 0.5em; position: relative; z-index: 7; position: relative;
+    //&:after { @include position(absolute,0,0,null,16vw); content: ' '; display: block; height:7vw; background-image: url(../svg/menu-sparkle.svg); background-size:contain; background-position: top left; background-repeat: no-repeat; }
+    @media (min-width:800px) { font-size:5vw;
+      &:after { @include position(absolute,0,0,null,16vw); content: ' '; display: block; height:7vw; background-image: url(../svg/menu-sparkle.svg); background-size:contain; background-position: top left; background-repeat: no-repeat; }
+    }
+    @media (max-width:799px) { font-size:15vw; }
+
+  }
+
+  .inner { background:#DA5C5C; padding: 10px; position: relative;
+    &:before { @include position(absolute,null,0,null,0);  content: ' '; display: block; background-image: url(../svg/menu-backboard.svg); background-size:cover; background-position: top center;
+      @media (min-width:800px) { top:-6vw; height:6vw; }
+      @media (max-width:799px) { top:-14vw; height:14vw; }
+    }
+  }
+
+  .page { background: $white; padding:2rem;
+    @media (max-width:799px) { padding-left: 10px; padding-right: 10px; }
+  }
+  //.menu-section { }
+  .section-title { font-size:150%; color:$teal; font-weight: $bold; margin-bottom: 0.25em; }
+  .section-text { text-align: center; font-size:110%; }
+
+  .menu-item { @include flex-container(); padding:0.5rem;
+    .name { @include flex-item(calc(100% - #{$priceWidth})); }
+    .price { @include flex-item($priceWidth); }
+    .desc { @include flex-item(100%); padding-left: 1.5em; padding-right: $priceWidth; font-size:90%; padding-top: 0.5em; }
+    
+    &:nth-child(even) { background-color:rgba($orange,0.3); }
+  }
+
+  //.page { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 40px; }
+  .page { //column-count: 3; column-gap: 40px;
+    &.food {  grid-gap: 40px; display: grid; 
+      @media (min-width:1381px)                       { grid-template-columns: 1fr 1fr 1fr; }
+      @media (min-width:961px) and (max-width:1380px) { grid-template-columns: 1fr 1fr; }
+      @media (max-width:960px)                        { grid-template-columns: 1fr; }
+    }
+    &.booze { display: grid; grid-gap: 40px; align-items: start;
+      @media (min-width:1681px)                        { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+      @media (min-width:1361px) and (max-width:1680px) { grid-template-columns: 1fr 1fr 1fr 1fr; }
+      @media (min-width:1045px) and (max-width:1360px) { grid-template-columns: 1fr 1fr 1fr; }
+      @media (min-width:645px)  and (max-width:1044px) { grid-template-columns: 1fr 1fr; }
+      @media (max-width:644px)                         { grid-template-columns: 1fr; grid-gap:10px;  }
+
+      .name { @include flex-item(100%); }
+      .options { @include flex-item(100%);
+        li { list-style: disc; margin-left: 1.5em; }
+      }
+    }
+  }
+  @media (min-width:$desktop-min) {
+    .menu-section { margin-bottom: 2em; }
+  }
+}

@@ -1,0 +1,31 @@
+type: builder
+fieldsets:
+  event:
+    label: Event
+    snippet: builder/weekly_event
+    fields:
+      all_day:
+        label: All day?
+        type: fieldtoggle
+        width: 1/4
+        options:
+          no:  "No"
+          yes: "Yes"
+        show:
+          no:  begins ends
+        hide:
+          yes: begins ends
+      begins:
+        label: begins
+        type: time
+        width: 1/3
+      ends:
+        label: ends
+        type: time
+        width: 1/3
+      title:
+        label: Title
+        type: text
+      desc:
+        label: Description
+        type: textarea

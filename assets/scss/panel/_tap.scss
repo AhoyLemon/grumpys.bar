@@ -1,0 +1,12 @@
+.tap {
+  .name { font-size:125%; font-weight:$bold; color:$red; }
+
+  .content { @include flex-container();
+    > * { @include flex-item(33%); border:1px solid #888; padding:0.25rem 1rem; }
+    .brewery, .style { font-weight:$bold;
+      &:before { font-weight: $light; }
+    }
+    .brewery:before { content: 'brewery: '; }
+    .style:before { content: 'style: '; }
+  }
+}

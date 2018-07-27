@@ -1,0 +1,24 @@
+.calendar { 
+
+  @media (min-width:820px) { padding-right:50px; }
+
+  .slick-prev { display: none; }
+  .slick-next { @include position(absolute,50%,0); height:50px; width:50px; display: block; background:url(../svg/slick-next.svg); background-size:contain; border:none; cursor: pointer; }
+  .slick-slide { padding:20px; }
+  @media (max-width:819px) {
+    .slick-arrow { display: none !important; }
+  }
+}
+
+.image-carousel {
+  .slick-dots { @include position(absolute,null,0,0.5em,0); text-align: center;
+    li { display: inline-block; margin-right: 0.5em;
+      button { width:1.5em; height: 1.5em; border:2px solid $white; border-radius: 50%; text-indent: -999px; overflow: hidden; background:transparent; cursor: pointer;
+        &:hover { background: $teal; border-color:$teal; }
+      }
+      &.slick-active {
+        button { background:$white; }
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="kirby-page-builder">Kirby Page Builder</h1>
+<p>This custom field for <a href="https://getkirby.com">Kirby CMS</a> (v2.4.1 and above) lets you predefine content blocks with different field sets that can then be added and arranged inside the panel (Kirby&#39;s backend).</p>
+<h3 id="blueprint-example">Blueprint example</h3>
+<pre><code class="lang-yaml">fields:
+...
+  builder:
+    label: Sections
+    type: builder
+    fieldsets:
+      bodytext:
+        label: Body Text
+        snippet: sections/bodytext
+        fields:
+          text:
+            label: text
+            type: textarea
+      imageBanner:
+        label: Image Banner
+        snippet: sections/imagebanner
+        fields:
+          picture:
+            label: Background Image
+            type: image
+          text:
+            label: Headline Text
+            type: text
+      quote:
+        label: Quote
+        snippet: sections/quote
+        fields:
+          text:
+            label: Quote Text
+            type: textarea
+          citation:
+            label: Citation
+            type: text
+</code></pre>
+<p>The above blueprint will give us a panel field like this:</p>
+<p><img src="https://raw.githubusercontent.com/TimOetting/kirby-builder/master/PREVIEW.gif" alt="Kirby builder Screenshot"></p>
+<h3 id="previewing-the-content-inside-the-panel">Previewing the content inside the panel</h3>
+<p>There are three ways how the content of the builder entries can be displayed inside the panel:</p>
+<ul>
+<li>By default the builder entries just show the plain content of the coresponding field set row by row</li>
+<li><p>The builder field, just like the structure field, allows you to define some markup in teh blueprint&#39;s entry field to preview the content. The builder field extends this feature with the <code>{{_fileUrl}}</code> variable, to display images in the preview: </p>
+<pre><code class="lang-yaml">  ...
+    builder:
+      ...
+      fieldsets:
+        ...
+        imageBanner:
+          ...
+              entry: &gt;
+                &lt;img src=&quot;{{_fileUrl}}{{picture}}&quot; height=120px/&gt;&lt;/br&gt;
+                {{url}}
+  ...
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>The builder field, however, even gives you the possibility to use snippets to preview the content blocks. Inside these snippets, you have access to the <code>$page</code> and a <code>$data</code> variable. The latter contains all the content and logic of the field&#39;s data, i.e. you can render text as kirbytext, iterate over list items, etc.</p>
+<p>  You can just declare a path to the respective snippet path in a snippet field inside the blueprint:</p>
+<pre><code class="lang-yaml">  ...
+    builder:
+      ...
+      fieldsets:
+        ...
+        imageBanner:
+          ...
+          snippet: builder/imagebanner
+  ...
+</code></pre>
+<p>  the snippet <code>site/snippets/builder/imageBanner.php</code> from the example above would look like this:</p>
+<pre><code class="lang-php">  &lt;section class=&quot;imageBanner&quot; 
+  &lt;?php if ($data-&gt;picture()-&gt;isNotEmpty()): ?&gt;
+    style=&quot;background-image: url(&lt;?= $page-&gt;image($data-&gt;picture())-&gt;url() ?&gt;)&quot;
+  &lt;?php endif ?&gt;
+  &gt;
+    &lt;h2 class=&quot;imageBanner-headline&quot;&gt;
+      &lt;?= $data-&gt;text() ?&gt;
+    &lt;/h2&gt;
+  &lt;/section&gt;
+</code></pre>
+<p>  With this solution, it is possible to use the same snippet both in the website&#39;s frontend and in the panel. You can use a <a href="https://getkirby.com/docs/developer-guide/panel/css">custom panel styling</a> to control the look of the individual previews.</p>
+</li>
+</ul>
+<h3 id="how-the-content-will-be-stored">How the content will be stored</h3>
+<pre><code>----
+
+Builder: 
+
+- 
+  picture: forrest.jpg
+  text: Hey folks!
+  _fieldset: imageBanner
+- 
+  text: |
+    ## Thanks for watching
+    Lorem ipsum dolor sit amet, consetetur sadipscing 
+    elitr, sed diam nonumy eirmod tempor invidunt ut 
+    labore et dolore magna aliquyam erat, sed diam voluptua. 
+    [...]
+  _fieldset: bodytext
+- 
+  text: &gt;
+    Power is of two kinds. One is obtained
+    by the fear of punishment and the other
+    by acts of love. Power based on love is
+    a thousand times more effective and
+    permanent then the one derived from fear
+    of punishment.
+  citation: Mahadma Gandhi
+  _fieldset: quote
+</code></pre><h2 id="template-usage">Template Usage</h2>
+<p>There are different ways to use the builder field inside a template. A clean approach for this is to use different snippets inside <code>site/snippets/sections/</code> that have the same file name like the field set names in the blueprint. Like mentioned above, these snippets could be the same like those used in the panel.</p>
+<h3 id="-site-templates-yourtemplate-php">/site/templates/yourtemplate.php</h3>
+<pre><code class="lang-php">&lt;?php foreach($page-&gt;builder()-&gt;toStructure() as $section): ?&gt;
+  &lt;?php snippet(&#39;sections/&#39; . $section-&gt;_fieldset(), array(&#39;data&#39; =&gt; $section)) ?&gt;
+&lt;?php endforeach ?&gt;
+</code></pre>
+<p>Don&#39;t forget to use <code>toStructure()</code> on the builder field that &quot;gives you a full blown Kirby Collection which makes it possible to use Kirby&#39;s chaining syntax&quot; (<a href="http://getkirby.com/docs/cheatsheet/field-methods/toStructure">Kirby Documentation</a>).</p>
+<h3 id="-site-snippets-sections-bodytext-php">/site/snippets/sections/bodytext.php</h3>
+<pre><code class="lang-php">&lt;section class=&quot;bodyText&quot;&gt;
+  &lt;?= $data-&gt;text()-&gt;kt() ?&gt;
+&lt;/section&gt;
+</code></pre>
+<h3 id="-site-snippets-sections-imagebanner-php">/site/snippets/sections/imagebanner.php</h3>
+<pre><code class="lang-php">&lt;section class=&quot;imageBanner&quot; 
+&lt;?php if ($data-&gt;picture()-&gt;isNotEmpty()): ?&gt;
+  style=&quot;background-image: url(&lt;?= $page-&gt;image($data-&gt;picture())-&gt;url() ?&gt;)&quot;
+&lt;?php endif ?&gt;
+&gt;
+  &lt;h2 class=&quot;imageBanner-headline&quot;&gt;
+    &lt;?= $data-&gt;text() ?&gt;
+  &lt;/h2&gt;
+&lt;/section&gt;
+</code></pre>
+<h3 id="-site-snippets-sections-quote-php">/site/snippets/sections/quote.php</h3>
+<pre><code class="lang-php">&lt;section class=&quot;quote&quot;&gt;
+  &lt;blockquote&gt;
+    &lt;?= $data-&gt;text() ?&gt;
+  &lt;/blockquote&gt;
+  &lt;div class=&quot;citation&quot;&gt;
+    &lt;?= $data-&gt;citation() ?&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+<h2 id="setup">Setup</h2>
+<p><code>git clone https://github.com/TimOetting/kirby-builder.git site/fields/builder</code>
+From the root of your kirby install.</p>
+<p>Alternatively you can download the zip file, unzip it&#39;s contents into site/fields/builder.</p>
+<p>##Known Issues</p>
+<p>Some issues related to the structure field of Kirby Panel do also affect the builder field.
+Builder fields do not support nested structure fields or other builder fields (on the TODO).</p>
+
+      </body>
+    </html>

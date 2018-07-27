@@ -1,0 +1,55 @@
+.pikatime-container {
+   width: 250px;
+   position: absolute;
+   z-index: 1001;
+   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+   border-radius: 3px;
+   background-color: black;
+}
+
+.pikatime-container::before {
+   content: "";
+   position: absolute;
+   top: -30px;
+   left: 50%;
+   transform: translateX(-50%);
+
+   border: solid 15px transparent;
+   border-bottom-color: black;
+}
+
+.pikatime-container-no-arrow::before {
+   display: none;
+}
+
+.pikatime-container canvas {
+   display: block;
+
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+}
+
+.pikatime-container button {
+   border: none;
+   color: white;
+   padding: .6em .6em .75em;
+   width: 50%;
+   background-color: black;
+}
+
+.pikatime-container div {
+   overflow: hidden;
+   border-top: 1px solid #333;
+
+   border-bottom-right-radius: 3px;
+   border-bottom-left-radius: 3px;
+}
+
+.pikatime-container div button:first-of-type {
+   border-right: 1px solid #333;
+}
+
+.pikatime-container button:hover {
+   background-color: #8dae28;
+   cursor: pointer;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1259 266" style="enable-background:new 0 0 1259 266;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#00B0B3;}
+	.st1{opacity:0.75;fill:#FBF2C0;}
+	.st2{fill:#DA5C5C;}
+	.st3{fill:none;stroke:#FBF2C0;stroke-width:0.7496;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FBF2C0;stroke-miterlimit:10;}
+</style>
+<rect y="-57.9" class="st0" width="1297" height="366.9"/>
+<rect y="-142.9" class="st1" width="1404" height="532.9"/>
+<rect x="829" class="st2" width="430" height="49"/>
+<rect x="829" y="225" class="st2" width="430" height="49"/>
+<g>
+	<polygon class="st2" points="1259,49 1129.6,49 1259,137 	"/>
+	<polygon class="st2" points="1259,225.1 1129.6,225.1 1259,137 	"/>
+	<rect x="842.9" y="178.1" class="st2" width="286.7" height="47"/>
+	<rect x="842.9" y="49" class="st2" width="286.7" height="47"/>
+</g>
+<rect x="2028.9" y="1066" class="st0" width="416.1" height="176.1"/>
+<rect x="-321" y="1" class="st2" width="1423.1" height="95"/>
+<rect x="-321" y="178" class="st2" width="1451" height="95"/>
+<g>
+	<g>
+		<g>
+			<polygon class="st3" points="1108.4,131.5 1011.7,124.8 979,40.6 1075.7,47.3 			"/>
+			<polygon class="st3" points="1066.2,155.3 969.5,148.6 936.7,64.4 1033.5,71.2 			"/>
+			<polygon class="st3" points="1151.7,101.2 1055,94.5 1022.3,10.3 1119,17 			"/>
+		</g>
+		<line class="st4" x1="1027.3" y1="23.1" x2="1124.1" y2="30"/>
+		<line class="st4" x1="984.5" y1="54.7" x2="1080.8" y2="60.5"/>
+		<path class="st4" d="M941.4,76.4c0.1,0.3,96.6,6.4,96.6,6.4"/>
+	</g>
+	<g>
+		<g>
+			<g>
+				<polygon class="st3" points="966.4,225.5 869.7,218.8 837,134.6 933.7,141.3 				"/>
+				<polygon class="st3" points="924.2,249.3 827.5,242.6 794.7,158.4 891.5,165.2 				"/>
+				<polygon class="st3" points="1009.7,195.2 913,188.5 880.3,104.3 977,111 				"/>
+			</g>
+			<line class="st4" x1="885.3" y1="117.1" x2="982.1" y2="124"/>
+			<line class="st4" x1="842.5" y1="148.7" x2="938.8" y2="154.5"/>
+			<path class="st4" d="M799.4,170.4c0.1,0.3,96.6,6.4,96.6,6.4"/>
+		</g>
+	</g>
+</g>
+</svg>

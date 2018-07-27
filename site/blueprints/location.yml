@@ -1,0 +1,124 @@
+title: Location
+pages: true
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  hours:
+    label: Hours
+    type: textarea
+  street_address:
+    label: Street Address
+    type: text
+    width: 1/2
+  city:
+    label: City
+    type: text
+    width: 1/4
+  state:
+    label: State
+    type: text
+    width: 1/4
+  map:
+    label: Map URL
+    type: url
+    width: 1/2
+  phone:
+    label: Phone Number
+    type: tel
+    width: 1/2
+  facebook:
+    label: Facebook
+    type: url
+    icon: facebook
+    width: 1/3
+  twitter:
+    label: Twitter
+    type: url
+    icon: twitter
+    width: 1/3
+  email:
+    label: Email
+    type: email
+    width: 1/3
+  homeshot:
+    label: Home Shot
+    help: This is the image used for this location on the home page.
+    type: image
+  heros:
+    label: Heroes
+    type: structure
+    fields:
+      pic:
+        label: Picture
+      desc:
+        label: Description (for SEO)
+
+  weekly_headline:
+    label: Weekly Events
+    type: headline
+  weekly_monday:
+    label:   Mondays
+    extends: weekly_event
+  weekly_tuesday:
+    label:   Tuesdays
+    extends: weekly_event
+  weekly_wednesday:
+    label:   Wednesdays
+    extends: weekly_event
+  weekly_thursday:
+    label:   Thursdays
+    extends: weekly_event
+  weekly_friday:
+    label:   Fridays
+    extends: weekly_event
+  weekly_saturday:
+    label:   Saturday
+    extends: weekly_event
+  weekly_sunday:
+    label:   Sunday
+    extends: weekly_event
+
+  taps_headline:
+    label: Beers on Tap
+    type: builder
+    fieldsets:
+      tap:
+        label: Tap
+        snippet: builder/tap
+        fields:
+          name:
+            label: Name
+            type: text
+            required: true
+            width: 1/2
+            help: Name & Brewery are required, the rest is optional
+          brewery:
+            label: Brewery
+            type: text
+            required: true
+            width: 1/2
+          style:
+            label: Style
+            type: text
+          abv:
+            label: ABV
+            type: number
+            step: 0.1
+            width: 1/4
+          ibu:
+            label: IBU
+            type: number
+            step: 1
+            width: 1/4
+          price:
+            label: Price (in dollars)
+            type: number
+            step: 0.25
+            width: 1/4
+          pour: 
+            label: Pour (in ounces)
+            type: number
+            step: 1
+            width: 1/4

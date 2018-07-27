@@ -1,5 +1,7 @@
 title: Page
-pages: true
+pages:
+  template:
+    - location
 files: true
 fields:
   title:

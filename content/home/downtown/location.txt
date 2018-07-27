@@ -1,0 +1,140 @@
+Title: Downtown
+
+----
+
+Text: 
+
+----
+
+Hours: 
+
+----
+
+Street-address: 
+
+----
+
+City: 
+
+----
+
+State: 
+
+----
+
+Map: 
+
+----
+
+Phone: 
+
+----
+
+Facebook: 
+
+----
+
+Twitter: 
+
+----
+
+Email: 
+
+----
+
+Homeshot: 
+
+----
+
+Heros: 
+
+----
+
+Weekly-monday: 
+
+- 
+  all_day: 'no'
+  begins: 15:00
+  ends: 19:00
+  title: ""
+  desc: >
+    $1 off beer, cocktails and appetizers;
+    $4.50 wings
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 20:00
+  ends: 23:00
+  title: ""
+  desc: Half-priced bottles of wine
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 20:00
+  ends: 23:00
+  title: Drinky Drive-In
+  desc: Movies and boozahol
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 17:00
+  ends: 23:00
+  title: Minnesota Mondays
+  desc: All Minnesota beers half price
+  _fieldset: event
+
+----
+
+Weekly-tuesday: 
+
+----
+
+Weekly-wednesday: 
+
+----
+
+Weekly-thursday: 
+
+----
+
+Weekly-friday: 
+
+----
+
+Weekly-saturday: 
+
+----
+
+Weekly-sunday: 
+
+----
+
+Taps-headline: 
+
+- 
+  name: "Emily's Dream #32"
+  brewery: LTD Brewing
+  style: Sour Ale
+  abv: ""
+  ibu: ""
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Weltenwanderer
+  brewery: Hammerheart
+  style: Rauchbier
+  abv: "6.2"
+  ibu: ""
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Splendid Moose
+  brewery: Insight
+  style: American Pale Ale
+  abv: "5.5"
+  ibu: "19"
+  price: ""
+  pour: ""
+  _fieldset: tap
