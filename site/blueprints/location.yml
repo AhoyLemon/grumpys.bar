@@ -1,5 +1,10 @@
 title: Location
-pages: true
+pages:
+  template:
+    - calendar
+    - taps
+    - food
+    - booze
 files: true
 fields:
   title:
@@ -54,6 +59,17 @@ fields:
         label: Picture
       desc:
         label: Description (for SEO)
+
+  calendar_info:
+    label: Calendar
+    type: headline
+    help: See Calendar page at left.
+
+  taps_info:
+    label: Beers on Tap
+    type: headline
+    help: See Taps page, at left.
+
 
   weekly_headline:
     label: Weekly Events

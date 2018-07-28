@@ -1,0 +1,13 @@
+.menu-item {
+  
+  .name-and-price { margin-bottom: 0.35em; 
+    .name { font-size:120%; font-weight: bold; display: inline-block; margin-right: 1em;}
+    .price { display: inline-block; }
+  }
+  
+  > .name { font-size: 120%; font-weight: bold; margin-bottom: 0.35em; }
+  .desc { 
+    p { margin-bottom:0;} 
+  }
+  ul { margin-bottom: 0; }
+}

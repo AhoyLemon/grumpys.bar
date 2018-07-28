@@ -1,0 +1,16 @@
+Title: Appetizers
+
+----
+
+Builder: 
+
+- 
+  name: "Grumpy's Drummies"
+  price: $10.99
+  text: 'Wing flavors are available in: Buffalo: Mild, Medium or Hot, Honey Sriracha, Thai Peanut, BBQ, Surly Furious BBQ or Teriyaki'
+  _fieldset: menu_item
+- 
+  name: Pork and Kimchi Fries
+  price: $9.99
+  text: ""
+  _fieldset: menu_item

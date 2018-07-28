@@ -1,0 +1,48 @@
+Title: Whiskey
+
+----
+
+Builder: 
+
+- 
+  name: Bulleit Rye
+  _fieldset: brand
+- 
+  name: Crown Royal
+  _fieldset: brand
+- 
+  name: High West
+  variant_a: 2x Rye
+  variant_b: Campfire
+  variant_c: White Whiskey
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Jack Daniels
+  _fieldset: brand
+- 
+  name: Jameson
+  variant_a: Black Barrel
+  variant_b: Caskmates
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Jim Beam Rye
+  _fieldset: brand
+- 
+  name: Knob Creek
+  _fieldset: brand
+- 
+  name: Powers
+  _fieldset: brand
+- 
+  name: Seagrams 7
+  _fieldset: brand
+- 
+  name: Windsor
+  _fieldset: brand

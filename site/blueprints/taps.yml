@@ -1,0 +1,49 @@
+title: Taps
+pages: false
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  taps:
+    label: Beers on Tap
+    type: builder
+    fieldsets:
+      tap:
+        label: Tap
+        snippet: builder/tap
+        fields:
+          name:
+            label: Name
+            type: text
+            required: true
+            width: 1/2
+            help: Name & Brewery are required, the rest is optional
+          brewery:
+            label: Brewery
+            type: text
+            required: true
+            width: 1/2
+          style:
+            label: Style
+            type: text
+          abv:
+            label: ABV
+            type: number
+            step: 0.1
+            width: 1/4
+          ibu:
+            label: IBU
+            type: number
+            step: 1
+            width: 1/4
+          price:
+            label: Price (in dollars)
+            type: number
+            step: 0.25
+            width: 1/4
+          pour: 
+            label: Pour (in ounces)
+            type: number
+            step: 1
+            width: 1/4

@@ -1,0 +1,32 @@
+title: Calendar
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+
+  weekly_headline:
+    label: Weekly Events
+    type: headline
+  weekly_monday:
+    label:   Mondays
+    extends: weekly_event
+  weekly_tuesday:
+    label:   Tuesdays
+    extends: weekly_event
+  weekly_wednesday:
+    label:   Wednesdays
+    extends: weekly_event
+  weekly_thursday:
+    label:   Thursdays
+    extends: weekly_event
+  weekly_friday:
+    label:   Fridays
+    extends: weekly_event
+  weekly_saturday:
+    label:   Saturdays
+    extends: weekly_event
+  weekly_sunday:
+    label:   Sundays
+    extends: weekly_event

@@ -177,3 +177,24 @@ input[disabled] {
     content: 'brewery: '; }
   .tap .content .style:before {
     content: 'style: '; }
+
+.menu-item .name-and-price {
+  margin-bottom: 0.35em; }
+  .menu-item .name-and-price .name {
+    font-size: 120%;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 1em; }
+  .menu-item .name-and-price .price {
+    display: inline-block; }
+
+.menu-item > .name {
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 0.35em; }
+
+.menu-item .desc p {
+  margin-bottom: 0; }
+
+.menu-item ul {
+  margin-bottom: 0; }

@@ -1,0 +1,54 @@
+Title: Vodka
+
+----
+
+Builder: 
+
+- 
+  name: Absolut
+  variant_a: Citron
+  variant_b: Peppar
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Grey Goose
+  _fieldset: brand
+- 
+  name: High West
+  _fieldset: brand
+- 
+  name: J. Carver
+  variant_a: Lake House
+  variant_b: ""
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Ketel One
+  _fieldset: brand
+- 
+  name: Stoli
+  variant_a: Blueberry
+  variant_b: Orange
+  variant_c: Raspbery
+  variant_d: Vanilla
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Titos
+  _fieldset: brand
+- 
+  name: Van Gogh
+  variant_a: Espresso
+  variant_b: ""
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants

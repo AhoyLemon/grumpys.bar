@@ -1,0 +1,53 @@
+title: Booze Type
+pages: false
+options:
+  preview: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+  
+  builder:
+    label: Menu Items
+    type: builder
+    fieldsets:
+      brand:
+        label: Brand
+        snippet: builder/booze_brand
+        fields:
+          name:
+            label: Booze
+            type: text
+      brand_variants:
+        label: Brand w/ Variants
+        snippet: builder/booze_brand_options
+        fields:
+          name:
+            label: Brand
+            type: text
+            help: "List brand variants (ex: Caskmates, Citron, etc) below. If there are no variants, use the *Brand* option instead"
+          variant_a:
+            label: Variant
+            type: text
+            width: 1/3
+          variant_b:
+            label: Variant
+            type: text
+            width: 1/3
+          variant_c:
+            label: Variant
+            type: text
+            width: 1/3
+          variant_d:
+            label: Variant
+            type: text
+            width: 1/3
+          variant_e:
+            label: Variant
+            type: text
+            width: 1/3
+          variant_f:
+            label: Variant
+            type: text
+            width: 1/3

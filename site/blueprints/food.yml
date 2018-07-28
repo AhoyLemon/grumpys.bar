@@ -1,0 +1,19 @@
+title: Food
+pages:
+  template:
+    - menu-section
+files: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+    
+  info:
+    type: info
+    text: >
+      # Pages are sections
+      
+      Add new pages to this menu in order to add sections to this menu. Every visible page will show up in this menu, in the order provided.
+      
+      Hidden sections will not be shown.
