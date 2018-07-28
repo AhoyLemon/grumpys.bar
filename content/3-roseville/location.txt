@@ -5,7 +5,7 @@ Title: Roseville
 Hours: 
 
 Sun & Mon: 11AM to midnight
-Tue - Sat: 11AM to 2AM
+Tue - Sat: 11AM to 2PM
 
 ----
 
@@ -45,7 +45,7 @@ Email: leah@grumpys-bar.com
 
 ----
 
-Homeshot: 
+Homeshot: roseville.jpg
 
 ----
 

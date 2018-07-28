@@ -8,7 +8,7 @@
 }
 
 main.home {
-  .locations { position: relative; z-index:$z-locations; 
+  .locations { position: relative; z-index:$z-locations;
     figure { background-size:cover; background-position: center; position: relative;
       a { @include position(absolute,0,0,0,0); }
     }

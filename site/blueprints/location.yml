@@ -55,6 +55,7 @@ fields:
     label: Home Shot
     help: This is the image used for this location on the home page.
     type: image
+    required: true
   heroes:
     label: Hero Images
     type: builder
