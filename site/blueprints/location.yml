@@ -13,6 +13,10 @@ fields:
   hours:
     label: Hours
     type: textarea
+  map:
+    label: Map URL
+    type: url
+    width: 1/2
   street_address:
     label: Street Address
     type: text
@@ -25,14 +29,14 @@ fields:
     label: State
     type: text
     width: 1/4
-  map:
-    label: Map URL
-    type: url
-    width: 1/2
+  zip:
+    label: ZIP
+    type: text
+    width: 1/4
   phone:
     label: Phone Number
     type: tel
-    width: 1/2
+    width: 1/4
   facebook:
     label: Facebook
     type: url
@@ -51,14 +55,25 @@ fields:
     label: Home Shot
     help: This is the image used for this location on the home page.
     type: image
-  heros:
+  heroes:
     label: Heroes
-    type: structure
-    fields:
-      pic:
-        label: Picture
-      desc:
-        label: Description (for SEO)
+    type: builder
+    #style: table
+    fieldsets:
+      hero:
+        label: Hero
+        entry: >
+           <img src="{{_fileUrl}}{{pic}}" height="220px" />
+        fields:
+          pic:
+            label: Picture
+            type: image
+            help: "(1200x450)"
+
+          desc:
+            label: Description
+            type: text
+            help: (for SEO)
 
   calendar_info:
     label: Calendar

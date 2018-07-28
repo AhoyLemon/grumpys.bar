@@ -6,39 +6,39 @@ Text:
 
 ----
 
-Hours: 
+Hours: Every Day: 11AM to 2AM
 
 ----
 
-Street-address: 
+Street-address: 1111 S Washington Ave
 
 ----
 
-City: 
+City: Minneapolis
 
 ----
 
-State: 
+State: MN
 
 ----
 
-Map: 
+Map: https://goo.gl/maps/xTtEWzqfqa92
 
 ----
 
-Phone: 
+Phone: (612) 340-9738
 
 ----
 
-Facebook: 
+Facebook: https://www.facebook.com/grumpysdt
 
 ----
 
-Twitter: 
+Twitter: https://twitter.com/grumpysdt
 
 ----
 
-Email: 
+Email: johnny@grumpys-bar.com
 
 ----
 
@@ -138,3 +138,22 @@ Taps-headline:
   price: ""
   pour: ""
   _fieldset: tap
+
+----
+
+Zip: 55415
+
+----
+
+Heroes: 
+
+- 
+  pic: hero1.jpg
+  desc: Stock image of glasses clinking
+  _fieldset: hero
+- 
+  pic: hero2.jpg
+  desc: >
+    Stock photo of several young people with
+    beer glasses
+  _fieldset: hero
