@@ -65,17 +65,24 @@
           </svg>
         </a>
       <?php } ?>
-    <a class="facebook" href="https://www.facebook.com/grumpysdt">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-              <path d="M0 0v32h19.2V21.4h-3.9v-4.5h3.9v-3.3c0-3.9 2.4-6 5.8-6 1.7 0 3.1.1 3.5.2v4h-2.4c-1.9 0-2.2.9-2.2 2.2v2.9h4.5l-.6 4.5h-3.9V32H32V0H0z"></path>
-            </svg></a>
-            
-            
-  <a class="email" href="mailto:johnny@grumpys-bar.com">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-              <path d="M1.4 6.1v20.8h29.8V6.1H1.4zm26 1.5L16.3 18.3 5.1 7.6h22.3zm2.3 17.8H2.9V7.6H3l13.3 12.7L29.6 7.6h.1v17.8z"></path>
-            </svg></a>
+      
+      <?php if ($page->facebook() != "") { ?>
+        <a class="twitter" href="<?= $page->facebook(); ?>">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path d="M0 0v32h19.2V21.4h-3.9v-4.5h3.9v-3.3c0-3.9 2.4-6 5.8-6 1.7 0 3.1.1 3.5.2v4h-2.4c-1.9 0-2.2.9-2.2 2.2v2.9h4.5l-.6 4.5h-3.9V32H32V0H0z"></path>
+          </svg>
+        </a>
+      <?php } ?>
+
+      <?php if ($page->email() != "") { ?>
+        <a class="email" href="mailto:<?= $page->email(); ?>">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path d="M1.4 6.1v20.8h29.8V6.1H1.4zm26 1.5L16.3 18.3 5.1 7.6h22.3zm2.3 17.8H2.9V7.6H3l13.3 12.7L29.6 7.6h.1v17.8z"></path>
+          </svg>
+        </a>
+      <?php } ?>  
     </div>
+
   </div>
 
   <?php foreach ($page->children()->visible() as $section) { ?>
@@ -162,184 +169,77 @@
       </section>
 
 
-    <?php } ?>
+    <?php } else  if ($section->slug() == "taps") { ?>
+      <a name="taps"></a>
+      <section class="tap-list">
+        <div class="headline">Beers on tap...</div>
 
+        <?php $tapList = $page->find('taps'); ?>
+
+        <div class="taps">
+          <?php foreach ($tapList->taps()->toStructure() as $tap) { ?>
+            <div class="tap">
+              <div class="content">
+                <?php if ($tap->name() != "") { ?>
+                  <div class="name"><?= $tap->name(); ?></div>
+                <?php } ?>
+                <?php if ($tap->brewery() != "") { ?>
+                  <div class="brewery"><?= $tap->brewery(); ?></div>
+                <?php } ?>
+                <?php if ($tap->style() != "") { ?>
+                  <div class="style"><?= $tap->style(); ?></div>
+                <?php } ?>
+
+                <?php if ($tap->abv() != "") { ?>
+                  <div class="abv"><?= $tap->abv(); ?>% ABV</div>
+                <?php } ?>
+
+                <?php if ($tap->ibu() != "") { ?>
+                  <div class="ibu"><?= $tap->ibu(); ?> IBU</div>
+                <?php } ?>
+
+                <?php if ($tap->price() != "" && $tap->pour() != "") { ?>
+                  <div class="price"><?= $tap->pour(); ?>oz @ $<?= $tap->price(); ?></div>
+                <?php } else if ($tap->price() != "") { ?>
+                  <div class="price">$<?= $tap->price(); ?></div>
+                <?php } else if ($tap->pour() != "") { ?>
+                  <div class="price"><?= $tap->pour(); ?>oz</div>
+                <?php }  ?>
+              </div>
+            </div>
+          <?php } ?>
+        </div>
+
+      </section>
+      <?php } else  if ($section->slug() == "food") { ?>
+        <a name="food"></a>
+        <section class="menu full-menu">
+          <h2>Food</h2>
+          <div class="inner">
+            <div class="page food">
+              <?php foreach ($section->children()->visible() as $menu) { ?>
+                <div class="menu-section">
+
+                  <div class="section-title"><?= $menu->title(); ?></div>
+                  
+                  <?php foreach ($menu->builder()->toStructure() as $item) { ?>
+                    <div class="menu-item">
+                      <div class="name"><?= $item->name(); ?></div>
+                      <div class="price"><?= $item->price(); ?></div>
+                      <div class="desc"><?= $item->text(); ?> </div>
+                    </div>
+                  <?php } ?>
+                
+                </div>
+              <?php } ?>
+            </div>
+          </div>
+        </section>
+      <?php } ?>
 
   <?php } ?>
-  <a name="taps"></a>
-  <div class="tap-list">
-    <div class="headline">Beers on tap...</div>
-    <div class="taps">
-          <div class="tap">
-            <div class="content">
-              <div class="name">Emily's Dream #30 Blood Orange Sour</div>
-              <div class="brewery">LTD Brewing</div>
-              <div class="style">Sour Ale</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Fuzzi Lil Pucker</div>
-              <div class="brewery">56 Brewing</div>
-              <div class="style">Sour Ale</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Short Pants</div>
-              <div class="brewery">Bauhaus Brew Labs</div>
-              <div class="style">Radler</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Dakota Soul</div>
-              <div class="brewery">Summit</div>
-              <div class="style">Pilsner</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">B-Side Pils</div>
-              <div class="brewery">Indeed</div>
-              <div class="style">Pilsner</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Pils</div>
-              <div class="brewery">Fair State</div>
-              <div class="style">Pilsner</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Hamm's</div>
-              <div class="brewery">Miller</div>
-              <div class="style">Lager</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Pils</div>
-              <div class="brewery">Lagunitas</div>
-              <div class="style">Pilsner</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Coors Light</div>
-              <div class="brewery">Coors</div>
-              <div class="style">Lager</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Summer Crush</div>
-              <div class="brewery">Castle Danger</div>
-              <div class="style">Pale Ale</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">WacTown Wheat</div>
-              <div class="brewery">Waconia Brewing Co</div>
-              <div class="style">Pale Wheat</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Oberon</div>
-              <div class="brewery">Bell's</div>
-              <div class="style">Pale Wheat</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Xtra Citra</div>
-              <div class="brewery">Surly</div>
-              <div class="style">Pale Ale</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Tea Break Blonde</div>
-              <div class="brewery">Bent Paddle</div>
-              <div class="style">Blonde Ale</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">EPA</div>
-              <div class="brewery">Summit</div>
-              <div class="style">Pale Ale</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Mango Blonde</div>
-              <div class="brewery">Lift Bridge</div>
-              <div class="style">Blonde</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Lonely Blonde</div>
-              <div class="brewery">Fulton</div>
-              <div class="style">Blonde</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Fathom</div>
-              <div class="brewery">Ballast Point</div>
-              <div class="style">IPA</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">300</div>
-              <div class="brewery">Fulton</div>
-              <div class="style">IPA</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Two Hearted</div>
-              <div class="brewery">Bell's</div>
-              <div class="style">IPA</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Furious</div>
-              <div class="brewery">Surly</div>
-              <div class="style">IPA</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Nitro Oatmeal Stout</div>
-              <div class="brewery">Founders</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Outcider</div>
-              <div class="brewery">2 Towns Ciderhouse</div>
-              <div class="style">Cider</div>
-            </div>
-          </div>
-          <div class="tap">
-            <div class="content">
-              <div class="name">Paulaner Hefewizen</div>
-              <div class="brewery">Paulaner</div>
-              <div class="style">Hefeweisen</div>
-            </div>
-          </div><a class="untappd-link">
-        <div class="content"><img src="img/untappd-logo.png"></div></a>
-    </div>
-  </div><a name="food"></a>
+  
+  <a name="food"></a>
   <section class="menu full-menu">
     <h2>Food</h2>
     <div class="inner">

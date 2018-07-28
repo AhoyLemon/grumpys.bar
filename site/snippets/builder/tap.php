@@ -15,7 +15,7 @@
     <?php } ?>
 
     <?php if ($data->ibu() != "") { ?>
-      <div class="ibu"><?= $data->abv(); ?> IBU</div>
+      <div class="ibu"><?= $data->ibu(); ?> IBU</div>
     <?php } ?>
 
     <?php if ($data->price() != "" && $data->pour() != "") { ?>

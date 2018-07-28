@@ -3,3 +3,40 @@ Title: Taps
 ----
 
 Taps: 
+
+- 
+  name: Kriek (2018)
+  brewery: Boom Island
+  style: Lambic
+  abv: "4.8"
+  ibu: ""
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Mexican Honey Light
+  brewery: Indeed
+  style: Lager
+  abv: "5.2"
+  ibu: ""
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Splendid Moose
+  brewery: Insight
+  style: Pale Ale
+  abv: "5.5"
+  ibu: "19"
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Voodoo Ranger
+  brewery: New Belgium
+  style: IPA
+  abv: "7.5"
+  ibu: "42"
+  price: ""
+  pour: ""
+  _fieldset: tap
