@@ -433,7 +433,7 @@ svg * {
       padding-top: 0.6em;
       padding-bottom: 0.6em; }
     header .link.active {
-      background: #FBF2C0; }
+      background: #00B0B3; }
       header .link.active a {
         color: #414042;
         cursor: default; }
@@ -1152,9 +1152,11 @@ main.location {
         font-weight: 900;
         font-size: 130%;
         color: #ee2a2a;
-        padding-left: 1.1em; }
+        padding-left: 1.1em;
+        padding-right: 1.1em; }
       .calendar .day .item .desc {
-        padding-left: 1.5em; }
+        padding-left: 1.5em;
+        padding-right: 1.5em; }
 
 @media (max-width: 820px) {
   .calendar .day {

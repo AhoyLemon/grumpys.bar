@@ -1,0 +1,82 @@
+Title: Calendar
+
+----
+
+Weekly-headline: 
+
+----
+
+Weekly-monday: 
+
+----
+
+Weekly-tuesday: 
+
+----
+
+Weekly-wednesday: 
+
+- 
+  all_day: 'no'
+  begins: 21:00
+  ends: ""
+  title: Trivia
+  desc: >
+    $25 gift certificate for first place,
+    plus other prizes
+  _fieldset: event
+
+----
+
+Weekly-thursday: 
+
+- 
+  all_day: 'no'
+  begins: 19:00
+  ends: 22:00
+  title: Tex Mex Thursday
+  desc: |
+    $3 off: nachos, tex-mex rolls, quesadilla gordo
+    $1 off: Corona Corona Light, Pacifico & Dos Equis
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 22:00
+  ends: ""
+  title: Bar Bingo
+  desc: Progressive pot (free to play)
+  _fieldset: event
+
+----
+
+Weekly-friday: 
+
+- 
+  all_day: 'no'
+  begins: 19:00
+  ends: 22:00
+  title: Furious Friday
+  desc: $3 Surly Furious on tap
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 16:00
+  ends: ""
+  title: ""
+  desc: All you can eat fish fry
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 21:00
+  ends: ""
+  title: ""
+  desc: Beanbag tourney
+  _fieldset: event
+
+----
+
+Weekly-saturday: 
+
+----
+
+Weekly-sunday: 

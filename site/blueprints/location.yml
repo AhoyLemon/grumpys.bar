@@ -56,7 +56,7 @@ fields:
     help: This is the image used for this location on the home page.
     type: image
   heroes:
-    label: Heroes
+    label: Hero Images
     type: builder
     #style: table
     fieldsets:
@@ -73,82 +73,11 @@ fields:
             label: Description
             type: text
             help: (for SEO)
+  
+  section_headline:
+    label: Define Sections
+    type: info
+    text: >
+      Use the pages (at left) to define the sections that will appear on this page.
 
-  calendar_info:
-    label: Calendar
-    type: headline
-    help: See Calendar page at left.
-
-  taps_info:
-    label: Beers on Tap
-    type: headline
-    help: See Taps page, at left.
-
-
-  weekly_headline:
-    label: Weekly Events
-    type: headline
-  weekly_monday:
-    label:   Mondays
-    extends: weekly_event
-  weekly_tuesday:
-    label:   Tuesdays
-    extends: weekly_event
-  weekly_wednesday:
-    label:   Wednesdays
-    extends: weekly_event
-  weekly_thursday:
-    label:   Thursdays
-    extends: weekly_event
-  weekly_friday:
-    label:   Fridays
-    extends: weekly_event
-  weekly_saturday:
-    label:   Saturday
-    extends: weekly_event
-  weekly_sunday:
-    label:   Sunday
-    extends: weekly_event
-
-  taps_headline:
-    label: Beers on Tap
-    type: builder
-    fieldsets:
-      tap:
-        label: Tap
-        snippet: builder/tap
-        fields:
-          name:
-            label: Name
-            type: text
-            required: true
-            width: 1/2
-            help: Name & Brewery are required, the rest is optional
-          brewery:
-            label: Brewery
-            type: text
-            required: true
-            width: 1/2
-          style:
-            label: Style
-            type: text
-          abv:
-            label: ABV
-            type: number
-            step: 0.1
-            width: 1/4
-          ibu:
-            label: IBU
-            type: number
-            step: 1
-            width: 1/4
-          price:
-            label: Price (in dollars)
-            type: number
-            step: 0.25
-            width: 1/4
-          pour: 
-            label: Pour (in ounces)
-            type: number
-            step: 1
-            width: 1/4
+      The number of the page defines the order, invisible pages will not be shown.

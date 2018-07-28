@@ -1,0 +1,34 @@
+Title: Salads
+
+----
+
+Builder: 
+
+- 
+  name: Strawberry Salad
+  price: $10.99
+  text: >
+    Beautiful summer day in a bowl (who
+    writes this stuff?) Baby spinach,
+    strawberries, onion and honey mustard
+    dressing on side.
+  _fieldset: menu_item
+- 
+  name: Ty Cobb Salad
+  price: $13.99
+  text: >
+    A heavy hitter sans the bad attitude.
+    You name the dressing. Classic iceberg
+    topped with turkey, ham, bacon, hard
+    cooked eggs, avocado, diced tomatoes,
+    bleu cheese crumbles and black olives.
+  _fieldset: menu_item
+- 
+  name: Aztec Salad
+  price: $10.99
+  text: >
+    Romaine lettuce tossed with kicky
+    chipotle dressing, red peppers, black
+    beans, corn and cheddar cheese, green
+    onions and tortilla chips.
+  _fieldset: menu_item

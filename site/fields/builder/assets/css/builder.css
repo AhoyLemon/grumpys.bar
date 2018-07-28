@@ -134,6 +134,8 @@ input[disabled] {
 
 .weekly-event .desc {
   padding-left: 1.5em; }
+  .weekly-event .desc p {
+    margin-bottom: 0; }
 
 .tap .name {
   font-size: 125%;

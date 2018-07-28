@@ -5,6 +5,9 @@ fields:
   title:
     label: Title
     type:  text
+  untappd_url:
+    label: Untappd URL
+    type: url
   taps:
     label: Beers on Tap
     type: builder

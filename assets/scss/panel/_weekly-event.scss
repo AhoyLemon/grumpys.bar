@@ -1,5 +1,7 @@
 .weekly-event {
   .when { font-weight:$bold; }
   .name { font-weight:$bold; font-size:130%; color:$red; padding-left: 1.1em; }
-  .desc { padding-left: 1.5em; }
+  .desc { padding-left: 1.5em;
+    p { margin-bottom: 0; }
+  }
 }

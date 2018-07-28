@@ -1,0 +1,36 @@
+Title: Appetizers
+
+----
+
+Builder: 
+
+- 
+  name: "Grumpy's Wings"
+  price: $11.99
+  text: |
+    Wing flavors are available in: Mild, Hot, Grumpy’s BBQ, Jamaican, Teriyaki, Bangkok or Cajun Dry Rub
+    Served just how you want ‘em with either bleu cheese or ranch dressing & celery sticks.
+  _fieldset: menu_item
+- 
+  name: Chicken Tenders
+  price: $9.99
+  text: |
+    Premium chicken breast tenders, coated with your choice of sauce, or naked with sauce on the side. Served with our own bleu cheese dressing or ranch dressing and celery sticks.
+    Choose: Mild, Hot, Grumpy’s BBQ, Jamacian, Teriyaki, Bangkok, Honey Mustard or Cajun Dry Rub
+  _fieldset: menu_item
+- 
+  name: Quesadilla Gordo
+  price: $10.99
+  text: >
+    A nice big flour tortilla brushed with
+    garlic butter, grilled with mucho
+    cheddar jack cheese, tomatoes and
+    onions. Served with cilantro sour cream
+    and salsa. Your choice of Chicken or
+    Beef.
+  _fieldset: menu_item
+- 
+  name: Potato Skins
+  price: $9.99
+  text: 'We take Grade A fresh potatoes and pile on melted cheddar jack, bacon, & green onions. Served with cilantro sour cream.'
+  _fieldset: menu_item

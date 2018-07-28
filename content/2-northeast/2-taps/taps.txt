@@ -1,0 +1,42 @@
+Title: Taps
+
+----
+
+Taps: 
+
+- 
+  name: Supra Deluxe
+  brewery: Modist
+  style: Japanese Rice Lager
+  abv: "5"
+  ibu: ""
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Hefeweisen
+  brewery: Fair State
+  style: ""
+  abv: ""
+  ibu: ""
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Shoutao
+  brewery: Omnipollo
+  style: Milkshake IPA
+  abv: "7"
+  ibu: "60"
+  price: ""
+  pour: ""
+  _fieldset: tap
+- 
+  name: Day Tripper
+  brewery: Indeed
+  style: Pale Ale
+  abv: ""
+  ibu: ""
+  price: ""
+  pour: ""
+  _fieldset: tap

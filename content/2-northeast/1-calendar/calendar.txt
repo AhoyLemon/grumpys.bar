@@ -1,0 +1,171 @@
+Title: Calendar
+
+----
+
+Weekly-headline: 
+
+----
+
+Weekly-monday: 
+
+- 
+  all_day: 'no'
+  begins: 14:00
+  ends: 18:00
+  title: ""
+  desc: $1 off anything that pours
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 16:00
+  ends: 20:00
+  title: ""
+  desc: Half-priced bottles of wine
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 17:00
+  ends: 21:00
+  title: ""
+  desc: Half-priced Minnesota beers
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 19:00
+  ends: 21:00
+  title: MN Music Listening Party
+  desc: >
+    Local music and more spun by folks that
+    go to way more shows than you do
+  _fieldset: event
+
+----
+
+Weekly-tuesday: 
+
+- 
+  all_day: 'no'
+  begins: 14:00
+  ends: 18:00
+  title: ""
+  desc: $1 off anything that pours
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 17:00
+  ends: ""
+  title: ""
+  desc: >
+    Hotdish is a buck a bowl until we run
+    out
+  _fieldset: event
+
+----
+
+Weekly-wednesday: 
+
+- 
+  all_day: 'no'
+  begins: 14:00
+  ends: 18:00
+  title: ""
+  desc: $1 off anything that pours
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 20:00
+  ends: 22:00
+  title: Trivia with Berni the Trailer Park Queen
+  desc: >
+    This fills up, so get here early to grab
+    a seat and a $2 PBR tall boy to make you
+    smarter
+  _fieldset: event
+
+----
+
+Weekly-thursday: 
+
+- 
+  all_day: 'no'
+  begins: 14:00
+  ends: 18:00
+  title: ""
+  desc: $1 off anything that pours
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 14:00
+  ends: 18:00
+  title: ""
+  desc: $3 for two domestic bottles
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 18:00
+  ends: 22:00
+  title: Vino Vinyl
+  desc: >
+    Bring in a vinyl record to play and get
+    a free drink; two-for-one glasses of
+    wine
+  _fieldset: event
+
+----
+
+Weekly-friday: 
+
+- 
+  all_day: 'no'
+  begins: 14:00
+  ends: 18:00
+  title: ""
+  desc: $1 off anything that pours
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 16:00
+  ends: 19:00
+  title: Firkin Fridays
+  desc: >
+    Fresh and rare cask beers from Indeed,
+    Surly, Fulton, Thornbridge and Bell’s
+    PLUS free food like octopus on a stick
+    or hop-smoked cheese to pair with your
+    pint
+  _fieldset: event
+
+----
+
+Weekly-saturday: 
+
+- 
+  all_day: 'yes'
+  begins: ""
+  ends: ""
+  title: ""
+  desc: >
+    $3 taps from all breweries within a
+    stone’s throw (includes Indeed,
+    Fulton, Surly, Northgate, 612 Brew and
+    Sociable Cider)
+  _fieldset: event
+
+----
+
+Weekly-sunday: 
+
+- 
+  all_day: 'no'
+  begins: 16:00
+  ends: 20:00
+  title: ""
+  desc: Half-priced bottles of wine
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 23:00
+  ends: 02:00
+  title: ""
+  desc: $2 tall boys from our vast selection
+  _fieldset: event

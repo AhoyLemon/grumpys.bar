@@ -1,10 +1,23 @@
 <header class="desktop">
   <div class="inner">
     <nav>
-      <div class="link"><a scroll-to="calendar">Calendar</a></div>
-      <div class="link"><a scroll-to="taps">Taps</a></div>
-      <div class="link"><a scroll-to="food">Food</a></div>
-      <div class="link"><a scroll-to="booze">Booze</a></div>
+      <?php if ($page->template() == "location") { ?>
+        <?php foreach ($page->children()->visible() as $anchor) { ?>
+          <div class="link">
+            <a scroll-to="<?= $anchor->slug(); ?>">
+              <?= $anchor->title(); ?>
+            </a>
+          </div>
+        <?php } ?>  
+      <?php } else if ($page->parent()->template() == "location") { ?>
+        <?php foreach ($page->parent()->children()->visible() as $anchor) { ?>
+          <div class="link">
+            <a href="<?= $anchor->slug(); ?>">
+              <?= $anchor->title(); ?>
+            </a>
+          </div>
+        <?php } ?>
+      <?php } ?>
       <div class="logo-holder"><a href="<?= $site->url(); ?>"><img class="logo" src="<?= $site->url(); ?>/assets/svg/logo_header.svg"></a></div>
       <div class="link"><a href="northeast.html">Northeast</a></div>
       <div class="link"><a href="roseville.html">Roseville</a></div>
