@@ -8,6 +8,37 @@ Weekly-headline:
 
 Weekly-monday: 
 
+- 
+  all_day: 'no'
+  begins: 15:00
+  ends: 19:00
+  title: ""
+  desc: >
+    $1 off beer, cocktails and appetizers;
+    $4.50 wings
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 17:00
+  ends: 23:00
+  title: Minnesota Mondays
+  desc: All Minnesota beers half price
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 20:00
+  ends: 23:00
+  title: ""
+  desc: Half-priced bottles of wine
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 20:00
+  ends: 23:00
+  title: Drinky Drive In
+  desc: Movies and boozahol
+  _fieldset: event
+
 ----
 
 Weekly-tuesday: 
@@ -28,6 +59,42 @@ Weekly-friday:
 
 Weekly-saturday: 
 
+- 
+  all_day: 'no'
+  begins: 11:00
+  ends: ""
+  title: "Grumpy's Brunch"
+  desc: >
+    Tired of standing in line for a couple
+    of eggs over easy? Try our Barnyard
+    brunch.
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 22:00
+  ends: 02:00
+  title: Residency
+  desc: ""
+  _fieldset: event
+
 ----
 
 Weekly-sunday: 
+
+- 
+  all_day: 'no'
+  begins: 11:00
+  ends: ""
+  title: Grumpy’s Brunch
+  desc: >
+    Try the 666—six sour cream pancakes,
+    six sausage links and six ounces of
+    maple syrup
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 22:00
+  ends: ""
+  title: 21 Bingo (free)
+  desc: "It's our way of letting you have a chance at winning back some of your drinking money"
+  _fieldset: event

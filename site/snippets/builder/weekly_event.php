@@ -3,7 +3,7 @@
   <!-- WHEN -->
   <?php if ($data->all_day() == "1") { ?>
     <div class="when">All Day</div>
-  <?php } else if ($data->begins() != "" && $data->ends()) { ?>
+  <?php } else if ($data->begins() != "" && $data->ends() != "") { ?>
     <div class="when"><?= date("g:ia", strtotime($data->begins())); ?> - <?= date("g:ia", strtotime($data->ends())); ?></div>
   <?php } else if ($data->begins() != "") { ?>
     <div class="when"><?= date("g:ia", strtotime($data->begins())); ?></div>
@@ -16,6 +16,7 @@
     <div class="name"><?= $data->title(); ?></div>
   <?php } ?>
 
-  <div class="desc">$1 off beer, cocktails and appetizers; $4.50 wings</div>
+  <!-- Description -->
+  <div class="desc"><?= $data->desc()->kirbytext(); ?></div>
 
 </div>

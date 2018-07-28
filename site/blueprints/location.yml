@@ -69,7 +69,6 @@ fields:
             label: Picture
             type: image
             help: "(1200x450)"
-
           desc:
             label: Description
             type: text

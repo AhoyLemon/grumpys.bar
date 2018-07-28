@@ -11,12 +11,13 @@ main.location {
   }
 
   .hero { position: relative;
+
+    figure { background-size:cover; background-position: center; background-repeat: no-repeat; }
     .social-links { @include position(absolute,null,0,-10px); padding-right: 40px;
       a { background-color:$teal; display: inline-block; height:3.5em; width:3.5em; transform: rotate(45deg); color:$black; }
       svg { width:2em; height: 2em; transform: rotate(-45deg) translateY(1em);  }
       a:hover { background:$red; color:$white; }
     }
-  
   
   }
   .details-holder {

@@ -68,117 +68,105 @@
     <a class="facebook" href="https://www.facebook.com/grumpysdt">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path d="M0 0v32h19.2V21.4h-3.9v-4.5h3.9v-3.3c0-3.9 2.4-6 5.8-6 1.7 0 3.1.1 3.5.2v4h-2.4c-1.9 0-2.2.9-2.2 2.2v2.9h4.5l-.6 4.5h-3.9V32H32V0H0z"></path>
-            </svg></a><a class="email" href="mailto:johnny@grumpys-bar.com">
+            </svg></a>
+            
+            
+  <a class="email" href="mailto:johnny@grumpys-bar.com">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path d="M1.4 6.1v20.8h29.8V6.1H1.4zm26 1.5L16.3 18.3 5.1 7.6h22.3zm2.3 17.8H2.9V7.6H3l13.3 12.7L29.6 7.6h.1v17.8z"></path>
             </svg></a>
     </div>
-  </div><a name="calendar"></a>
-  <section class="calendar">
-        <div class="day">
-          <div class="inner">
-            <div class="title">Today</div>
-            <div class="items">
-              <div class="item">
-                <div class="when">3pm to 7pm</div>
-                <div class="desc">$1 off beer, cocktails and appetizers; $4.50 wings</div>
-              </div>
-              <div class="item">
-                <div class="when">9pm to 11pm</div>
-                <div class="name">Trivia Mafia</div>
-              </div>
-              <div class="item">
-                <div class="when">9pm to 2am</div>
-                <div class="desc">Half priced bottles of wine, $2.50 PBR, $3.50 rail drinks</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="day">
-          <div class="inner">
-            <div class="title">Tomorrow</div>
-            <div class="items">
-              <div class="item">
-                <div class="when">11am to 7pm</div>
-                <div class="desc">$1 off beer, cocktails and appetizers; $2 domestic bottles and cans; $3 rail drinks; $4.50 wings</div>
-              </div>
-              <div class="item">
-                <div class="when">10pm to 1am</div>
-                <div class="name">Death Comedy Jam</div>
-                <div class="desc">Test your material or just sit back and heckle the newbies. It makes no difference to these guys whether you laugh or cry.</div>
-              </div>
-              <div class="item">
-                <div class="when">9pm to 2am</div>
-                <div class="desc">$2.50 PBR tall boys, $4 Stoli drinks, $4.50 Red Breast Whiskey</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="day">
-          <div class="inner">
-            <div class="title">Thursday</div>
-            <div class="items">
-              <div class="item">
-                <div class="when">3pm to 7pm</div>
-                <div class="desc">$1 off beer, cocktails and appetizers; $4.50 wings</div>
-              </div>
-              <div class="item">
-                <div class="when">10pm to 2am</div>
-                <div class="name">Karaoke</div>
-                <div class="desc">PLUS: Music Appreciation Night with live DJ’s!</div>
-              </div>
-              <div class="item">
-                <div class="when">9pm to 2am</div>
-                <div class="desc">$2.50 tall boys</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="day">
-          <div class="inner">
-            <div class="title">Friday</div>
-            <div class="items">
-              <div class="item">
-                <div class="when">3pm to 7pm</div>
-                <div class="desc">$1 off beer, cocktails and appetizers; $4.50 wings</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="day">
-          <div class="inner">
-            <div class="title">Saturday</div>
-            <div class="items">
-              <div class="item">
-                <div class="when">11am</div>
-                <div class="name">Grumpy's Brunch</div>
-                <div class="desc">Tired of standing in line for a couple of eggs over easy? Try our Barnyard brunch.</div>
-              </div>
-              <div class="item">
-                <div class="when">10pm to 2am</div>
-                <div class="name">Residency</div>
+  </div>
+
+  <?php foreach ($page->children()->visible() as $section) { ?>
+    
+    <?php if ($section->slug() == "calendar") { ?>
+
+      <?php $calendar = $page->find('calendar'); ?>
+
+      <?php
+        $currentWeekday = date('l');
+        if ($currentWeekday == "Monday")  { 
+          $lineup = array($calendar->weekly_monday(), $calendar->weekly_tuesday(), $calendar->weekly_wednesday(), $calendar->weekly_thursday(), $calendar->weekly_friday(), $calendar->weekly_saturday(), $calendar->weekly_sunday() );
+        } else if ($currentWeekday == "Tuesday")  { 
+          $lineup = array($calendar->weekly_tuesday(), $calendar->weekly_wednesday(), $calendar->weekly_thursday(), $calendar->weekly_friday(), $calendar->weekly_saturday(), $calendar->weekly_sunday(), $calendar->weekly_monday() );
+        } else if ($currentWeekday == "Wednesday")  { 
+          $lineup = array($calendar->weekly_wednesday(), $calendar->weekly_thursday(), $calendar->weekly_friday(), $calendar->weekly_saturday(), $calendar->weekly_sunday(), $calendar->weekly_monday(), $calendar->weekly_tuesday() );
+        } else if ($currentWeekday == "Thursday")  { 
+          $lineup = array($calendar->weekly_thursday(), $calendar->weekly_friday(), $calendar->weekly_saturday(), $calendar->weekly_sunday(), $calendar->weekly_monday(), $calendar->weekly_tuesday(), $calendar->weekly_wednesday() );
+        } else if ($currentWeekday == "Friday")  { 
+          $lineup = array($calendar->weekly_friday(), $calendar->weekly_saturday(), $calendar->weekly_sunday(), $calendar->weekly_monday(), $calendar->weekly_tuesday(), $calendar->weekly_wednesday(), $calendar->weekly_thursday() );
+        } else if ($currentWeekday == "Saturday")  { 
+          $lineup = array($calendar->weekly_saturday(), $calendar->weekly_sunday(), $calendar->weekly_monday(), $calendar->weekly_tuesday(), $calendar->weekly_wednesday(), $calendar->weekly_thursday(), $calendar->weekly_friday() );
+        } else if ($currentWeekday == "Sunday")  { 
+          $lineup = array($calendar->weekly_sunday(), $calendar->weekly_monday(), $calendar->weekly_tuesday(), $calendar->weekly_wednesday(), $calendar->weekly_thursday(), $calendar->weekly_friday(), $calendar->weekly_saturday() );
+        }
+      ?>
+      
+      <a name="calendar"></a>
+      <section class="calendar">
+        
+        <?php $dayCount = 0; $dayName = "Error"; ?>
+
+        <?php foreach ($lineup as $weekday) { ?>
+          <?php
+            $dayCount++;
+            if ($weekday == $calendar->weekly_monday())         { $dayName =  "Monday"; }
+            else if ($weekday == $calendar->weekly_tuesday())   { $dayName =  "Tuesday"; }
+            else if ($weekday == $calendar->weekly_wednesday()) { $dayName =  "Wednesday"; }
+            else if ($weekday == $calendar->weekly_thursday())  { $dayName =  "Thursday"; }
+            else if ($weekday == $calendar->weekly_friday())    { $dayName =  "Friday"; }
+            else if ($weekday == $calendar->weekly_saturday())  { $dayName =  "Saturday"; }
+            else if ($weekday == $calendar->weekly_sunday())    { $dayName =  "Sunday"; }
+          ?>
+          <?php if ($weekday != "") { ?>
+            <div class="day">
+              <div class="inner">
+                <div class="title">
+                  <?php if ($dayCount == 1) { echo 'Today'; }
+                    else if ($dayCount == 2) { echo 'Tomorrow'; }
+                    else { echo $dayName; }
+                  ?>
+                </div>
+                <div class="items">
+                  <?php foreach ($weekday->toStructure() as $event) { ?>
+                    <div class="item">
+                    
+                      <!-- WHEN -->
+                      <?php if ($event->all_day() == "1") { ?>
+                        <div class="when">All Day</div>
+                      <?php } else if ($event->begins() != "" && $event->ends()) { ?>
+                        <div class="when"><?= date("g:ia", strtotime($event->begins())); ?> - <?= date("g:ia", strtotime($event->ends())); ?></div>
+                      <?php } else if ($event->begins() != "") { ?>
+                        <div class="when"><?= date("g:ia", strtotime($event->begins())); ?></div>
+                      <?php } else if ($event->ends() != "") { ?>
+                        <div class="when">'til <?= date("g:ia", strtotime($event->ends())); ?></div>
+                      <?php } ?>
+
+                      <!-- TITLE -->
+                      <?php if ($event->title() != "") { ?>
+                        <div class="name"><?= $event->title(); ?></div>
+                      <?php } ?>
+
+                      <!-- Description -->
+                      <div class="desc"><?= $event->desc()->kirbytext(); ?></div>
+                    </div>
+                  <?php } ?>
+
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="day">
-          <div class="inner">
-            <div class="title">Sunday</div>
-            <div class="items">
-              <div class="item">
-                <div class="when">11am</div>
-                <div class="name">Grumpy's Brunch</div>
-                <div class="desc">Try the 666—six sour cream pancakes, six sausage links and six ounces of maple syrup</div>
-              </div>
-              <div class="item">
-                <div class="when">10pm</div>
-                <div class="name">21 Bingo</div>
-                <div class="desc">It's our way of letting you have a chance at winning back some of your drinking money</div>
-              </div>
-            </div>
-          </div>
-        </div>
-  </section><a name="taps"></a>
+          <?php } ?>
+        <?php } ?>
+
+      </section>
+
+
+    <?php } ?>
+
+
+  <?php } ?>
+  <a name="taps"></a>
   <div class="tap-list">
     <div class="headline">Beers on tap...</div>
     <div class="taps">

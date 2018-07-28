@@ -899,6 +899,10 @@ main.location {
     background-image: url(../svg/bubblebox-red.svg); }
   main.location .hero {
     position: relative; }
+    main.location .hero figure {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
     main.location .hero .social-links {
       position: absolute;
       right: 0;
@@ -1589,5 +1593,3 @@ main.location {
   @media (min-width: 601px) {
     .full-menu .menu-section {
       margin-bottom: 2em; } }
-
-/*# sourceMappingURL=grumpys.css.map */
