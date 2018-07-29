@@ -84,7 +84,7 @@ main.location {
 
     .hero { margin-bottom: 40px;
       .hours { font-size:135%; }
-      .details { padding-left: 20px; padding-right: 20px; font-size:12px;
+      .details { padding-left: 20px; padding-right: 20px; padding-top: 120px; font-size:12px;
         
         address { display: none; }
         .phone { font-size:185%; color:$yellow; margin-top: 1em; }
@@ -112,7 +112,9 @@ main.location {
     }
 
     .hero { @include flex-container(); position: relative; height: 40vh;
-      .details-holder { @include flex-item(33%,0); padding-left: 80px; }
+      .details-holder { @include flex-item(33%,0); padding-left: 80px;
+        .details { background: $yellow; padding: 1em 2em; border: 2px solid darken($yellow,25%); color: black; display: inline-block;}
+      }
       
       address, .phone { font-size:135%; }
       address a:hover, .phone a:hover { background:$teal; }

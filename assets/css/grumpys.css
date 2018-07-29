@@ -1027,6 +1027,7 @@ main.location {
     main.location .hero .details {
       padding-left: 20px;
       padding-right: 20px;
+      padding-top: 120px;
       font-size: 12px; }
       main.location .hero .details address {
         display: none; }
@@ -1115,6 +1116,12 @@ main.location {
       -ms-flex-item-align: auto;
       align-self: auto;
       padding-left: 80px; }
+      main.location .hero .details-holder .details {
+        background: #FBF2C0;
+        padding: 1em 2em;
+        border: 2px solid #f3d948;
+        color: black;
+        display: inline-block; }
     main.location .hero address, main.location .hero .phone {
       font-size: 135%; }
     main.location .hero address a:hover, main.location .hero .phone a:hover {
@@ -1233,13 +1240,11 @@ main.location {
   @media (min-width: 631px) and (max-width: 930px) {
     .tap-list .taps {
       grid-template-columns: 1fr 1fr 1fr; } }
-  @media (min-width: 431px) and (max-width: 630px) {
+  @media (max-width: 630px) {
     .tap-list .taps {
-      grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 430px) {
-    .tap-list .taps {
-      grid-template-columns: 1fr;
-      grid-gap: 0; } }
+      grid-template-columns: 1fr 1fr; }
+      .tap-list .taps .tap:before, .tap-list .taps .tap:after {
+        height: 12px; } }
 
 @media (min-width: 431px) {
   .tap-list .tap {

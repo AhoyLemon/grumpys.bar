@@ -18,11 +18,14 @@
             <div class="style"><?= $tap->style(); ?></div>
           <?php } ?>
 
-          <?php if ($tap->abv() != "") { ?>
+          <?php if ($tap->abv()->isNotEmpty() && $tap->ibu()->isNotEmpty() ) { ?>
+            <div class="abv-and-ibu">
+              <span class="abv"><?= $tap->abv(); ?>% ABV</span>, 
+              <span class="ibu"><?= $tap->abv(); ?> IBU</span>
+            </div>
+          <?php } else if ($tap->abv() != "") { ?>
             <div class="abv"><?= $tap->abv(); ?>% ABV</div>
-          <?php } ?>
-
-          <?php if ($tap->ibu() != "") { ?>
+          <?php } else if ($tap->ibu() != "") { ?>
             <div class="ibu"><?= $tap->ibu(); ?> IBU</div>
           <?php } ?>
 
