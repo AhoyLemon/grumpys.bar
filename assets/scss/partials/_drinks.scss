@@ -51,8 +51,8 @@
       &:after { background-image:url('../svg/untappd_odd.svg'); }
     }
     &:nth-child(even) { 
-      &:before { background-image:url('../svg/pl_even.svg');  }
-      &:after { background-image:url('../svg/pl_even.svg'); }
+      &:before { background-image:url('../svg/untappd_even.svg');  }
+      &:after { background-image:url('../svg/untappd_even.svg'); }
     }
 
     .content { background:#FECE0C; text-align: center; @include flex-center(); min-height: 80px;

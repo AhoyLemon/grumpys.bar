@@ -10,17 +10,17 @@ Taps:
   style: Japanese Rice Lager
   abv: "5"
   ibu: ""
-  price: ""
-  pour: ""
+  price: "6"
+  pour: "16"
   _fieldset: tap
 - 
   name: Hefeweisen
   brewery: Fair State
   style: ""
-  abv: ""
-  ibu: ""
-  price: ""
-  pour: ""
+  abv: "4.8"
+  ibu: "13"
+  price: "6"
+  pour: "16"
   _fieldset: tap
 - 
   name: Shoutao
@@ -28,15 +28,154 @@ Taps:
   style: Milkshake IPA
   abv: "7"
   ibu: "60"
-  price: ""
-  pour: ""
+  price: "7"
+  pour: "12"
+  _fieldset: tap
+- 
+  name: Pils
+  brewery: Fair State
+  style: ""
+  abv: "5.1"
+  ibu: "40"
+  price: "5.5"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Lonely Blonde
+  brewery: Fulton
+  style: ""
+  abv: "4.8"
+  ibu: "29"
+  price: "5.5"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Standard
+  brewery: Fulton
+  style: Lager
+  abv: "4.5"
+  ibu: "30"
+  price: "5"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Flock Together on Nitro
+  brewery: Indeed
+  style: Blonde Ale
+  abv: "5.8"
+  ibu: "25"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Dakota Soul
+  brewery: Summit
+  style: Czech Pilsner
+  abv: "4.8"
+  ibu: "28"
+  price: "5.5"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: 'High & Dry Brut IPA'
+  brewery: Indeed
+  style: ""
+  abv: "5.6"
+  ibu: "20"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: First Light
+  brewery: Able Seedhouse
+  style: IPA
+  abv: "6"
+  ibu: "60"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Furious
+  brewery: Surly
+  style: IPA
+  abv: "6.6"
+  ibu: "100"
+  price: "5.5"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: 14° ESB (Nitro)
+  brewery: Bent Paddle
+  style: Extra Special Strong Bitter
+  abv: "5.6"
+  ibu: "32"
+  price: "6"
+  pour: "16"
   _fieldset: tap
 - 
   name: Day Tripper
-  brewery: Indeed
+  brewery: Pale Ale
   style: Pale Ale
-  abv: ""
-  ibu: ""
-  price: ""
-  pour: ""
+  abv: "5.4"
+  ibu: "45"
+  price: "5.5"
+  pour: "16"
   _fieldset: tap
+- 
+  name: Extra Pale Ale
+  brewery: Summit
+  style: Pale Ale
+  abv: "5.2"
+  ibu: "45"
+  price: "5.5"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Cherry Rhubarb Scrumpy
+  brewery: Sweetland Orchard
+  style: Cider
+  abv: "6.95"
+  ibu: ""
+  price: "6"
+  pour: "12"
+  _fieldset: tap
+- 
+  name: Milk Stout Nitro
+  brewery: Left Hand
+  style: ""
+  abv: "6"
+  ibu: "25"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Imperial Stout
+  brewery: Lagunitas
+  style: ""
+  abv: "9.9"
+  ibu: "72"
+  price: "7"
+  pour: "12"
+  _fieldset: tap
+- 
+  name: Rosetta 2018
+  brewery: Ommegang
+  style: 'Sour - Flanders Oud Bruin'
+  abv: "5.5"
+  ibu: ""
+  price: "8"
+  pour: "12"
+  _fieldset: tap
+- 
+  name: "Pineapple Falconer's Sour"
+  brewery: Able Seedhouse
+  style: ""
+  abv: "4.6"
+  ibu: "8"
+  price: "7"
+  pour: "12"
+  _fieldset: tap
+
+----
+
+Untappd-url: 

@@ -169,3 +169,17 @@ Weekly-sunday:
   title: ""
   desc: $2 tall boys from our vast selection
   _fieldset: event
+
+----
+
+Single-events: 
+
+- 
+  event_date: 2018-08-03
+  event_time: 14:00
+  name: Pils Party
+  desc: |
+    **featuring**
+    Bauhaus Wunderstuff, Fair State Pils, Finnegans East Town, Fulton Pilsner, Firstenburg, Indeed B-Side Pils, Summit Dakota Soul, Victory Prima Pils, Firestone Walker Pivo Pils, Schell's Pils
+  publish: ""
+  _fieldset: event_text

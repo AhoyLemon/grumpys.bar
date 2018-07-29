@@ -40,7 +40,7 @@
         a { color:$black; }
       }
       a { color:$yellow; font-weight: $bold; font-size:120%; text-decoration: none; cursor: pointer; display: block; padding-top: 0.6em; padding-bottom: 0.6em; }
-      &.active { background:$teal;
+      &.active { background:$orange;
         a { color:$black; cursor: default; }
       }
     }

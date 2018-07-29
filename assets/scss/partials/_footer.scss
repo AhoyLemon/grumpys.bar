@@ -21,7 +21,7 @@ footer { background: url(../svg/footer.svg); z-index: $z-footer; position: relat
     .check { text-align: center; font-size:1.8em; color:$teal; font-weight: $bold; }
     .both { @include flex-container(); }
     .friend { @include flex-item(50%); text-align: center;  }
-    img { max-width: 130px;}
+    img { max-height: 100px;}
   }
 
 }

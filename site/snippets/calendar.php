@@ -22,6 +22,12 @@
   
   <?php $dayCount = 0; $dayName = "Error"; ?>
 
+  <?php foreach($calendar->single_events()->toStructure() as $singleEvent) { ?>
+    
+    <?php snippet('single_event', ['event' => $singleEvent]) ?>
+
+  <?php } ?>
+
   <?php foreach ($lineup as $weekday) { ?>
     <?php
       $dayCount++;

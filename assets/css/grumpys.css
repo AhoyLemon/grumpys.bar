@@ -297,6 +297,10 @@ svg {
     .image-carousel .slick-dots li.slick-active button {
       background: #eee; }
 
+.slick-list .slick-slide {
+  cursor: -webkit-grab;
+  cursor: grab; }
+
 [v-cloak] {
   display: none !important; }
 
@@ -433,7 +437,7 @@ svg * {
       padding-top: 0.6em;
       padding-bottom: 0.6em; }
     header .link.active {
-      background: #00B0B3; }
+      background: #C6943B; }
       header .link.active a {
         color: #414042;
         cursor: default; }
@@ -566,7 +570,7 @@ footer {
       align-self: auto;
       text-align: center; }
     footer .our-friends img {
-      max-width: 130px; }
+      max-height: 100px; }
 
 @media (max-width: 600px) {
   footer .location {
@@ -1130,6 +1134,32 @@ main.location {
   margin: 20px; }
   .calendar:not(.slick-initialized) {
     display: none; }
+  .calendar .single-event figure {
+    text-align: center; }
+  .calendar .single-event img {
+    max-width: 100%;
+    max-height: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .calendar .single-event.event-text {
+    padding: 1em; }
+    .calendar .single-event.event-text .inner {
+      padding: 1em;
+      background: #00B0B3; }
+    .calendar .single-event.event-text .when {
+      font-family: "Oleo Script", cursive;
+      font-size: 3em;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: -0.04em 0.04em 0 #414042; }
+    .calendar .single-event.event-text .details {
+      background: #fff;
+      padding: 1em; }
+    .calendar .single-event.event-text .name {
+      font-size: 185%;
+      color: #ee2a2a;
+      font-weight: 900; }
   .calendar .day {
     padding: 1em; }
     .calendar .day .inner {
@@ -1274,9 +1304,9 @@ main.location {
   .tap-list .untappd-link:nth-child(odd):after {
     background-image: url("../svg/untappd_odd.svg"); }
   .tap-list .untappd-link:nth-child(even):before {
-    background-image: url("../svg/pl_even.svg"); }
+    background-image: url("../svg/untappd_even.svg"); }
   .tap-list .untappd-link:nth-child(even):after {
-    background-image: url("../svg/pl_even.svg"); }
+    background-image: url("../svg/untappd_even.svg"); }
   .tap-list .untappd-link .content {
     background: #FECE0C;
     text-align: center;
@@ -1595,3 +1625,5 @@ main.location {
   @media (min-width: 601px) {
     .full-menu .menu-section {
       margin-bottom: 2em; } }
+
+/*# sourceMappingURL=grumpys.css.map */

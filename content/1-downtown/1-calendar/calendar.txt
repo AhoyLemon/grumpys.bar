@@ -98,3 +98,18 @@ Weekly-sunday:
   title: 21 Bingo (free)
   desc: "It's our way of letting you have a chance at winning back some of your drinking money"
   _fieldset: event
+
+----
+
+Single-events-headline: 
+
+- 
+  pic: folkfest20.jpg
+  alt: 20th Annual NE Folkfest
+  publish: ""
+  expires: 2018-07-31
+  _fieldset: event
+
+----
+
+Single-events: 

@@ -1,10 +1,67 @@
 title: Calendar
 pages: false
-files: false
+files: true
 fields:
   title:
     label: Title
     type:  text
+
+  single_events_headline:
+    label: Single Events
+    type: headline
+
+  single_events:
+    label: Single Events
+    type: builder
+    fieldsets:
+      event_image:
+        label: Event w/ Image
+        snippet: builder/single_event_image
+        fields:
+          pic:
+            label: Pic
+            type: image
+            width: 1/2
+          alt:
+            label: Description
+            type: text
+            help: (for SEO)
+            width: 1/2
+          publish:
+            label: Publish Date
+            type: date
+            help: If blank, will publish immediately
+            width: 1/2
+          expires:
+            label: Expire Date
+            type: date
+            required: true
+            width: 1/2
+      event_text:
+        label: Event w/ Text
+        snippet: builder/single_event_text
+        fields:
+          event_date:
+            label: Event Date
+            type: date
+            width: 1/2
+            required: true
+          event_time:
+            label: Start Time
+            type: time
+            width: 1/2
+            required: true
+          name:
+            label: Name
+            type: text
+          desc:
+            label: Description
+            type: textarea
+          publish:
+            label: Publish Date
+            type: date
+            help: If blank, will publish immediately
+            width: 1/2
 
   weekly_headline:
     label: Weekly Events
