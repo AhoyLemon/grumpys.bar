@@ -10,9 +10,15 @@ fields:
   title:
     label: Title
     type:  text
+
+  info_headline:
+    label: Location Info
+    type: headline
+    help: This will populate info in several different pages.
   hours:
     label: Hours
     type: textarea
+    buttons: false
   map:
     label: Map URL
     type: url
@@ -58,6 +64,7 @@ fields:
     required: true
   heroes:
     label: Hero Images
+    help: This will show up on location page, next to the hours and address.
     type: builder
     #style: table
     fieldsets:
@@ -75,10 +82,17 @@ fields:
             type: text
             help: (for SEO)
   
+  # META INFO
+  meta_headline:
+    extends: meta_headline
+  meta_description:
+    extends: meta_description
+  twitter_image:
+    extends: twitter_image
+  og_image:
+    extends: og_image
+
   section_headline:
     label: Define Sections
-    type: info
-    text: >
-      Use the pages (at left) to define the sections that will appear on this page.
-
-      The number of the page defines the order, invisible pages will not be shown.
+    type: headline
+    help: ⬅️ Use the pages (at left) to define the sections that will appear on this page. <br />The number of the page defines the order, invisible pages will not be shown.

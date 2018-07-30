@@ -1,0 +1,6 @@
+label: Meta Description
+type: text
+validate:
+  maxLength: 180
+icon: code
+help: Overwrites page description, twitter description and open graph description

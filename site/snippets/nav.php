@@ -11,17 +11,32 @@
         <?php } ?>  
       <?php } else if ($page->parent()->template() == "location") { ?>
         <?php foreach ($page->parent()->children()->visible() as $anchor) { ?>
-          <div class="link">
-            <a href="<?= $anchor->slug(); ?>">
+
+          <div class="link <?php if ($anchor->isOpen()) { echo 'active'; } ?>">
+            <a href="<?= $anchor->url(); ?>">
               <?= $anchor->title(); ?>
             </a>
           </div>
         <?php } ?>
       <?php } ?>
-      <div class="logo-holder"><a href="<?= $site->url(); ?>"><img class="logo" src="<?= $site->url(); ?>/assets/svg/logo_header.svg"></a></div>
-      <div class="link"><a href="northeast.html">Northeast</a></div>
-      <div class="link"><a href="roseville.html">Roseville</a></div>
-      <div class="link active"><a class="active" href="downtown.html">Downtown</a></div>
+      <div class="logo-holder"><a href="<?= $site->url(); ?>"><img class="logo" src="<?= $site->url(); ?>/assets/svg/logo_head.svg"></a></div>
+      
+      <?php foreach ($site->children()->visible()->filterBy('template', 'location') as $location) { ?>
+        <?php if (strpos($page->url(), $location->slug()) !== false) { ?>
+          <div class="link active">
+            <a href="<?= $location->url(); ?>">
+              <?= $location->title(); ?>
+            </a>
+          </div>
+        <?php } else { ?>
+          <div class="link">
+            <a href="<?= $location->url(); ?>">
+              <?= $location->title(); ?>
+            </a>
+          </div>
+        <?php } ?>
+      <?php } ?>
+
     </nav>
   </div>
 </header>
