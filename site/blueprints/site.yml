@@ -35,24 +35,30 @@ fields:
     type: text
     help: "ex: $$"
     required: true
-    width: 1/3
+    width: 1/4
   schema_image:
     label: Image
     type: image
     help: "This should be a location photo, not a logo."
     required: true
-    width: 1/3
+    width: 1/4
   schema_logo:
     label: Logo
     type: image
     help: "PNG or SVG"
     required: true
-    width: 1/3
+    width: 1/4
+  serves_cuisine:
+    label: Serves Cuisine
+    type: text
+    help: "ex: American"
+    required: true
+    width: 1/4
   schema_attributes:
     label: Additional Schema
     type: structure
     style: table
-    help: Refer to http://schema.org/LocalBusiness for more info.
+    help: Refer to http://schema.org/Restaurant for more info.
     fields:
       property:
         label: Property

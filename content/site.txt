@@ -31,3 +31,14 @@ Schema-logo: logo1200.png
 ----
 
 Schema-attributes: 
+
+- 
+  property: parentOrganization
+  value: "Grumpy's"
+- 
+  property: paymentAccepted
+  value: Cash,Credit
+
+----
+
+Serves-cuisine: American

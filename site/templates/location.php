@@ -107,10 +107,16 @@
 
   <?php } ?>
 
+<?php
+  if ($page->meta_description() != "")  { $description = $page->meta_description()->xml();
+  } else if ($page->text() != "")       { $description = excerpt($page->text()->xml(), 180);
+  } else                                { $description = $site->meta_description()->xml(); }
+?>
+
   <script type="application/ld+json">
 {
   "@context": "http://schema.org",
-  "@type": "Restaurant",
+  "@type": "BarOrPub",
   "name": "<?= $site->title(); ?> <?= $page->title(); ?>",
   "url": "<?= $page->url(); ?>",
   "sameAs": [
@@ -119,26 +125,24 @@
   ],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "<?= $page->street_address(); ?>",
+    "streetAddress":   "<?= $page->street_address(); ?>",
     "addressLocality": "<?= $page->city(); ?>",
-    "addressRegion": "<?= $page->state(); ?>",
-    "postalCode": "<?php $page->zip(); ?>"
+    "addressRegion":   "<?= $page->state(); ?>",
+    "postalCode":      "<?= $page->zip(); ?>"
   },
   "image": "<?= $page->homeshot()->toFile()->url(); ?>",
   "logo": "<?= $site->schema_logo()->toFile()->url(); ?>",
   "acceptsReservations": false,
-  "servesCuisine": "American",
+  "servesCuisine": "<?= $site->serves_cuisine(); ?>",
   <?php if ($page->children()->visible()->filterBy('template', 'food')) { ?>
     "hasMenu": "<?= $site->url(); ?>/<?= $page->children()->visible()->filterBy('template', 'food'); ?>",
   <?php } ?>
   "telephone": "<?= $page->phone(); ?>",
-  "description": "For weddings or corporate events",
-  "parentOrganization": "Grumpy's",
-  "paymentAccepted": [
-    "Cash",
-    "Credit Card"
-  ],
-  "priceRange": "$"
+  "description": "<?= $description; ?>",
+  <?php foreach ($site->schema_attributes()->toStructure() as $schema) { ?>
+    "<?= $schema->property(); ?>": "<?= $schema->value(); ?>",
+  <?php } ?>
+  "priceRange": "<?= $site->schema_pricerange(); ?>"
 }
 </script>
 
