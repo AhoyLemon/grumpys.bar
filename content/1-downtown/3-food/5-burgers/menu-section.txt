@@ -1,0 +1,86 @@
+Title: Burgers
+
+----
+
+Builder: 
+
+- 
+  text: 'Served with pickle spear & potato chips. Substitute fries, tater tots or veggies for $1.99, or onion rings for $2.45'
+  _fieldset: menu_text
+- 
+  name: Garlic Cheese Burger
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: "Lil' Grumpy Burgers or Chicken Sliders"
+  price: $7.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Big Assed Breakfast Burger
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Spud Burger
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Veggie Burger
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: "Mac 'N Chili Burger"
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Garlic Bomb Burger
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Slow Burn Burger
+  price: $11.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: The Burgermeister
+  price: $11.99
+  text: >
+    Slathered with bacon, mushrooms, swiss
+    cheese and in true German tradition, a
+    side of tap beer (served in a glass of
+    course).
+  _fieldset: menu_item
+- 
+  name: Juicy Lucy
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Cream Cheese Burger
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: The Elvis
+  price: $10.99
+  text: 'Half a pound of 100% Certified Hereford Beef grilled to order & topped with peanut butter and crispy bacon! Okay, it sounds weird but once you try it you’ll be hooked.'
+  _fieldset: menu_item
+- 
+  name: Paddy Melt
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: "Build Your Own Fuckin' Whatever"
+  price: $10.99
+  text: |
+    Start with your choice of 1/2 lb burger, grilled chicken or 2 hot dogs. Then add your toppings from the list below.
+    Mushrooms, Sauteed Onions, Bell Peppers, Pineapple, Sour Cream, American, Swiss, Cheddar Jack, Bleu Cheese, Mozzarella, Pepper Jack, Provolone, Fried Egg, Chili, Guacamole or Sauerkraut for $1.00 each.
+    Ham, Turkey or Bacon $1.99 each.
+  _fieldset: menu_item

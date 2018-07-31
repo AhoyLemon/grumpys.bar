@@ -449,7 +449,7 @@ svg * {
       z-index: 11;
       left: 0;
       right: 0;
-      top: -60px; } }
+      bottom: -1.3vw; } }
 
 footer {
   background: url(../svg/footer.svg);
@@ -1509,7 +1509,7 @@ main.location {
         padding-left: 10px;
         padding-right: 10px; } }
   .full-menu .section-title {
-    font-size: 150%;
+    font-size: 200%;
     color: #00B0B3;
     font-weight: 900;
     margin-bottom: 0.25em; }
@@ -1570,6 +1570,8 @@ main.location {
       padding-top: 0.5em; }
     .full-menu .menu-item:nth-child(even) {
       background-color: rgba(198, 148, 59, 0.3); }
+    .full-menu .menu-item.menu-text {
+      padding: 1.25em; }
   .full-menu .page.food {
     grid-gap: 40px;
     display: grid; }

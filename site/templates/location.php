@@ -106,6 +106,42 @@
     <?php } ?>
 
   <?php } ?>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "name": "<?= $site->title(); ?> <?= $page->title(); ?>",
+  "url": "<?= $page->url(); ?>",
+  "sameAs": [
+    "<?= $page->twitter(); ?>",
+    "<?= $page->facebook(); ?>"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "<?= $page->street_address(); ?>",
+    "addressLocality": "<?= $page->city(); ?>",
+    "addressRegion": "<?= $page->state(); ?>",
+    "postalCode": "<?php $page->zip(); ?>"
+  },
+  "image": "<?= $page->homeshot()->toFile()->url(); ?>",
+  "logo": "<?= $site->schema_logo()->toFile()->url(); ?>",
+  "acceptsReservations": false,
+  "servesCuisine": "American",
+  <?php if ($page->children()->visible()->filterBy('template', 'food')) { ?>
+    "hasMenu": "<?= $site->url(); ?>/<?= $page->children()->visible()->filterBy('template', 'food'); ?>",
+  <?php } ?>
+  "telephone": "<?= $page->phone(); ?>",
+  "description": "For weddings or corporate events",
+  "parentOrganization": "Grumpy's",
+  "paymentAccepted": [
+    "Cash",
+    "Credit Card"
+  ],
+  "priceRange": "$"
+}
+</script>
+
   
   <section class="menu-stripe">
     <div class="diamonds">

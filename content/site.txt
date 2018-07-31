@@ -3,3 +3,31 @@ Title: Grumpy's Bar
 ----
 
 Text: 
+
+----
+
+Meta-description: The Twin Cities' Best In Food and Booze Fer Years!
+
+----
+
+Twitter-image: og_600_square.png
+
+----
+
+Og-image: og_600_square.png
+
+----
+
+Schema-pricerange: $
+
+----
+
+Schema-image: dt_exterior.jpg
+
+----
+
+Schema-logo: logo1200.png
+
+----
+
+Schema-attributes: 

@@ -43,17 +43,108 @@ Weekly-monday:
 
 Weekly-tuesday: 
 
+- 
+  begins: 15:00
+  ends: 19:00
+  all_day: 'no'
+  title: ""
+  desc: >
+    $1 off beer, cocktails and appetizers;
+    $4.50 wings
+  _fieldset: event
+- 
+  begins: 21:00
+  ends: 23:00
+  all_day: 'no'
+  title: Trivia Mafia
+  desc: ""
+  _fieldset: event
+- 
+  begins: 21:00
+  ends: 02:00
+  all_day: 'no'
+  title: ""
+  desc: >
+    Half-priced bottles of wine, $2.50 PBR,
+    $3.50 rail drinks
+  _fieldset: event
+
 ----
 
 Weekly-wednesday: 
+
+- 
+  begins: 11:00
+  ends: 19:00
+  all_day: 'no'
+  title: ""
+  desc: >
+    $1 off beer, cocktails and appetizers;
+    $2 domestic bottles and cans; $3 rail
+    drinks; $4.50 wings
+  _fieldset: event
+- 
+  begins: 21:00
+  ends: 02:00
+  all_day: 'no'
+  title: ""
+  desc: >
+    $2.50 PBR tall boys, $4 Stoli drinks,
+    $4.50 Red Breast Whiskey
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 01:00
+  all_day: 'no'
+  title: Death Comedy Jam
+  desc: >
+    Test your material or just sit back and
+    heckle the newbies. It makes no
+    difference to these guys whether you
+    laugh or cry.
+  _fieldset: event
 
 ----
 
 Weekly-thursday: 
 
+- 
+  begins: 15:00
+  ends: 19:00
+  all_day: 'no'
+  title: ""
+  desc: >
+    $1 off beer, cocktails and appetizers;
+    $4.50 wings
+  _fieldset: event
+- 
+  begins: 21:00
+  ends: 02:00
+  all_day: 'no'
+  title: ""
+  desc: $2.50 tall boys
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 02:00
+  all_day: 'no'
+  title: Karaoke
+  desc: ""
+  _fieldset: event
+
 ----
 
 Weekly-friday: 
+
+- 
+  begins: 15:00
+  ends: 19:00
+  all_day: 'no'
+  title: ""
+  desc: >
+    $1 off beer, cocktails and appetizers;
+    $4.50 wings
+  _fieldset: event
 
 ----
 

@@ -1,0 +1,57 @@
+Title: Soups
+
+----
+
+Builder: 
+
+- 
+  text: >
+    Choose from a CUP ($4.99) or BOWL
+    ($5.99)
+  _fieldset: menu_text
+- 
+  name: "Grumpy's Mac 'N Cheese"
+  price: ""
+  text: >
+    Ya take yer Mac ’N Cheese, add some
+    brats to counter the carbs and you’ll
+    keep warm all night. Served with texas
+    toast. Mmmmmm!
+  _fieldset: menu_item
+- 
+  name: "Mom's Homemade Chili"
+  price: ""
+  text: 'Grumpy is far too ornery to even have a mother, so we’re not sure whose Mom’s this is. But we do know top-notch chili when we taste it. Topped with cheddar jack & green onions and served with sour cream & Texas Toast.'
+  _fieldset: menu_item
+- 
+  name: "Grumpy's Soup"
+  price: ""
+  text: >
+    They’re different every day, always
+    made from scratch and will have you
+    upending your bowl for every last drop.
+    Served with texas toast.
+  _fieldset: menu_item
+- 
+  name: Vegan Chili
+  price: ""
+  text: >
+    If Grumpys Mom was a hippy this is what
+    she’d make. Just as flavorful as the
+    “real” thing, but without the meat.
+    (Or as Grumpy would say, “It’s full
+    of beans.”)
+  _fieldset: menu_item
+- 
+  name: Beer Cheese Soup
+  price: ""
+  text: >
+    Grumpys own recipe. Beer... Cheese...
+    What more could you possibly need? Comes
+    with a side of toasted baguette.
+  _fieldset: menu_item
+- 
+  name: 'Soup & 1/2 Sandwich'
+  price: $8.99
+  text: 'A cup of the Soup ‘O The Day and your choice of any cold deli sandwich toppped with lettuce, tomato & mayo.'
+  _fieldset: menu_item

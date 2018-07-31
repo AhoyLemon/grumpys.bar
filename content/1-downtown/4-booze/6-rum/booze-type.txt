@@ -1,0 +1,24 @@
+Title: Rum
+
+----
+
+Builder: 
+
+- 
+  name: Bacardi
+  variant_a: Limon
+  variant_b: ""
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Captain Morgan
+  _fieldset: brand
+- 
+  name: Meyers Dark
+  _fieldset: brand
+- 
+  name: Sailor Jerry
+  _fieldset: brand

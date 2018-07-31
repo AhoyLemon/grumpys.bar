@@ -1,0 +1,51 @@
+Title: Liqueurs
+
+----
+
+Builder: 
+
+- 
+  name: "Brady's Irish Cream"
+  _fieldset: brand
+- 
+  name: Campari
+  _fieldset: brand
+- 
+  name: Cruzan Coconut
+  _fieldset: brand
+- 
+  name: Fernet Branca
+  _fieldset: brand
+- 
+  name: Kahlua
+  _fieldset: brand
+- 
+  name: Midori
+  _fieldset: brand
+- 
+  name: Pimms
+  _fieldset: brand
+- 
+  name: Polish Brandy
+  _fieldset: brand
+- 
+  name: RumChata
+  _fieldset: brand
+- 
+  name: Rumpleminze
+  _fieldset: brand
+- 
+  name: Sambuca
+  variant_a: Black
+  variant_b: ""
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Sloe Gin
+  _fieldset: brand
+- 
+  name: Southern Comfort
+  _fieldset: brand

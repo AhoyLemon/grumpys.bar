@@ -1,0 +1,70 @@
+title: Site
+pages:
+  template:
+    - events
+    - spaces
+    - menus
+    - contact
+    - default
+
+fields:
+  title:
+    label: Title
+    type:  text
+    
+  og_header:
+    label: Social
+    type: headline
+    help: (for Facebook, Twitter, Pinterest, LinkedIn, etc)
+  meta_description:
+    extends: meta_description
+    help: This will be used as the backup description for any page which doesn't have one.
+  twitter_image:
+    extends: twitter_image
+    required: true
+  og_image:
+    extends: og_image
+    required: true
+    
+  schema_header:
+    label: Schema.org data
+    type: headline
+    help: "This helps out the website's SEO in subtle but important ways"
+  schema_pricerange:
+    label: Price Range
+    type: text
+    help: "ex: $$"
+    required: true
+    width: 1/3
+  schema_image:
+    label: Image
+    type: image
+    help: "This should be a location photo, not a logo."
+    required: true
+    width: 1/3
+  schema_logo:
+    label: Logo
+    type: image
+    help: "PNG or SVG"
+    required: true
+    width: 1/3
+  schema_attributes:
+    label: Additional Schema
+    type: structure
+    style: table
+    help: Refer to http://schema.org/LocalBusiness for more info.
+    fields:
+      property:
+        label: Property
+        required: true
+        type: text
+      value:
+        label: Value
+        required: true
+        type: text
+  schema_info:
+    type: info
+    text: > 
+      Adjust as you see fit, but please be careful.
+      
+      After adjusting any schema information, *please* test it thru the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) to make sure there are no errors.

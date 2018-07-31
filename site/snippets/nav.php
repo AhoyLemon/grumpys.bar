@@ -19,7 +19,7 @@
           </div>
         <?php } ?>
       <?php } ?>
-      <div class="logo-holder"><a href="<?= $site->url(); ?>"><img class="logo" src="<?= $site->url(); ?>/assets/svg/logo_head.svg"></a></div>
+      <div class="logo-holder"><a href="<?= $site->url(); ?>"><img class="logo" src="<?= $site->url(); ?>/assets/svg/logo_header.svg"></a></div>
       
       <?php foreach ($site->children()->visible()->filterBy('template', 'location') as $location) { ?>
         <?php if (strpos($page->url(), $location->slug()) !== false) { ?>

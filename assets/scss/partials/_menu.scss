@@ -50,7 +50,7 @@ $priceWidth: 6rem;
     @media (max-width:799px) { padding-left: 10px; padding-right: 10px; }
   }
   //.menu-section { }
-  .section-title { font-size:150%; color:$teal; font-weight: $bold; margin-bottom: 0.25em; }
+  .section-title { font-size:200%; color:$teal; font-weight: $bold; margin-bottom: 0.25em; }
   .section-text { text-align: center; font-size:110%; }
 
   .menu-item { @include flex-container(); padding:0.5rem;
@@ -59,6 +59,8 @@ $priceWidth: 6rem;
     .desc { @include flex-item(100%); padding-left: 1.5em; padding-right: $priceWidth; font-size:90%; padding-top: 0.5em; }
     
     &:nth-child(even) { background-color:rgba($orange,0.3); }
+
+    &.menu-text { padding:1.25em; }
   }
 
   //.page { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 40px; }

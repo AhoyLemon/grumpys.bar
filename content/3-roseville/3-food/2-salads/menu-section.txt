@@ -7,21 +7,12 @@ Builder:
 - 
   name: Strawberry Salad
   price: $10.99
-  text: >
-    Beautiful summer day in a bowl (who
-    writes this stuff?) Baby spinach,
-    strawberries, onion and honey mustard
-    dressing on side.
+  text: ""
   _fieldset: menu_item
 - 
   name: Ty Cobb Salad
   price: $13.99
-  text: >
-    A heavy hitter sans the bad attitude.
-    You name the dressing. Classic iceberg
-    topped with turkey, ham, bacon, hard
-    cooked eggs, avocado, diced tomatoes,
-    bleu cheese crumbles and black olives.
+  text: ""
   _fieldset: menu_item
 - 
   name: Aztec Salad
@@ -32,3 +23,38 @@ Builder:
     beans, corn and cheddar cheese, green
     onions and tortilla chips.
   _fieldset: menu_item
+- 
+  name: Bleu Bayou Salad
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Caesar A La Grumpy
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Greek Salad
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Picnic Salad
+  price: $12.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Spinach Flatbread Salad
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Caprese Salad
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  text: |
+    **SALAD DRESSINGS**
+    Ranch, Balsamic Vinaigrette, Caesar, Buttermilk Bleu, French, 1000 Island, Italian, Honey Mustard, Fat Free Italian or Oil & Vinegar
+  _fieldset: menu_text

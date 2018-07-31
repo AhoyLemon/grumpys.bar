@@ -1,0 +1,30 @@
+Title: Scotch
+
+----
+
+Builder: 
+
+- 
+  name: Abelour 12
+  _fieldset: brand
+- 
+  name: Dewars
+  _fieldset: brand
+- 
+  name: Glenfarclas
+  _fieldset: brand
+- 
+  name: Glenlivet
+  variant_a: Nadurra
+  variant_b: Oloroso
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Laphroiag
+  _fieldset: brand
+- 
+  name: MacCallan 12
+  _fieldset: brand

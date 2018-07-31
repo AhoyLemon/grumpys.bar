@@ -1,0 +1,57 @@
+Title: Salads
+
+----
+
+Builder: 
+
+- 
+  name: Taco Salad
+  price: "10.99"
+  text: >
+    Crispy flour tortilla chips mixed in
+    with shredded lettuce, cheddar Jack
+    cheese, tomatoes, jalapenos, onions and
+    black olives. Choice of Spicy Beef or
+    Chicken. Served with salsa and sour
+    cream
+  _fieldset: menu_item
+- 
+  name: Garlicky BLT Salad
+  price: $9.99
+  text: >
+    Deconstructed to garlicky goodness.
+    Romaine lightly dressed in a creamy
+    parmesan and garlic dressing, covered in
+    chopped bacon and cherry tomatoes.
+  _fieldset: menu_item
+- 
+  name: Thai Peanut Salad
+  price: $8.99
+  text: >
+    Mixed greens drizzled with a Thai Peanut
+    dressing, topped with peapods and
+    peanuts.
+  _fieldset: menu_item
+- 
+  name: Caesar A La Grumpy
+  price: ""
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Seasonal Greens
+  price: $7.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: 'Soup & Salad'
+  price: $6.99
+  text: >
+    Grumpys side dinner salad and a cup of
+    the Soup ‘O The Day help keep Mr.
+    Spare Tire away.
+  _fieldset: menu_item
+- 
+  text: |
+    **SALAD DRESSINGS**:
+    Ranch, Balsamic Vinaigrette, Caesar, Buttermilk Bleu, French, Italian, Honey Mustard
+  _fieldset: menu_text

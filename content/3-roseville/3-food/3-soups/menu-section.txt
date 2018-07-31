@@ -1,0 +1,39 @@
+Title: Soups
+
+----
+
+Builder: 
+
+- 
+  text: >
+    Choose from a CUP ($4.99) or BOWL
+    ($5.99)
+  _fieldset: menu_text
+- 
+  name: Chicken Wild Rice
+  price: ""
+  text: 'Rich and creamy, with seasoned chicken, yellow onions, wild rice, & celery'
+  _fieldset: menu_item
+- 
+  name: "Grumpy's Mac 'n Cheese"
+  price: ""
+  text: >
+    Think outside of the box on this one,
+    hearty with chunks of bratwurst. Dang
+    near a meal by itself!
+  _fieldset: menu_item
+- 
+  name: Chili
+  price: ""
+  text: >
+    Everyone has their own take on Chili.
+    It’s too bad they’re all wrong, and
+    we’re right!
+  _fieldset: menu_item
+- 
+  name: Soup Du Jour
+  price: ""
+  text: >
+    Umm... that’s french for soup of the
+    day!
+  _fieldset: menu_item

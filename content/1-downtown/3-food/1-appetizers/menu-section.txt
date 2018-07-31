@@ -10,7 +10,77 @@ Builder:
   text: 'Wing flavors are available in: Buffalo: Mild, Medium or Hot, Honey Sriracha, Thai Peanut, BBQ, Surly Furious BBQ or Teriyaki'
   _fieldset: menu_item
 - 
-  name: Pork and Kimchi Fries
+  name: Pulled Pork and Kimchi Fries
   price: $9.99
   text: ""
+  _fieldset: menu_item
+- 
+  name: Quesadillas
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Potato Skins
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Tex Mex Queso Rolls
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Beer Battered Onion Rings
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Fries or Tots
+  price: ""
+  text: |
+    **HALF:** $4.99
+    **FULL:** $6.99
+  _fieldset: menu_item
+- 
+  name: Nachos El Grumpy
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Midwestern Cream Cheese Rolls
+  price: $9.99
+  text: >
+    Our homemade eggrolls stuffed with cream
+    cheese and pickles, then thrown in the
+    fryer and cooked to golden perfection.
+  _fieldset: menu_item
+- 
+  name: Chicken Fingers
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: "Grumpy's Poutine"
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Mini Corndogs
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: State Fair Cheese Curds
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: "Mac 'n Cheese Bites"
+  price: $8.99
+  text: >
+    Straight out of the trailer park and on
+    to your plate. Fried and battered
+    macaroni and cheese. Almost as
+    entertaining as a shirtless dude with a
+    mullet on Cops!
   _fieldset: menu_item

@@ -1,0 +1,79 @@
+Title: Sandwiches
+
+----
+
+Builder: 
+
+- 
+  name: "Grilled Cheese or Ham 'N Cheese"
+  price: $7.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Hot Pastrami
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Grilled Reuben or Rachel
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: BBQ Chicken Sandwich
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Cajun Chicken Sandwich
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Buffalo Wing Chicken Sandwich
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: BLT
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Hammerhead Hoagie
+  price: $11.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: The Cuban
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Kim Chi Mock Duck Banh Mi
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Veggie Sandwich
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Pork Cake Sliders
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: "Hot Beef 'N Cheddar"
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Southwestern Turkey Sandwich
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  text: '**MAKE IT A WRAP!** Almost every sandwich here can be made as a wrap, just ask!'
+  _fieldset: menu_text

@@ -27,4 +27,11 @@ fields:
             placeholder: (include $)
           text:
             label: Item Desc
-            type: textarea
+            type: markdown
+      menu_text:
+        label: Menu Text
+        snippet: builder/menu_text
+        fields:
+          text:
+            label: Text
+            type: markdown

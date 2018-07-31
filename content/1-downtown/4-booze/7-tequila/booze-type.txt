@@ -1,0 +1,48 @@
+Title: Tequila
+
+----
+
+Builder: 
+
+- 
+  name: Altos Silver
+  variant_a: Reposado
+  variant_b: ""
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Avion Silver
+  _fieldset: brand
+- 
+  name: Cazadores Blanco
+  variant_a: Reposado
+  variant_b: ""
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Casamigos Blanco
+  variant_a: Reposado
+  variant_b: Anejo
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Patron
+  variant_a: Citronage
+  variant_b: XO Cafe
+  variant_c: ""
+  variant_d: ""
+  variant_e: ""
+  variant_f: ""
+  _fieldset: brand_variants
+- 
+  name: Sauza Gold
+  _fieldset: brand

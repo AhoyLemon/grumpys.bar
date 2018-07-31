@@ -1,0 +1,110 @@
+Title: Sandwiches
+
+----
+
+Builder: 
+
+- 
+  name: Buffalo Wing Chicken Sandwich
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Cajun Chicken Sandwich
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Hawaiian Chicken Sandwich
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: "Build Yer Own Fuckin' Chicken Sandwich"
+  price: $8.99
+  text: >
+    Okay, Mr./Mrs. Picky, pick yer own damn
+    toppings. Add mushrooms, sauteed onions,
+    pineapple, bell peppers, sour cream,
+    american, swiss, cheddar jack,
+    mozzarella, pepper cheese, or bleu
+    cheese for 99¢ Each ; Add bacon $1.99
+  _fieldset: menu_item
+- 
+  name: Southwestern Turkey Sandwich
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Tuna Melt El Paso
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Walleye Sanwich
+  price: $14.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: BBQ Chicken Sandwich
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Mock Duck BBQ Sandwich
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Coney Dogs, St. Paul Style
+  price: $9.99
+  text: '2 old-world homemade Coney sauce recipe dogs. THIS AIN’T A CHILI DOG! Grilled buns, mustard, cheese & onions.'
+  _fieldset: menu_item
+- 
+  name: Grilled Cheese
+  price: $7.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Hell on Wheels
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Hot Pastrami
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Grilled Reuben
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Rachel
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: BLT
+  price: $8.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: French Dip
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: Clubhouse
+  price: $10.99
+  text: ""
+  _fieldset: menu_item
+- 
+  name: The Cuban
+  price: $9.99
+  text: ""
+  _fieldset: menu_item
+- 
+  text: '**MAKE IT A WRAP!** Almost every sandwich here can be made as a wrap, just ask!'
+  _fieldset: menu_text
