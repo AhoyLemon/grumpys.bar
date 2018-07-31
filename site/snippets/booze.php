@@ -1,3 +1,4 @@
+<a name="<?= $boozeMenu->slug(); ?>"></a>
 <section class="menu full-menu">
   <h2><?= $boozeMenu->title(); ?></h2>
   <div class="inner">
