@@ -1222,6 +1222,10 @@ main.location {
     .tap-list .headline {
       font-size: 12vw; } }
 
+.tap-list .untapped-embed-container {
+  max-width: 666px;
+  margin-right: auto; }
+
 .tap-list .taps {
   display: grid;
   grid-gap: 20px; }

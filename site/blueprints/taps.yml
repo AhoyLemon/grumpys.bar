@@ -5,9 +5,33 @@ fields:
   title:
     label: Title
     type:  text
+
+  embed_toggle:
+    label: Embed Untappd menu?
+    type: fieldtoggle
+    width: 1/4
+    options:
+      no: "No"
+      yes: "Yes"
+    show:
+      yes: untapped_embed
+      no:  untappd_url
+    hide:
+      no:  untapped_embed
+      yes: untappd_url
+  
+  untapped_embed:
+    label: Embed Code
+    type: textarea
+    width: 3/4
+    buttons: false
   untappd_url:
-    label: Untappd URL
+    label: Untappd Page URL
+    width: 3/4
     type: url
+    help: This will be linked to
+
+
   taps:
     label: Beers on Tap
     type: builder

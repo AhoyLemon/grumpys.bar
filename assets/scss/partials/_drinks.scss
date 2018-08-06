@@ -8,6 +8,8 @@
     @media (max-width:799px) { font-size:12vw; }
   }
 
+  .untapped-embed-container { max-width: 666px; margin-right:auto; }
+
   .taps { display: grid; grid-gap: 20px;
     @media (min-width:1651px)                         { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
     @media (min-width:1361px) and (max-width:1650px)  { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
