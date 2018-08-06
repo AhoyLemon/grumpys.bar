@@ -32,7 +32,7 @@
   header.mobile { display: none; }
 
   header {
-    .inner { display: table; width:100%; margin-top:90px; background: $black; margin-bottom: 60px; z-index: $z-header; position: relative; }
+    .inner { display: table; width:100%; background: $black; margin-bottom: 60px; z-index: $z-header; position: relative; margin-top:3.8vw; }
     nav { display: table-row; }
     .link, .logo-holder { display: table-cell; }
     .link { text-align: center; text-transform: uppercase;
@@ -45,7 +45,7 @@
       }
     }
     .logo-holder { width:16%; position: relative;
-      .logo { position: absolute; z-index: $z-logo; left:0; right: 0; bottom:-1.3vw; }
+      .logo { position: absolute; z-index: $z-logo; left:0; right: 0; bottom:-2vw; }
     }
   }
 
