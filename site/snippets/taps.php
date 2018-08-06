@@ -5,6 +5,7 @@
   <?php /*  $tapList = $page->find('taps'); */ ?>
 
   <?php if ($tapList->embed_toggle() == "yes" && $tapList->untapped_embed()->isNotEmpty()) { ?>
+
     <div class="untapped-embed-container">
       <?= $tapList->untapped_embed(); ?>
     </div>
@@ -55,8 +56,8 @@
         </a>
       <?php } ?>
 
-  <?php } ?>
+    </div>
 
-  </div>
+  <?php } ?>
 
 </section>

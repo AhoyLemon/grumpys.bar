@@ -47,7 +47,7 @@ Untappd-url: https://untappd.com/v/grumpys-bar-grill/4122
 
 ----
 
-Embed-toggle: no
+Embed-toggle: yes
 
 ----
 
