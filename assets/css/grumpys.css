@@ -1080,7 +1080,7 @@ main.location {
       -webkit-animation: bubbleBoxMove 5.6s linear infinite;
       animation: bubbleBoxMove 5.6s linear infinite; }
     main.location .bubble-boxes .red {
-      bottom: 22.5%;
+      bottom: 46%;
       right: 0;
       background-position: bottom right;
       -webkit-animation: bubbleBoxMove 4.2s linear infinite;

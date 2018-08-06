@@ -108,7 +108,7 @@ main.location {
   
       .brown { bottom:-2%; left:25%; animation: bubbleBoxMove 8s linear infinite; }
       .tan   { bottom:15%; left:-2%;  animation: bubbleBoxMove 5.6s linear infinite;  }
-      .red   { bottom:22.5%; right:0;  background-position: bottom right; animation: bubbleBoxMove 4.2s linear infinite; }
+      .red   { bottom:46%; right:0;  background-position: bottom right; animation: bubbleBoxMove 4.2s linear infinite; }
     }
 
     .hero { @include flex-container(); position: relative; height: 40vh;
