@@ -108,10 +108,26 @@
   <?php } ?>
 
 <?php
+
   if ($page->meta_description() != "")  { $description = $page->meta_description()->xml();
   } else if ($page->text() != "")       { $description = excerpt($page->text()->xml(), 180);
   } else                                { $description = $site->meta_description()->xml(); }
+
+  if ($page->schema_image()->isNotEmpty())      { $schemaPhoto = $page->schema_image()->toFile()->url();
+  } else if ($page->homeshot()->isNotEmpty())   { $schemaPhoto = $page->homeshot()->toFile()->url();
+  } else                                        { $schemaPhoto = $site->schema_image()->toFile()->url(); }
+
+  if ($page->schema_logo()->isNotEmpty())       { $schemaLogo = $page->schema_logo()->toFile()->url();
+  } else                                        { $schemaLogo = $site->schema_logo()->toFile()->url(); }
+
+  if ($page->serves_cuisine()->isNotEmpty())    { $servesCuisine = $page->serves_cuisine();
+  } else                                        { $servesCuisine = $site->serves_cuisine(); }
+
+  if ($page->schema_pricerange()->isNotEmpty()) { $priceRange = $page->schema_pricerange();
+  } else                                        { $priceRange = $site->schema_pricerange(); }
+
 ?>
+
 
   <script type="application/ld+json">
 {
@@ -130,19 +146,19 @@
     "addressRegion":   "<?= $page->state(); ?>",
     "postalCode":      "<?= $page->zip(); ?>"
   },
-  "image": "<?= $page->homeshot()->toFile()->url(); ?>",
-  "logo": "<?= $site->schema_logo()->toFile()->url(); ?>",
+  "image": "<?= $schemaPhoto; ?>",
+  "logo": "<?= $schemaLogo; ?>",
   "acceptsReservations": false,
-  "servesCuisine": "<?= $site->serves_cuisine(); ?>",
+  "servesCuisine": "<?= $servesCuisine; ?>",
   <?php if ($page->children()->visible()->filterBy('template', 'food')) { ?>
     "hasMenu": "<?= $site->url(); ?>/<?= $page->children()->visible()->filterBy('template', 'food'); ?>",
   <?php } ?>
   "telephone": "<?= $page->phone(); ?>",
   "description": "<?= $description; ?>",
-  <?php foreach ($site->schema_attributes()->toStructure() as $schema) { ?>
+  <?php foreach ($page->schema_attributes()->toStructure() as $schema) { ?>
     "<?= $schema->property(); ?>": "<?= $schema->value(); ?>",
   <?php } ?>
-  "priceRange": "<?= $site->schema_pricerange(); ?>"
+  "priceRange": "<?= $priceRange; ?>"
 }
 </script>
 

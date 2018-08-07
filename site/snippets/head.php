@@ -13,5 +13,5 @@
     
   </head>
   
-  <body>
+  <body class="<?= $page->template(); ?>">
     <div id="app">

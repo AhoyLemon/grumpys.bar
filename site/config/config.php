@@ -17,7 +17,7 @@ for more information: http://getkirby.com/license
 
 c::set('license', 'K2-PRO-920391cf8a84c4059ce220e8a70ff348');
 c::set('debug', true);
-c::set('ssl',true);
+c::set('ssl', false);
 
 /*
 

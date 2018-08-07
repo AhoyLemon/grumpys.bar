@@ -43,6 +43,7 @@ fields:
   phone:
     label: Phone Number
     type: tel
+    required: true
     width: 1/4
   facebook:
     label: Facebook
@@ -65,7 +66,7 @@ fields:
     required: true
   heroes:
     label: Hero Images
-    help: This will show up on location page, next to the hours and address.
+    help: This will show up on location page, next to the hours and address. At least one hero image is *strongly* recommended.
     type: builder
     #style: table
     fieldsets:
@@ -82,7 +83,13 @@ fields:
             label: Description
             type: text
             help: (for SEO)
-  
+
+  # SECTIONS
+  section_headline:
+    label: Define Sections
+    type: headline
+    help: ⬅️ Use the pages (at left) to define the sections that will appear on this page. <br />The number of the page defines the order, invisible pages will not be shown.
+
   # META INFO
   meta_headline:
     extends: meta_headline
@@ -92,8 +99,49 @@ fields:
     extends: twitter_image
   og_image:
     extends: og_image
-
-  section_headline:
-    label: Define Sections
+    
+  # SCHEMA
+  schema_header:
+    label: Schema.org data
     type: headline
-    help: ⬅️ Use the pages (at left) to define the sections that will appear on this page. <br />The number of the page defines the order, invisible pages will not be shown.
+    help: "This helps out the website's SEO in subtle but important ways"
+  schema_pricerange:
+    label: Price Range
+    type: text
+    help: "ex: $$"
+    width: 1/4
+  schema_image:
+    label: Image
+    type: image
+    help: "This should be a location photo, not a logo."
+    width: 1/4
+  schema_logo:
+    label: Logo
+    type: image
+    help: "PNG or SVG"
+    width: 1/4
+  serves_cuisine:
+    label: Serves Cuisine
+    type: text
+    help: "ex: American"
+    width: 1/4
+  schema_attributes:
+    label: Additional Schema
+    type: structure
+    style: table
+    help: Refer to https://schema.org/BarOrPub for more info.
+    fields:
+      property:
+        label: Property
+        required: true
+        type: text
+      value:
+        label: Value
+        required: true
+        type: text
+  schema_info:
+    type: info
+    text: > 
+      Adjust as you see fit, but please be careful.
+      
+      After adjusting any schema information, *please* test it thru the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) to make sure there are no errors.

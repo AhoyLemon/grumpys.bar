@@ -54,20 +54,6 @@ fields:
     help: "ex: American"
     required: true
     width: 1/4
-  schema_attributes:
-    label: Additional Schema
-    type: structure
-    style: table
-    help: Refer to http://schema.org/Restaurant for more info.
-    fields:
-      property:
-        label: Property
-        required: true
-        type: text
-      value:
-        label: Value
-        required: true
-        type: text
   schema_info:
     type: info
     text: > 

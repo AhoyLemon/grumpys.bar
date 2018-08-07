@@ -56,7 +56,7 @@ main.home {
 
 }
 @media (min-width:$desktop-min) {
-  html.home { background-image: url(../svg/bg_desktop.svg); background-size:cover; background-position: top left; background-attachment: fixed; }
+  body.home { background-image: url(../svg/bg_desktop.svg); background-size:cover; background-position: top left; background-attachment: fixed; }
   .home-header { @include flex-container();
     .tagline-stripe { @include position(absolute,null,0,0,0); background: $black; height: 70px; }
   }

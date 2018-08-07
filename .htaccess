@@ -12,8 +12,8 @@ RewriteEngine on
 # In some enviroments it's necessary to
 # set the RewriteBase to:
 #
-# RewriteBase /grumpys
-RewriteBase /
+RewriteBase /grumpys
+# RewriteBase /
 
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
