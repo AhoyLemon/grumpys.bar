@@ -1,4 +1,5 @@
-  title: Booze
+title: Booze
+icon: glass
 pages:
   template:
     - booze-type

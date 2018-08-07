@@ -7,19 +7,13 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
-# make sure to set the RewriteBase correctly
-# if you are running the site in a subfolder.
-# Otherwise links or the entire site will break.
-#
-# If your homepage is http://yourdomain.com/mysite
-# Set the RewriteBase to:
-#
-# RewriteBase /mysite
+# RewriteBase /grumpys
 
 # In some enviroments it's necessary to
 # set the RewriteBase to:
 #
-RewriteBase /grumpys
+# RewriteBase /grumpys
+RewriteBase /
 
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
