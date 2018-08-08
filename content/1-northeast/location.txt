@@ -51,6 +51,11 @@ Homeshot: nordeast.jpg
 
 Heroes: 
 
+- 
+  pic: interior.jpg
+  desc: "patrons enjoying themselves in Grumpy's Northeast"
+  _fieldset: hero
+
 ----
 
 Calendar-info: 
@@ -94,3 +99,35 @@ Weekly-sunday:
 ----
 
 Taps-headline: 
+
+----
+
+Meta-description: 
+
+----
+
+Twitter-image: 
+
+----
+
+Og-image: 
+
+----
+
+Schema-pricerange: 
+
+----
+
+Schema-image: exterior-artawhirl.jpg
+
+----
+
+Schema-logo: 
+
+----
+
+Serves-cuisine: 
+
+----
+
+Schema-attributes: 

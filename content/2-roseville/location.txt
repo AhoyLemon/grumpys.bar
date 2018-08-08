@@ -51,6 +51,43 @@ Homeshot: roseville.jpg
 
 Heroes: 
 
+- 
+  pic: roseville-interior.jpg
+  desc: "interior of Grumpy's Roseville, unfortunately not high res enough"
+  _fieldset: hero
+
 ----
 
 Section-headline: 
+
+----
+
+Meta-description: 
+
+----
+
+Twitter-image: 
+
+----
+
+Og-image: 
+
+----
+
+Schema-pricerange: 
+
+----
+
+Schema-image: 
+
+----
+
+Schema-logo: 
+
+----
+
+Serves-cuisine: 
+
+----
+
+Schema-attributes: 

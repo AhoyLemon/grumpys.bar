@@ -8,6 +8,23 @@ Weekly-headline:
 
 Weekly-monday: 
 
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: ""
+  desc: Minnesota beers for $3
+  _fieldset: event
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: Burger Night
+  desc: |
+    $6.99 for a two topping burger
+    All other burgers $2 off
+  _fieldset: event
+
 ----
 
 Weekly-tuesday: 
@@ -80,3 +97,7 @@ Weekly-saturday:
 ----
 
 Weekly-sunday: 
+
+----
+
+Single-events: 

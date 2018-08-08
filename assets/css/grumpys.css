@@ -1130,7 +1130,7 @@ main.location {
       position: absolute;
       top: -60px;
       right: 0;
-      width: 66%; }
+      width: 67%; }
     main.location .hero .image-holder figure {
       height: 45vh;
       z-index: 2; }
@@ -1214,7 +1214,9 @@ main.location {
   font-family: "Oleo Script", cursive;
   font-weight: 900;
   color: #00B0B3;
-  text-shadow: -0.03em 0.03em 0 #fff, -0.06em 0.06em 0 #414042; }
+  text-shadow: -0.03em 0.03em 0 #fff, -0.06em 0.06em 0 #414042;
+  position: relative;
+  z-index: 100; }
   @media (min-width: 800px) {
     .tap-list .headline {
       font-size: 5vw; } }
@@ -1223,8 +1225,44 @@ main.location {
       font-size: 12vw; } }
 
 .tap-list .untapped-embed-container {
-  max-width: 666px;
-  margin-right: auto; }
+  min-height: 400px; }
+  .tap-list .untapped-embed-container .section-heading {
+    background: transparent !important; }
+  .tap-list .untapped-embed-container .menu-item, .tap-list .untapped-embed-container .section {
+    background: transparent !important; }
+  .tap-list .untapped-embed-container .inner-container {
+    background: #DA5C5C;
+    position: relative; }
+    @media (min-width: 800px) {
+      .tap-list .untapped-embed-container .inner-container {
+        padding: 3em; } }
+    @media (min-width: 799px) {
+      .tap-list .untapped-embed-container .inner-container {
+        padding: 1em; } }
+    .tap-list .untapped-embed-container .inner-container:before {
+      position: absolute;
+      right: 0;
+      left: 0;
+      content: ' ';
+      display: block;
+      background-image: url(../svg/menu-backboard.svg);
+      background-size: cover;
+      background-position: top center; }
+      @media (min-width: 800px) {
+        .tap-list .untapped-embed-container .inner-container:before {
+          top: -6vw;
+          height: 6vw; } }
+      @media (max-width: 799px) {
+        .tap-list .untapped-embed-container .inner-container:before {
+          top: -14vw;
+          height: 14vw; } }
+  .tap-list .untapped-embed-container .tab-content {
+    background: white;
+    padding: 2em; }
+  .tap-list .untapped-embed-container .menu-info {
+    display: none; }
+  .tap-list .untapped-embed-container .section-items-container {
+    color: white; }
 
 .tap-list .taps {
   display: grid;

@@ -148,12 +148,55 @@ Zip: 55415
 Heroes: 
 
 - 
-  pic: hero1.jpg
-  desc: Stock image of glasses clinking
+  pic: inside.jpg
+  desc: "Interior photo of Grumpy's Downtown"
   _fieldset: hero
 - 
-  pic: hero2.jpg
-  desc: >
-    Stock photo of several young people with
-    beer glasses
+  pic: outisde.jpg
+  desc: "outside patio of Grumpy's Downtown, facing the parking lot"
   _fieldset: hero
+
+----
+
+Meta-description: 
+
+----
+
+Twitter-image: 
+
+----
+
+Og-image: 
+
+----
+
+Schema-pricerange: $
+
+----
+
+Schema-image: downtown.jpg
+
+----
+
+Schema-logo: 
+
+----
+
+Serves-cuisine: 
+
+----
+
+Schema-attributes: 
+
+- 
+  property: paymentAccepted
+  value: Cash,Credit
+- 
+  property: openingHours
+  value: Mo-Su 11:00-02:00
+- 
+  property: smokingAllowed
+  value: 'false'
+- 
+  property: email
+  value: johnny@grumpys-bar.com

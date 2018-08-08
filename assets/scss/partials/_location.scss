@@ -120,7 +120,7 @@ main.location {
       address a:hover, .phone a:hover { background:$teal; }
       
 
-      .image-holder { @include position(absolute,-60px,0); width:66%; }
+      .image-holder { @include position(absolute,-60px,0); width:67%; }
       .image-holder { //@include flex-item(33%); position: relative; background: lime;
         figure { height: 45vh; z-index: $z-hero-image; }
       }
