@@ -26,7 +26,7 @@
     <div class="single-event event-text">
       <div class="inner">
         <div class="when">
-          <time><?= date("l, F jS", strtotime($event->event_date())); ?></time>
+          <time><?= date("D, M j", strtotime($event->event_date())); ?></time>
         </div>
 
         <div class="details">
