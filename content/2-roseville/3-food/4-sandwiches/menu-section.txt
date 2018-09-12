@@ -71,11 +71,6 @@ Builder:
   text: ""
   _fieldset: menu_item
 - 
-  name: Hot Pastrami
-  price: $9.99
-  text: ""
-  _fieldset: menu_item
-- 
   name: Grilled Reuben
   price: $10.99
   text: ""

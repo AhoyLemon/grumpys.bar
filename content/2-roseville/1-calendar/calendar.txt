@@ -9,11 +9,46 @@ Weekly-headline:
 Weekly-monday: 
 
 - 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: |
+    **$5 Appetizers**
+    *Garlic Cheesy Bread*
+    *Chicken Tenders*
+    *Mac & Cheese Bites*
+    *Mini Corn Dogs*
+    
+    **$7 Appetizers**
+    *Sliders*
+    *Quesadilla Gordo*
+    *Tex Mex Rolls*
+    *Nachos El Grumpy*
+    
+    **$9 Appetizers**
+    *Pepper Jack "Popeye" Spinach Dip*
+    *Tepanyaki Beef Tidbits*
+    *Grumpy Wings*
+    *Walleye Fingers*
+    
+    **BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**
+  _fieldset: event
+- 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: '$1 OFF Domestic Bottles, Craft Taps, &  Glasses of House Wine'
+  _fieldset: event
+- 
   begins: 19:00
   ends: 22:00
   all_day: 'no'
-  title: ""
-  desc: Minnesota beers for $3
+  title: MN MONDAY
+  desc: |
+    Minnesota beers for $3 (exceptions apply)
+    BAR AREA ONLY
   _fieldset: event
 - 
   begins: 19:00
@@ -21,26 +56,157 @@ Weekly-monday:
   all_day: 'no'
   title: Burger Night
   desc: |
-    $6.99 for a two topping burger
-    All other burgers $2 off
+    $6.99 for BYO Burger
+    ALL OTHER BURGERS $2 OFF
+  _fieldset: event
+- 
+  begins: 11:00
+  ends: 23:00
+  all_day: 'no'
+  title: $3 Dollars
+  desc: Domestic Taps and Rail Drinks
   _fieldset: event
 
 ----
 
 Weekly-tuesday: 
 
+- 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: |
+    **$5 Appetizers**
+    *Garlic Cheesy Bread*
+    *Chicken Tenders*
+    *Mac & Cheese Bites*
+    *Mini Corn Dogs*
+    
+    **$7 Appetizers**
+    *Sliders*
+    *Quesadilla Gordo*
+    *Tex Mex Rolls*
+    *Nachos El Grumpy*
+    
+    **$9 Appetizers**
+    *Pepper Jack "Popeye" Spinach Dip*
+    *Tepanyaki Beef Tidbits*
+    *Grumpy Wings*
+    *Walleye Fingers*
+    
+    **BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**
+  _fieldset: event
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: TALLBOY TUESDAY
+  desc: |
+    **$2 TALLBOYS**
+    *PBR, HAMMS, LONE STAR, ROLLING ROCK & COORS BQT*
+  _fieldset: event
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: 1/2 PRICED WINGS
+  desc: '**BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**'
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 01:00
+  all_day: 'no'
+  title: 1/2 PRICED DEEP FRIED APPS
+  desc: '**BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**'
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 02:00
+  all_day: 'no'
+  title: Service Industry Night
+  desc: |
+    1/2 priced drinks for full bar and restaurant employees.
+    
+    *Must bring a valid pay stub for discounts*
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 02:00
+  all_day: 'no'
+  title: KARAOKE
+  desc: Provided by Cities Entertainment
+  _fieldset: event
+- 
+  begins: 11:00
+  ends: 23:00
+  all_day: 'no'
+  title: $3 Dollars
+  desc: Domestic Taps and Rail Drinks
+  _fieldset: event
+
 ----
 
 Weekly-wednesday: 
 
 - 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: |
+    **$5 Appetizers**
+    *Garlic Cheesy Bread*
+    *Chicken Tenders*
+    *Mac & Cheese Bites*
+    *Mini Corn Dogs*
+    
+    **$7 Appetizers**
+    *Sliders*
+    *Quesadilla Gordo*
+    *Tex Mex Rolls*
+    *Nachos El Grumpy*
+    
+    **$9 Appetizers**
+    *Pepper Jack "Popeye" Spinach Dip*
+    *Tepanyaki Beef Tidbits*
+    *Grumpy Wings*
+    *Walleye Fingers*
+    
+    **BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**
+  _fieldset: event
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: 'PIZZA & VINO WEDNESDAY'
+  desc: |
+    1/2 PRICED PIZZA
+    1/2 PRICED BOTTLE OF WINE
+  _fieldset: event
+- 
   all_day: 'no'
   begins: 21:00
   ends: ""
-  title: Trivia
-  desc: >
-    $25 gift certificate for first place,
-    plus other prizes
+  title: Happy Awesome Trivia
+  desc: |
+    $25 gift certificate for 1st place, plus other prizes.
+    
+    Provided by Wayne Burfeind
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 01:00
+  all_day: 'no'
+  title: 1/2 PRICED DEEP FRIED APPS
+  desc: '**BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**'
+  _fieldset: event
+- 
+  begins: 11:00
+  ends: 23:00
+  all_day: 'no'
+  title: $3 Dollars
+  desc: Domestic Taps and Rail Drinks
   _fieldset: event
 
 ----
@@ -48,26 +214,103 @@ Weekly-wednesday:
 Weekly-thursday: 
 
 - 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: |
+    **$5 Appetizers**
+    *Garlic Cheesy Bread*
+    *Chicken Tenders*
+    *Mac & Cheese Bites*
+    *Mini Corn Dogs*
+    
+    **$7 Appetizers**
+    *Sliders*
+    *Quesadilla Gordo*
+    *Tex Mex Rolls*
+    *Nachos El Grumpy*
+    
+    **$9 Appetizers**
+    *Pepper Jack "Popeye" Spinach Dip*
+    *Tepanyaki Beef Tidbits*
+    *Grumpy Wings*
+    *Walleye Fingers*
+    
+    **BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**
+  _fieldset: event
+- 
   all_day: 'no'
   begins: 19:00
   ends: 22:00
-  title: Tex Mex Thursday
+  title: TEX-MEX THURSDAYS
   desc: |
-    $3 off: nachos, tex-mex rolls, quesadilla gordo
-    $1 off: Corona Corona Light, Pacifico & Dos Equis
+    **$3 OFF:** *Nachos, Tex Mex rolls, Quesadilla Gordo*
+    **$1 OFF:** *Corona, Corona Light, Pacifico & Dos Equis*
+    *$4 Margaritas*
   _fieldset: event
 - 
   all_day: 'no'
   begins: 22:00
   ends: ""
-  title: Bar Bingo
-  desc: Progressive pot (free to play)
+  title: Nerdy Dirty Bargo
+  desc: |
+    Progressive pot (free to play)
+    
+    Provided by Wayne Burfeind
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 01:00
+  all_day: 'no'
+  title: 1/2 PRICED DEEP FRIED APPS
+  desc: '**BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**'
+  _fieldset: event
+- 
+  begins: 11:00
+  ends: 23:00
+  all_day: 'no'
+  title: $3 Dollars
+  desc: Domestic Taps and Rail Drinks
   _fieldset: event
 
 ----
 
 Weekly-friday: 
 
+- 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: |
+    **$5 Appetizers**
+    *Garlic Cheesy Bread*
+    *Chicken Tenders*
+    *Mac & Cheese Bites*
+    *Mini Corn Dogs*
+    
+    **$7 Appetizers**
+    *Sliders*
+    *Quesadilla Gordo*
+    *Tex Mex Rolls*
+    *Nachos El Grumpy*
+    
+    **$9 Appetizers**
+    *Pepper Jack "Popeye" Spinach Dip*
+    *Tepanyaki Beef Tidbits*
+    *Grumpy Wings*
+    *Walleye Fingers*
+    
+    **BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**
+  _fieldset: event
+- 
+  all_day: 'no'
+  begins: 16:00
+  ends: 22:00
+  title: FRIDAY FISH FRY
+  desc: ALL YOU CAN EAT FOR $14.99
+  _fieldset: event
 - 
   all_day: 'no'
   begins: 19:00
@@ -77,27 +320,176 @@ Weekly-friday:
   _fieldset: event
 - 
   all_day: 'no'
-  begins: 16:00
-  ends: ""
-  title: ""
-  desc: All you can eat fish fry
-  _fieldset: event
-- 
-  all_day: 'no'
   begins: 21:00
   ends: ""
-  title: ""
-  desc: Beanbag tourney
+  title: BEAN BAG TOURNAMENT
+  desc: ""
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 01:00
+  all_day: 'no'
+  title: 1/2 PRICED DEEP FRIED APPS
+  desc: '**BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**'
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 01:00
+  all_day: 'no'
+  title: $1 BURGER SLIDERS
+  desc: .50 cents for any addition toppings
+  _fieldset: event
+- 
+  begins: 11:00
+  ends: 23:00
+  all_day: 'no'
+  title: $3 Dollars
+  desc: Domestic Taps and Rail Drinks
   _fieldset: event
 
 ----
 
 Weekly-saturday: 
 
+- 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: |
+    **$5 Appetizers**
+    *Garlic Cheesy Bread*
+    *Chicken Tenders*
+    *Mac & Cheese Bites*
+    *Mini Corn Dogs*
+    
+    **$7 Appetizers**
+    *Sliders*
+    *Quesadilla Gordo*
+    *Tex Mex Rolls*
+    *Nachos El Grumpy*
+    
+    **$9 Appetizers**
+    *Pepper Jack "Popeye" Spinach Dip*
+    *Tepanyaki Beef Tidbits*
+    *Grumpy Wings*
+    *Walleye Fingers*
+    
+    **BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**
+  _fieldset: event
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: SUMMIT SATURDAYS
+  desc: $3 Summits (exceptions apply)
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 01:00
+  all_day: 'no'
+  title: 1/2 PRICED WINGS
+  desc: '**BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**'
+  _fieldset: event
+- 
+  begins: 22:00
+  ends: 02:00
+  all_day: 'no'
+  title: KARAOKE
+  desc: Provided by Cities Entertainment
+  _fieldset: event
+- 
+  begins: 11:00
+  ends: 23:00
+  all_day: 'no'
+  title: $3 Dollars
+  desc: Domestic Taps and Rail Drinks
+  _fieldset: event
+
 ----
 
 Weekly-sunday: 
 
+- 
+  begins: ""
+  ends: ""
+  all_day: 'no'
+  title: Viking Game Specials
+  desc: |
+    $3 20oz Miller Taps
+    $3 Rail Drinks
+    $3 Domestic Taps
+  _fieldset: event
+- 
+  begins: 15:00
+  ends: 18:00
+  all_day: 'no'
+  title: Grumpy Hour Deals
+  desc: |
+    **$5 Appetizers**
+    *Garlic Cheesy Bread*
+    *Chicken Tenders*
+    *Mac & Cheese Bites*
+    *Mini Corn Dogs*
+    
+    **$7 Appetizers**
+    *Sliders*
+    *Quesadilla Gordo*
+    *Tex Mex Rolls*
+    *Nachos El Grumpy*
+    
+    **$9 Appetizers**
+    *Pepper Jack "Popeye" Spinach Dip*
+    *Tepanyaki Beef Tidbits*
+    *Grumpy Wings*
+    *Walleye Fingers*
+    
+    **BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**
+  _fieldset: event
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: SpecTAPular SUNDAYS
+  desc: $4 Tap Beers (exceptions apply)
+  _fieldset: event
+- 
+  begins: 19:00
+  ends: 22:00
+  all_day: 'no'
+  title: 1/2 PRICED DEEP FRIED APPS
+  desc: '**BAR AREA ONLY, NOT AVAILABLE FOR TAKE OUT!**'
+  _fieldset: event
+- 
+  begins: 21:00
+  ends: 23:00
+  all_day: 'no'
+  title: MINGO
+  desc: |
+    That's right! Musical Bingo (free to play)
+    Provided by Get a Clu
+  _fieldset: event
+- 
+  begins: 11:00
+  ends: 23:00
+  all_day: 'no'
+  title: $3 Dollars
+  desc: Domestic Taps and Rail Drinks
+  _fieldset: event
+
 ----
 
 Single-events: 
+
+- 
+  pic: wrestle-rock.jpg
+  alt: WRESTLE ROCK
+  publish: 2018-09-11
+  expires: 2018-09-30
+  _fieldset: event_image
+- 
+  pic: specialsposting-9-14.jpg
+  alt: "Grumpy's Bi-Weekly Specials"
+  publish: 2018-09-14
+  expires: 2018-09-27
+  _fieldset: event_image

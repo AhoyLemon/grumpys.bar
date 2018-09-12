@@ -4,8 +4,8 @@ Title: Roseville
 
 Hours: 
 
-Sun & Mon: 11AM to midnight
-Tue - Sat: 11AM to 2PM
+Sun & Mon: 11am to Midnight
+Tue - Sat: 11am to 2am
 
 ----
 
@@ -91,3 +91,15 @@ Serves-cuisine:
 ----
 
 Schema-attributes: 
+
+----
+
+Instagram: 
+
+----
+
+Yelp: 
+
+----
+
+Untappd: 

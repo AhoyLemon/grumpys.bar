@@ -27,7 +27,7 @@ Weekly-monday:
   begins: 17:00
   ends: 21:00
   title: ""
-  desc: Half-priced Minnesota beers
+  desc: Half-priced Minnesota beers and spirits
   _fieldset: event
 - 
   all_day: 'no'
@@ -50,15 +50,6 @@ Weekly-tuesday:
   title: ""
   desc: $1 off anything that pours
   _fieldset: event
-- 
-  all_day: 'no'
-  begins: 17:00
-  ends: ""
-  title: ""
-  desc: >
-    Hotdish is a buck a bowl until we run
-    out
-  _fieldset: event
 
 ----
 
@@ -78,8 +69,8 @@ Weekly-wednesday:
   title: Trivia with Berni the Trailer Park Queen
   desc: >
     This fills up, so get here early to grab
-    a seat and a $2 PBR tall boy to make you
-    smarter
+    a seat and a $2.5 PBR tall boy to make
+    you smarter
   _fieldset: event
 
 ----
@@ -107,8 +98,8 @@ Weekly-thursday:
   title: Vino Vinyl
   desc: >
     Bring in a vinyl record to play and get
-    a free drink; two-for-one glasses of
-    wine
+    a free local beer; two-for-one glasses
+    of wine
   _fieldset: event
 
 ----
@@ -146,9 +137,8 @@ Weekly-saturday:
   title: ""
   desc: >
     $3 taps from all breweries within a
-    stone’s throw (includes Indeed,
-    Fulton, Surly, Northgate, 612 Brew and
-    Sociable Cider)
+    stone’s throw (includes Indeed, Fulton
+    and Surly)
   _fieldset: event
 
 ----
@@ -167,7 +157,7 @@ Weekly-sunday:
   begins: 23:00
   ends: 02:00
   title: ""
-  desc: $2 tall boys from our vast selection
+  desc: $2.5 tall boys from our vast selection
   _fieldset: event
 
 ----
@@ -175,11 +165,17 @@ Weekly-sunday:
 Single-events: 
 
 - 
-  event_date: 2018-08-03
-  event_time: 14:00
-  name: Pils Party
-  desc: |
-    **featuring**
-    Bauhaus Wunderstuff, Fair State Pils, Finnegans East Town, Fulton Pilsner, Firstenburg, Indeed B-Side Pils, Summit Dakota Soul, Victory Prima Pils, Firestone Walker Pivo Pils, Schell's Pils
+  event_date: 2018-09-22
+  event_time: 16:00
+  name: Mr. Northeast Pageant
+  desc: >
+    Think you have what it takes to be
+    crowned the quintessential Northeast
+    dude? Then step right up, strike a pose,
+    and show us what you got. Eligible
+    contestants are 21 years of age or
+    older, identify as male, and live or
+    work in Northeast Minneapolis.
+    https://www.mrnortheastpageant.com/
   publish: ""
   _fieldset: event_text

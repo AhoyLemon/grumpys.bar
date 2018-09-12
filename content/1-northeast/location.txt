@@ -33,7 +33,7 @@ Phone: (612) 789-7429
 
 ----
 
-Facebook: https://www.facebook.con/pages/Grumpys-Northeast/122463474468748
+Facebook: 
 
 ----
 
@@ -131,3 +131,15 @@ Serves-cuisine:
 ----
 
 Schema-attributes: 
+
+----
+
+Instagram: 
+
+----
+
+Yelp: 
+
+----
+
+Untappd: 
