@@ -59,6 +59,9 @@
       </div>
     </div>
   </div>
+  <div class="site-by">
+    This website was built by <a href="https://ahoylemon.xyz">Lemon</a>.
+  </div>
 </footer>
 
 </div>

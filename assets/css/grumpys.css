@@ -571,6 +571,14 @@ footer {
       text-align: center; }
     footer .our-friends img {
       max-height: 100px; }
+  footer .site-by {
+    padding: 12px 24px;
+    color: #fff; }
+    footer .site-by a {
+      color: #C6943B;
+      text-decoration: none; }
+      footer .site-by a:hover, footer .site-by a:active, footer .site-by a:focus {
+        text-decoration: underline; }
 
 @media (max-width: 600px) {
   footer .location {

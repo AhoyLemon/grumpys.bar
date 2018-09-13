@@ -24,6 +24,11 @@ footer { background: url(../svg/footer.svg); z-index: $z-footer; position: relat
     img { max-height: 100px;}
   }
 
+  .site-by { padding:12px 24px; color:$white;
+    a { color:$orange; text-decoration: none;
+      &:hover, &:active, &:focus { text-decoration: underline; }
+    }
+  }
 }
 
 @media (max-width:$mobile-max) {
