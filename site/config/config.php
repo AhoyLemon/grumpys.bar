@@ -16,17 +16,38 @@ for more information: http://getkirby.com/license
 */
 
 c::set('license', 'K2-PRO-920391cf8a84c4059ce220e8a70ff348');
-c::set('debug', true);
-c::set('ssl', false);
 
 /*
-
 ---------------------------------------
-Kirby Configuration
+Routing
 ---------------------------------------
+*/
 
-By default you don't have to configure anything to
-make Kirby work. For more fine-grained configuration
-of the system, please check out http://getkirby.com/docs/advanced/options
-
+/*
+c::set('routes', array(
+  array(
+    'pattern' => 'downtown.html',
+    'action'  => function() {
+      header::redirect('/downtown', 301);
+    }
+  ),
+  array(
+    'pattern' => 'roseville.html',
+    'action'  => function() {
+      header::redirect('/roseville', 301);
+    }
+  ),
+  array(
+    'pattern' => 'northeast.html',
+    'action'  => function() {
+      header::redirect('/northeast', 301);
+    }
+  ),
+  array(
+    'pattern' => 'nordeast',
+    'action'  => function() {
+      return go('/northeast');
+    }
+  )
+));
 */

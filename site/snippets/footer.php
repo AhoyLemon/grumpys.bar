@@ -66,76 +66,15 @@
 <div class="javascripts">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $('.hamburger').click(function() {
-      $('header.mobile').toggleClass('active');
-    });
-    
-    
-    let cal = $('.calendar');
-    const singleSlideWidth = 820;
-    
-    cal.on('init', function(){ 
-      matchCalendarHeight()
-    });
-    
-    cal.slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      adaptiveHeight: false,
-      prevArrow: false,
-      nextArrow: '<button type=button" class="slick-next"></button>',
-      responsive: [
-        { 
-          breakpoint: 1150,
-          settings: {
-            slidesToShow: 2
-          },
-          breakpoint: singleSlideWidth,
-          settings: {
-            slidesToShow: 1,
-            adaptiveHeight: true,
-          }
-        }
-      ]
-    });
-    
-    $('.image-carousel').slick({
-      infinite: true,
-      slidesToShow: 1,
-      arrows: false,
-      dots: true
-    });
-    
-    
-    function matchCalendarHeight() {
-    
-      if ($(window).width > singleSlideWidth) {
-        let maxHeight;
-          $('.calendar .inner').each(function() {
-          maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-        });
-    
-        $('.calendar .inner').each(function() {
-          $(this).height(maxHeight);
-        });
-      }
-    }
-    
-    $("a[scroll-to]").click(function() {
-    
-      let o = 0;
-      if (window.innerWidth < 601) {
-        o = 120
-      }
-    
-      let t = $(this).attr('scroll-to');
-      $('header.mobile').removeClass('active');
-      $([document.documentElement, document.body]).animate({
-        scrollTop: $('a[name='+t+']').offset().top - o
-      }, 350);
-    });
+  <?= js('assets/js/min/grumpys.min.js') ?>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-116822514-2', 'auto');
+    ga('send', 'pageview');
   </script>
 </div>
 
