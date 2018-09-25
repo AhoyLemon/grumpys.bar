@@ -3,7 +3,7 @@ $('.hamburger').click(function() {
 });
 
 
-let cal = $('.calendar');
+let cal = $('section.calendar');
 const singleSlideWidth = 820;
 
 cal.on('init', function(){ 

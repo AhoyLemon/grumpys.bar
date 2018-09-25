@@ -2,7 +2,7 @@
 
 <?php snippet('nav') ?>
 
-<main class="location <? $page->slug(); ?>">
+<main class="calendar-main">
   
   <?php snippet('hero', ['location' => $page->parent()]) ?>
 
