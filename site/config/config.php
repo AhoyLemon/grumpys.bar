@@ -23,7 +23,6 @@ Routing
 ---------------------------------------
 */
 
-/*
 c::set('routes', array(
   array(
     'pattern' => 'downtown.html',
@@ -50,4 +49,3 @@ c::set('routes', array(
     }
   )
 ));
-*/

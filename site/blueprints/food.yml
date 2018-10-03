@@ -9,6 +9,39 @@ fields:
   title:
     label: Title
     type:  text
+
+  chowhound_toggle:
+    label: Link to External Menu?
+    type: fieldtoggle
+    width: 1/3
+    options:
+      yes: "Yes"
+      no:  "No"
+    hide:
+      no:  chowhound_url chowhound_text
+    show:
+      yes: chowhound_url chowhound_text
+  
+  chowhound_url:
+    label: External Menu URL
+    type: url
+    width: 1/3
+  chowhound_text:
+    label: Button Text
+    type: text
+    width: 1/3
+
+  onsite_menu_toggle:
+    label: Show On-site Menu?
+    type: fieldtoggle
+    width: 1/3
+    options:
+      yes: "Yes"
+      no:  "No"
+    hide:
+      no:  info
+    show:
+      yes: info
     
   info:
     type: info

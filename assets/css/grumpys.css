@@ -1551,6 +1551,21 @@ main.location {
         .full-menu .inner:before {
           top: -14vw;
           height: 14vw; } }
+  .full-menu .button-holder {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center; }
+    .full-menu .button-holder a {
+      display: inline-block;
+      font-size: 1.8em;
+      font-weight: 900;
+      text-decoration: none;
+      color: #fff;
+      padding: 0.4em 1.25em;
+      border: 2px solid #fff; }
+      .full-menu .button-holder a:hover {
+        background: #fff;
+        color: #DA5C5C; }
   .full-menu .page {
     background: #fff;
     padding: 2rem; }

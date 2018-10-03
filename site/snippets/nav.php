@@ -50,13 +50,35 @@
         </svg></a></div>
   </div>
   <nav class="mobile-links">
-    <div class="link"><a scroll-to="calendar">Calendar</a></div>
-    <div class="link"><a scroll-to="taps">Taps</a></div>
-    <div class="link"><a scroll-to="food">Food</a></div>
-    <div class="link"><a scroll-to="booze">Booze</a></div>
-    <div class="link"><a href="northeast.html">Northeast</a></div>
-    <div class="link"><a href="roseville.html">Roseville</a></div>
-    <div class="link active"><a class="active" href="downtown.html">Downtown</a></div>
+
+    <?php if ($page->template() == "location") { ?>
+      <?php foreach ($page->children()->visible() as $anchor) { ?>
+        <div class="link">
+          <a scroll-to="<?= $anchor->slug(); ?>">
+            <?= $anchor->title(); ?>
+          </a>
+        </div>
+      <?php } ?>  
+    <?php } ?>
+    <?php foreach ($site->children()->visible()->filterBy('template', 'location') as $location) { ?>
+        <?php if (strpos($page->url(), $location->slug()) !== false) { ?>
+          <div class="link active">
+            <a href="<?= $location->url(); ?>">
+              <?= $location->title(); ?>
+            </a>
+          </div>
+        <?php } else { ?>
+          <div class="link">
+            <a href="<?= $location->url(); ?>">
+              <?= $location->title(); ?>
+            </a>
+          </div>
+        <?php } ?>
+      <?php } ?>
   </nav>
-  <div class="logo-holder"><a href="/"><img class="logo" src="<?= $site->url(); ?>/assets/svg/logo_header.svg"></a></div>
+  <div class="logo-holder">
+    <a href="<?php $site->url(); ?>">
+      <img class="logo" src="<?= $site->url(); ?>/assets/svg/logo_header.svg">
+    </a>
+  </div>
 </header>

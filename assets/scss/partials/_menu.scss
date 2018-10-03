@@ -46,6 +46,13 @@ $priceWidth: 6rem;
     }
   }
 
+  .button-holder { padding-top:1em; padding-bottom:2em; text-align: center;
+    a { display: inline-block; font-size:1.8em; font-weight: $bold; text-decoration: none; color:$white; padding:0.4em 1.25em; border:2px solid $white;
+      &:hover { background:$white; color:#DA5C5C; }
+    }
+  }
+
+
   .page { background: $white; padding:2rem;
     @media (max-width:799px) { padding-left: 10px; padding-right: 10px; }
   }
