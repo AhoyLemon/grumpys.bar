@@ -45,7 +45,7 @@
       <?php if ($location->heroes() != "") { ?>
         <div class="image-carousel">
           <?php foreach ($location->heroes()->toStructure() as $hero) { ?>
-            <figure style="background-image:url(<?= $hero->pic()->toFile()->url(); ?>)" alt="<?= $hero->desc(); ?>"></figure>
+            <figure touched style="background-image:url(<?= $hero->pic()->toFile()->resize(1200)->url(); ?>)" alt="<?= $hero->desc(); ?>"></figure>
           <?php } ?>
         </div>
       <?php } ?>

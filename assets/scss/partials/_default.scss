@@ -1,10 +1,15 @@
 [v-cloak] { display: none !important; }
 
-//html { background-image: url(../svg/bg_desktop.svg); background-size:cover; background-position: top left; background-attachment: fixed; }
 html { background: $yellow; }
 body { font-family:$font; }
 svg {
   * { fill:currentColor; }
 }
 
-.triangle { @include position(fixed,null,null,0,0); width: 28%; z-index: $z-triangle; }
+@media (max-width:$mobile-max) {
+  .triangle { display: none; }
+}
+@media (min-width:$desktop-min) {
+  .triangle { @include position(fixed,null,null,0,0); width: 28%; z-index: $z-triangle; }
+}
+

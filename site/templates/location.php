@@ -50,7 +50,7 @@
       <?php if ($page->heroes() != "") { ?>
         <div class="image-carousel">
           <?php foreach ($page->heroes()->toStructure() as $hero) { ?>
-            <figure style="background-image:url(<?= $hero->pic()->toFile()->url(); ?>)" alt="<?= $hero->desc(); ?>"></figure>
+            <figure style="background-image:url(<?= $hero->pic()->toFile()->resize(1200)->url(); ?>)" alt="<?= $hero->desc(); ?>"></figure>
           <?php } ?>
         </div>
       <?php } ?>

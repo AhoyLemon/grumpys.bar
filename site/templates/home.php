@@ -14,7 +14,7 @@
         <nav class="locations">
           <?php foreach ($site->children()->visible()->filterBy('template', 'location') as $location) { ?>
             <div class="location">
-              <figure style="background-image:url(<?= $location->homeshot()->toFile()->url(); ?>)">
+              <figure style="background-image:url(<?= $location->homeshot()->toFile()->resize(900)->url(); ?>)">
                 <a href="<?= $location->url(); ?>"></a>
               </figure>
               <figcaption>
