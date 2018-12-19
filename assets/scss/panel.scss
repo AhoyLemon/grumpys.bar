@@ -1,0 +1,8 @@
+@import "partials/_variables";
+@import "globals/_mixins";
+
+body.login { background-size: cover; background-position: center; background-image: url('../images/login-bg.png');
+  form.form {
+    &:before { display: block; content: " "; height: 120px; background:url('../svg/logo_header.svg'); background-size:contain; background-position: center; background-repeat: no-repeat; margin-bottom: 1.5rem; }
+  }
+}
