@@ -55,7 +55,7 @@
                 <!-- WHEN -->
                 <?php if ($event->all_day() == "1") { ?>
                   <div class="when">All Day</div>
-                <?php } else if ($event->begins() != "" && $event->ends()) { ?>
+                <?php } else if ($event->begins() != "" && $event->ends() != "") { ?>
                   <div class="when"><?= date("g:ia", strtotime($event->begins())); ?> - <?= date("g:ia", strtotime($event->ends())); ?></div>
                 <?php } else if ($event->begins() != "") { ?>
                   <div class="when"><?= date("g:ia", strtotime($event->begins())); ?></div>
