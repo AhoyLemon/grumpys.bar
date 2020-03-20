@@ -88,7 +88,7 @@ fields:
       hero:
         label: Hero
         entry: >
-           <img src="{{_fileUrl}}{{pic}}" height="220px" />
+          <img src="{{_fileUrl}}{{pic}}" height="220px" />
         fields:
           pic:
             label: Picture
@@ -99,6 +99,15 @@ fields:
             type: text
             help: (for SEO)
 
+  # COVID Stripe
+  covid_headline:
+    label: COVID-19
+    type: headline
+    help: While the world is shut down, use this space to put whatever text you want.
+  text:
+    label: Text
+    type: markdown
+  
   # SECTIONS
   section_headline:
     label: Define Sections

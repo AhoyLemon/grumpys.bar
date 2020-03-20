@@ -109,6 +109,14 @@
 
   </div>
 
+  <?php if ($page->text()->isNotEmpty()) { ?>
+    <div class="text-holder">
+      <div class="location-text">
+        <?= $page->text()->kirbytext(); ?>
+      </div>
+    </div>
+  <?php } ?>
+
   <?php foreach ($page->children()->visible() as $section) { ?>
     
     <?php if ($section->slug() == "calendar") { ?>

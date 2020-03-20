@@ -38,6 +38,12 @@ main.location {
     }
   }
 
+  .text-holder { max-width:888px; margin-left: auto; margin-right: auto; background:$teal; padding:2em; margin-top:4em; margin-bottom: 4em;
+    .location-text { padding: 2em; background:$white;
+      p { margin-bottom: 1em; }
+     }
+  }
+
   /*
   .calendar {@include flex-container(); width:100%; margin-top: 3em;
     figure { height: 22vw; background-size:cover; background-position: center; position: relative; }

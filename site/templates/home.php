@@ -11,6 +11,7 @@
   </div>
 
   <main class="home">
+
         <nav class="locations">
           <?php foreach ($site->children()->visible()->filterBy('template', 'location') as $location) { ?>
             <div class="location">
