@@ -40,8 +40,15 @@ main.location {
 
   .text-holder { max-width:888px; margin-left: auto; margin-right: auto; background:$teal; padding:2em; margin-top:4em; margin-bottom: 4em;
     .location-text { padding: 2em; background:$white;
+      h1 { font-size:250%; }
+      h2 { font-size:200%; }
+      h3 { font-size:150%; }
+      h1, h2, h3 { margin-bottom: 0.5em; }
       p { margin-bottom: 1em; }
-     }
+      .button { background: $pink; border:2px solid $pink; display: inline-block; width: auto; color: white; text-decoration: none; padding: 0.5em 1em; font-size: 125%;
+        &:hover, &:active { background:$white; color:$pink; }
+      }
+    }
   }
 
   /*

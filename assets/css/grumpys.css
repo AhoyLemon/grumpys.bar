@@ -1152,8 +1152,34 @@ main.location .text-holder .location-text {
   padding: 2em;
   background: #fff;
 }
+main.location .text-holder .location-text h1 {
+  font-size: 250%;
+}
+main.location .text-holder .location-text h2 {
+  font-size: 200%;
+}
+main.location .text-holder .location-text h3 {
+  font-size: 150%;
+}
+main.location .text-holder .location-text h1, main.location .text-holder .location-text h2, main.location .text-holder .location-text h3 {
+  margin-bottom: 0.5em;
+}
 main.location .text-holder .location-text p {
   margin-bottom: 1em;
+}
+main.location .text-holder .location-text .button {
+  background: #da5c5c;
+  border: 2px solid #da5c5c;
+  display: inline-block;
+  width: auto;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 125%;
+}
+main.location .text-holder .location-text .button:hover, main.location .text-holder .location-text .button:active {
+  background: #fff;
+  color: #da5c5c;
 }
 
 @-webkit-keyframes bubbleBoxMove {
