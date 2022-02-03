@@ -4,9 +4,9 @@ Title: Northeast
 
 Hours: 
 
-To Be Determind?
-<!-- Mon - Fri: 2pm to 2 am
-Sat & Sun: 11am to 2pm -->
+Monday - Friday :  2pm - Close
+Saturday:  Noon - Close
+Sunday:  Noon - Close
 
 ----
 
@@ -34,7 +34,7 @@ Phone: (612) 789-7429
 
 ----
 
-Facebook: 
+Facebook: https://www.facebook.com/grumpysne/
 
 ----
 
@@ -42,7 +42,7 @@ Twitter: https://twitter.com/grumpysne
 
 ----
 
-Email: pat@grumpys-bar.com
+Email: pat@grumpys.bar
 
 ----
 
@@ -135,7 +135,7 @@ Schema-attributes:
 
 ----
 
-Instagram: 
+Instagram: https://www.instagram.com/grumpysnortheast/
 
 ----
 
@@ -149,6 +149,8 @@ Untappd:
 
 Text: 
 
-Aliquam ligula augue, facilisis non commodo sed, semper nec turpis. Nullam elementum ut augue a imperdiet. Duis imperdiet volutpat nibh, sed pretium ante condimentum sed. Quisque eget felis vel nibh ultrices gravida. Sed fermentum tristique quam, ac tristique lectus. Suspendisse finibus elit et gravida maximus. Nam sollicitudin, nulla quis gravida eleifend, metus dui molestie augue, sed ullamcorper ligula justo eu sapien. Phasellus lobortis augue nec lorem porttitor, et gravida ante sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer congue neque vel egestas dignissim. 
+## Staff tip jar
 
-[this is a link](https://google.com)
+So we've received several messages from people wondering if there's any way they might show some support for Grumpy's staff during these trying days. First off, we're gushing. Thank you SO much. This really means a lot to us! We try to operate Grumpy's with the idea that it's a family as well as a business. A true public house, an extension of the neighborhood. And when we get requests like this it really means the world to us. So we went ahead and sent up a (link:https://www.gofundme.com/f/grumpy039s-ne-family-tip-jar text:virtual “tip jar”) you can contribute to. We obviously won't be keeping any of it, 100% will go to the staff and their families. We know not everyone can afford to spread it around and we totally understand. Take care of you and yours first! We sincerely hope you're all healthy and comfortable. And thanks again everybody! Can't wait to see you all after detention!
+
+(link:https://www.gofundme.com/f/grumpy039s-ne-family-tip-jar text:Tip The Grumpy's staff class:button)

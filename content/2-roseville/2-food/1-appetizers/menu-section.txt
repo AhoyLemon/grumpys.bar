@@ -1,0 +1,131 @@
+Title: Appetizers
+
+----
+
+Builder: 
+
+- 
+  name: "Grumpy's Wings"
+  price: $14.99
+  text: 'Wing flavors are available in: Buffalo (Mild and Hot), Bangkok, Mango-Habanero, Cajun Dry Rub, BBQ or Teriyaki. Served with bleu cheese sauce and celery.'
+  _fieldset: menu_item
+- 
+  name: Chicken Tenders
+  price: $10.99
+  text: "Ask for your tenders tossed in the sauce or on the side fer dippin'. Sauces are available in: Buffalo (Mild and Hot), Bangkok, Mango-Habanero, Cajun Dry Rub, BBQ, Honey Mustard or Teriyaki. Served with bleu cheese sauce and celery."
+  _fieldset: menu_item
+- 
+  name: Quesadilla Gordo
+  price: $10.99
+  text: >
+    A nice big flour tortilla brushed with
+    butter, grilled mucho cheddar jack
+    cheese, tomatoes and onions. Your choice
+    of chicken, beef, or just cheese. Served
+    with cilantro sour cream and our house
+    made salsa. Add homemade guacamole for
+    $1.49.
+  _fieldset: menu_item
+- 
+  name: Potato Skins
+  price: $9.99
+  text: >
+    We take grade A fresh potatoes and pile
+    on melted cheddar jack cheese, bacon and
+    green onions. Served with our cilantro
+    sour cream for dipping.
+  _fieldset: menu_item
+- 
+  name: Cheese Curds
+  price: $9.99
+  text: >
+    Lightly battered and deep fried with a
+    side of marinara sauce.
+  _fieldset: menu_item
+- 
+  name: Tepanyaki Beef Tidbits
+  price: $12.99
+  text: >
+    Asian marinated tenderloin chunks, pan
+    seared to juicy perfection and served
+    with homemade fried wontons and a Thai
+    chili cream cheese dipping sauce.
+  _fieldset: menu_item
+- 
+  name: Cheesy Garlic Bread
+  price: $7.99
+  text: >
+    Oven toasted to ooey-gooey goodness and
+    served with marinara dipping sauce.
+  _fieldset: menu_item
+- 
+  name: Nachos El Grumpy
+  price: $12.99
+  text: 'Tortilla chips smothered with your choice of spiced beef or chicken, melted cheddar jack cheese, tomatoes, jalapenos, black olives and green onions. Served with fresh salsa and cilantro sour cream.  Add guacamole for $1.49 or chili for $2.00'
+  _fieldset: menu_item
+- 
+  name: Onion Rings
+  price: $9.99
+  text: >
+    Served with our chipotle mayo dipping
+    sauce.
+  _fieldset: menu_item
+- 
+  name: "Grumpy's Sliders"
+  price: $10.99
+  text: 'Three adorable wee burgers  or hot roast beef sandwiches. Add cheese, lettuce, tomato, onion or pickles for no addtional cost.'
+  _fieldset: menu_item
+- 
+  name: Mini Corndogs
+  price: $9.99
+  text: "Just how the sound. Stickless lil' corndogs fired up and ready to pop in yer mouth."
+  _fieldset: menu_item
+- 
+  name: Tex Mex Queso Rolls
+  price: $11.99
+  text: >
+    A North American alliance of roasted
+    chicken, pepper jack cheese and
+    caramelized onions, tucked into a flour
+    tortilla and deep fried. Served with BBQ
+    sauce, cilantro sour cream and tortilla
+    chips.
+  _fieldset: menu_item
+- 
+  name: Walleye Fingers
+  price: $11.99
+  text: >
+    Tasty strips of Canadian walleye are
+    freshly beer battered and deep fried.
+    Served with a lemon wedge and tartar
+    sauce.
+  _fieldset: menu_item
+- 
+  name: "Mac 'n Cheese Bites"
+  price: $8.99
+  text: >
+    Straight out of the trailer park and on
+    to your plate. Fried and battered
+    macaroni and cheese. Almost as
+    entertaining as a shirtless dude with a
+    mullet on Cops!
+  _fieldset: menu_item
+- 
+  name: Jalapeno Bottle Caps
+  price: $8.99
+  text: >
+    Battered, fried buttons of spicy sliced
+    jalapenos. Served with your choice of a
+    dipping sauce. Bleu cheese, ranch,
+    seasoned sour cream, cilantro sour
+    cream, or Thai chili cream cheese sauce.
+  _fieldset: menu_item
+- 
+  name: Pepper Jack Spinach Dip
+  price: $11.99
+  text: >
+    A zesty blend of spicy, melted pepper
+    jack cheese and spinach served with oven
+    toasted parmesan flatbread and tortilla
+    chips.
+  _fieldset: menu_item

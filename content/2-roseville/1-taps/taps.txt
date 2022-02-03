@@ -1,0 +1,77 @@
+Title: Taps
+
+----
+
+Taps: 
+
+- 
+  name: "300"
+  brewery: Fulton
+  style: American IPA
+  abv: "7"
+  ibu: "74"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Nitro Black
+  brewery: Bent Paddle
+  style: Dark Ale
+  abv: ""
+  ibu: ""
+  price: "6"
+  pour: "20"
+  _fieldset: tap
+- 
+  name: Chocolate Peanut Butter Porter
+  brewery: Waconia
+  style: ""
+  abv: "6.3"
+  ibu: "25"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Dakota Soul
+  brewery: Summit
+  style: Czech Pilsner
+  abv: "4.8"
+  ibu: "28"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: EPA
+  brewery: Summit
+  style: Pale Ale
+  abv: "5.2"
+  ibu: "45"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+- 
+  name: Furious
+  brewery: Surly
+  style: American IPA
+  abv: "6.6"
+  ibu: "100"
+  price: "6"
+  pour: "16"
+  _fieldset: tap
+
+----
+
+Embed-toggle: yes
+
+----
+
+Untapped-embed: 
+
+<div id="menu-container"></div>
+<script type="text/javascript">
+  !function(e,n){var t=document.createElement("script"),a=document.getElementsByTagName("script")[0];t.async=1,a.parentNode.insertBefore(t,a),t.onload=t.onreadystatechange=function(e,a){(a||!t.readyState||/loaded|complete/.test(t.readyState))&&(t.onload=t.onreadystatechange=null,t=void 0,a||n&&n())},t.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("menu-container",12700,46922)});
+</script>
+
+----
+
+Untappd-url: 

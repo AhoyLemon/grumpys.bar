@@ -4,8 +4,11 @@ Title: Roseville
 
 Hours: 
 
-Sun & Mon: 11am to Midnight
-Tue - Sat: 11am to 2am
+BAR: 11:00AM-1:00AM Tuesday-Saturday
+           11:00AM-12:00AM Sundays & Mondays
+
+KITCHEN: 11:00AM-10:00PM Monday-Saturday
+                      11:00AM-9:00PM  Sundays
 
 ----
 
@@ -45,15 +48,15 @@ Email: leah@grumpys-bar.com
 
 ----
 
-Homeshot: roseville.jpg
+Homeshot: _dsc6631.jpg
 
 ----
 
 Heroes: 
 
 - 
-  pic: roseville-interior.jpg
-  desc: "interior of Grumpy's Roseville, unfortunately not high res enough"
+  pic: _dsc6631.jpg
+  desc: "Grumpy's Roseville Exterior"
   _fieldset: hero
 
 ----
@@ -94,7 +97,7 @@ Schema-attributes:
 
 ----
 
-Instagram: 
+Instagram: https://www.instagram.com/grumpysroseville/?hl=en
 
 ----
 
@@ -103,3 +106,12 @@ Yelp:
 ----
 
 Untappd: 
+
+----
+
+Text: 
+
+# HEY GRUMPY'S GRUMPS
+We are back to much more normal hours of operation once again. 
+Tuesday thru Saturday 11am till 1am
+Sunday and Monday 11 till Midnight

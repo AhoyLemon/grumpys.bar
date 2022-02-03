@@ -1,0 +1,92 @@
+Title: Big Dinners & Pasta
+
+----
+
+Builder: 
+
+- 
+  name: 'Fish & Chips'
+  price: $13.99
+  text: "3 - 3oz hand beer battered cod fillets deep fried golden brown with your choice of tater (Grumpy fries, tater tots, criss-cut, shoe string, mashed potatoes or baked potato), cole slaw, tartar sauce and a wedge of lemon. Don't forget to ask for malt vinegar if ya want some."
+  _fieldset: menu_item
+- 
+  name: Fettuccine Alfredo
+  price: $11.99
+  text: >
+    Fettucini noodles tossed in a scratch
+    made alfredo sauce and topped with
+    shredded parmesan and served with garlic
+    toast. Add chicken for $2.99 or shrimp
+    for $3.99. This can be made gluten free
+    with gluten free penne noodles if the
+    need should arise.
+  _fieldset: menu_item
+- 
+  name: Angel Hair Shrimp Pasta
+  price: $14.99
+  text: >
+    Pan fried shrimp tossed in angel hair
+    pasta with butter, garlic, basil,
+    tomato, parsley and parmesan cheese.
+    Served with garlic toast. This can be
+    made gluten free with gluten free penne
+    noodles if the need should arise.
+  _fieldset: menu_item
+- 
+  name: Chicken Penne Carbonara
+  price: $14.99
+  text: >
+    Grilled chicken, bacon, mushrooms and
+    sweet peas tossed in our creamy alfredo
+    sauce, Served with garlic toast. This
+    can be made gluten free with gluten free
+    penne noodles if the need should arise.
+  _fieldset: menu_item
+- 
+  name: Beef Stroganoff
+  price: $13.99
+  text: 'Fettucini smothered in strips of beef sauteed in butter with onions, mushrooms and tossed with a sour cream and herb gravy. Served with garlic toast. This **can not** be made gluten free.'
+  _fieldset: menu_item
+- 
+  name: Homemade Meatloaf
+  price: $12.99
+  text: >
+    Our very own loaf of meat made just for
+    you! Served with mashed potatoes
+    enjoying a bath of our homemade beef
+    gravy, and a side of seasonal
+    vegetables.
+  _fieldset: menu_item
+- 
+  name: Tater Tot Hot Dish
+  price: $11.99
+  text: >
+    A heaping serving of this hamburger,
+    tater tot and veggie goodness. Straight
+    out of the Iron Range Church Gathering
+    recipe book. Served with a side of Texas
+    toast.
+  _fieldset: menu_item
+- 
+  name: Pulled Pork Sandwich
+  price: $11.99
+  text: "Hand rubbed and slow smoked in our kitchen to tender perfection. We pile it high and slather it with Grumpy's BBQ sauce. Comes with coleslaw and yer choice of tater."
+  _fieldset: menu_item
+- 
+  name: The Turkey Commercial
+  price: $14.99
+  text: >
+    We smoke the bird in house, put it on a
+    plate with a slice of Texas toast and a
+    pile of mashed potatoes covered in our
+    turkey gravy with stuffing and a side of
+    cranberry sauce.
+  _fieldset: menu_item
+- 
+  name: 'Steak & Fries'
+  price: $16.99
+  text: >
+    An 8 oz cut of steak served with your
+    choice of tater and a side of bearnaise
+    sauce.
+  _fieldset: menu_item

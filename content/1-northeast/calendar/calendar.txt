@@ -131,9 +131,9 @@ Weekly-friday:
 Weekly-saturday: 
 
 - 
-  all_day: 'yes'
-  begins: ""
-  ends: ""
+  all_day: 'no'
+  begins: 11:00
+  ends: 18:00
   title: ""
   desc: >
     $3 taps from all breweries within a
@@ -165,17 +165,9 @@ Weekly-sunday:
 Single-events: 
 
 - 
-  event_date: 2018-09-22
-  event_time: 16:00
-  name: Mr. Northeast Pageant
-  desc: >
-    Think you have what it takes to be
-    crowned the quintessential Northeast
-    dude? Then step right up, strike a pose,
-    and show us what you got. Eligible
-    contestants are 21 years of age or
-    older, identify as male, and live or
-    work in Northeast Minneapolis.
-    https://www.mrnortheastpageant.com/
+  event_date: 2018-10-22
+  event_time: 18:00
+  name: The Bad Man cd release party
+  desc: "We'll be spinning the brand new album, Laughing With Bad Teeth.  A limited amount of cds and new merchandise will be available."
   publish: ""
   _fieldset: event_text

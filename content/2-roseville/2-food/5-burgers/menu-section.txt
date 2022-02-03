@@ -1,0 +1,91 @@
+Title: Burgers
+
+----
+
+Builder: 
+
+- 
+  text: |
+    All of our specially blended 1/2 pound burgers are served with potato chips. Substitute choice of tater, cottage cheese, or coleslaw for $1.49. OR Substitute onion rings, jalapeno bottle caps, cup of soup or a side salad for $2.49. Seasoned Sour Cream is $.99.  Add lettuce, tomato, raw onions or pickles at no extra charge.
+    
+    *Cooked to order - Consuming raw or undercooked mets, poultry, sefood, shellfish or eggs my increse your risk of foodborne illness.
+  _fieldset: menu_text
+- 
+  name: Southern Style "The Elvis"
+  price: $14.99
+  text: >
+    Topped with peanut butter and crispy
+    bacon! Okay, it sounds weird but once
+    you try it you’ll be hooked.
+  _fieldset: menu_item
+- 
+  name: The American Burger
+  price: $12.99
+  text: >
+    Your choice of cheese. Add bacon for
+    $1.99.
+  _fieldset: menu_item
+- 
+  name: Slow Burn Burger
+  price: $14.99
+  text: >
+    Pepper cheese, jalpeno bacon, chipotle
+    mayo and deep fried jalapeno bottle
+    caps. Comes with a side of salsa and a
+    side of replacement taste buds.
+  _fieldset: menu_item
+- 
+  name: Juicy Lucy
+  price: $13.99
+  text: "Sure we ain't the first to serve these inside out cheeseburgers up, but our version is one of the best out there. ***CAUTION! HOT CHEESE INSIDE!***"
+  _fieldset: menu_item
+- 
+  name: Cream Cheese Burger
+  price: $13.99
+  text: >
+    I’m certain this will be made illegal
+    in most states soon enough, but for now
+    it doesn’t get much better than this!
+    Cream cheese blended with chives and
+    chopped bacon make this a heart stopping
+    delight.
+  _fieldset: menu_item
+- 
+  name: Gwhack A Mole Burger
+  price: $14.99
+  text: >
+    We spice this one up with sauteed
+    peppers and onions, pepper cheese,
+    chipotle mayo, tortilla chips and our
+    homemade guacamole.
+  _fieldset: menu_item
+- 
+  name: Garlic Cheesy Bomb Burger
+  price: $14.99
+  text: 'This Italian take on the Juicy Lucy will be with you the rest of the night, but it is worth it. We turn both sides of the bun into garlic cheese bread, then we stuff that burger full of garlic and mozzarella cheese. Served with a side of marinara sauce. ***CAUTION! HOT CHEESE INSIDE!***'
+  _fieldset: menu_item
+- 
+  name: The Impossible Burger
+  price: $14.99
+  text: >
+    A burger made entirely from plants that
+    smells, looks and tastes like ground
+    beef! Ask for the vegan bun to ensure
+    your animal-less meal.
+  _fieldset: menu_item
+- 
+  name: 'Build Your Own $#@! Burger'
+  price: $11.99
+  text: |
+    Choose your burger: House Burger or Impossible Burger (Vegan)
+    Choose your additions for $.99 each: Mushrooms, Sauteed Onions, Bell Peppers, Pineapple, American, Swiss, Bleu Cheese Crumbles, Cheddar, Cheddar Jack, Mozzarella or Pepper Cheese.
+    Add Regular or Jalapeno Bacon $1.99
+  _fieldset: menu_item
+- 
+  name: New York Deli Burger
+  price: $14.99
+  text: >
+    Pastrami, pepper jack cheese, kosher
+    pickles, cream cheese spiked with chives
+    and bacon. Really, really good.
+  _fieldset: menu_item

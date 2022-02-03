@@ -1,0 +1,159 @@
+Title: Sandwiches
+
+----
+
+Builder: 
+
+- 
+  text: >
+    Served with potato chips. Substitute
+    choice of tater, cottage cheese, or
+    coleslaw for $1.49. OR Substitute onion
+    rings, jalapeno bottle caps, cup of soup
+    or a side salad for $2.49. Seasoned Sour
+    Cream is $.99.
+  _fieldset: menu_text
+- 
+  name: Buffalo Chicken Sandwich
+  price: $12.99
+  text: >
+    Chicken breast smothered in our hot
+    buffalo sauce with pepper cheese,
+    cucumber slices, lettuce, tomato and a
+    side of bleu cheese dressing.
+  _fieldset: menu_item
+- 
+  name: Cajun Chicken Sandwich
+  price: $12.99
+  text: >
+    Cajun seasoned chicken breast topped
+    with cheddar jack, lettuce, tomato,
+    straw onions and our tangy cajun sauce.
+  _fieldset: menu_item
+- 
+  name: Hawaiian Chicken Sandwich
+  price: $12.99
+  text: >
+    Chicken breast smothered in teriyaki
+    sauce, topped with mozzarella cheese,
+    grilled pineapple, lettuce and tomato.
+  _fieldset: menu_item
+- 
+  name: 'Build Yer Own #%@$ Chicken Sandwich'
+  price: $9.99
+  text: 'Okay, Mr./Mrs. Picky, pick yer own #%@$ toppings. Add mushrooms, sauteed onions, pineapple, bell peppers, sour cream, american, swiss, cheddar jack, mozzarella, pepper cheese, or bleu cheese for 99¢ Each ; Add bacon $1.99'
+  _fieldset: menu_item
+- 
+  name: Southwestern Turkey Sandwich
+  price: $12.99
+  text: >
+    Deli style sliced turkey, pepper cheese,
+    jalapeno bacon and chipotle mayo on a
+    grilled ciabatta bun.
+  _fieldset: menu_item
+- 
+  name: Tuna Melt El Paso
+  price: $12.99
+  text: "It's a Texas-style spicy tuna salad with pepper cheese and tomato. Grilled up and some snappy marble rye bread."
+  _fieldset: menu_item
+- 
+  name: Walleye Sandwich
+  price: $14.99
+  text: >
+    A large piece of Canadian walleye dipped
+    in beer batter and deep fied golden
+    brown. Served on a grilled hoagie with
+    cheddar cheese, lettuce, tomato and
+    tartar sauce.
+  _fieldset: menu_item
+- 
+  name: BBQ Chicken Sandwich
+  price: $12.99
+  text: "CHicken breast slathered in our Grumpy's BBQ sauce, topped with melted cheddar jack, bacon, lettuce and tomato."
+  _fieldset: menu_item
+- 
+  name: Mock Duck BBQ Sandwich
+  price: $13.99
+  text: "Served on a hoagie and smothered in our Grumpy's BBQ sauce. No real ducks were harmed in the making of this sandwich. We just killed the $@*%* out of some tofu."
+  _fieldset: menu_item
+- 
+  name: Grilled Cheese
+  price: $8.99
+  text: >
+    Served on white or wheat. Add ham or
+    bacon for $1.99.
+  _fieldset: menu_item
+- 
+  name: Coney Dogs, St. Paul Style
+  price: $11.99
+  text: '2 old-world homemade, meaty Coney sauce recipe dogs. THIS AIN’T A CHILI DOG! Grilled buns, mustard, cheese & onions.'
+  _fieldset: menu_item
+- 
+  name: Grilled Reuben
+  price: $12.99
+  text: >
+    Lean corned beef, sauerkraut, 100 island
+    dressing and Swiss on grilled marble rye
+    bread.
+  _fieldset: menu_item
+- 
+  name: "Grumpy's Rachel"
+  price: $12.99
+  text: >
+    This sandwich puts the deli in delicious
+    with sliced roasted turkey, ranch
+    dressing, sauerkraut and Swiss on
+    grilled marble rye bread.
+  _fieldset: menu_item
+- 
+  name: B.L.T.
+  price: $10.99
+  text: >
+    For the slower set out there, that means
+    bacon, lettuce and tomato. We throw a
+    schmear of mayo on the toasted white or
+    wheat bread. Add cheese for $0.99.
+  _fieldset: menu_item
+- 
+  name: French Dip
+  price: $12.99
+  text: >
+    House smoked roast beef on a grilled
+    French loaf that we dust in grated
+    parmesan cheese with a side of au jus.
+    Make it a Philly with grilled green
+    peppers, onions and melty provolone
+    cheese for $1.49. You can also just add
+    cheese to it (highly recommended) for
+    only $0.99.
+  _fieldset: menu_item
+- 
+  name: Clubhouse
+  price: $12.99
+  text: >
+    A tower of a toasted sandwich. White
+    bread, roast turkey, smoked ham, bacon,
+    lettuce, tomato, mayo, cheddar and
+    provolone cheeses stacked three slices
+    high!
+  _fieldset: menu_item
+- 
+  text: '**MAKE IT A WRAP!** Almost every sandwich here can be made as a wrap, just ask!'
+  _fieldset: menu_text
+- 
+  name: The Cuban
+  price: $12.99
+  text: >
+    Ham, shredded pork, honey mustard,
+    garlic aioli, provolone cheese and
+    pickle chips on a grilled ciabatta roll.
+  _fieldset: menu_item
+- 
+  name: Crispy Chicken Sandwich
+  price: $12.99
+  text: >
+    We take a chicken breast and drop it in
+    our homemade beer batter and deep fry it
+    to perfection! Topped with lettuce,
+    tomato and mayo.
+  _fieldset: menu_item
