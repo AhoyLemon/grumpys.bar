@@ -6,6 +6,7 @@ pages:
     - menus
     - contact
     - default
+    - location
 
 fields:
   title:

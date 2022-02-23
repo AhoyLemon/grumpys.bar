@@ -1,12 +1,11 @@
-Title: Roseville New
-
-----
-
-Info-headline: 
+Title: Roseville
 
 ----
 
 Hours: 
+
+Tue - Sat: 11am till 1am
+Sun & Mon: 11 till Midnight
 
 ----
 
@@ -42,48 +41,24 @@ Twitter: https://twitter.com/grumpys_rv
 
 ----
 
-Instagram: https://www.instagram.com/grumpysroseville/?hl=en
+Email: leah@grumpys-bar.com
 
 ----
 
-Yelp: 
-
-----
-
-Untappd: 
-
-----
-
-Email: leah@grumpys.bar
-
-----
-
-Homeshot: _dsc6631.jpg
+Homeshot: roseville_ext.jpg
 
 ----
 
 Heroes: 
 
 - 
-  pic: _dsc6631.jpg
-  desc: "Grumpy's exterior with car parked outside"
+  pic: poster-hero.jpg
+  desc: "grumpy's interior with a bunch of posters"
   _fieldset: hero
 
 ----
 
-Covid-headline: 
-
-----
-
-Text: 
-
-----
-
 Section-headline: 
-
-----
-
-Meta-headline: 
 
 ----
 
@@ -96,10 +71,6 @@ Twitter-image:
 ----
 
 Og-image: 
-
-----
-
-Schema-header: 
 
 ----
 
@@ -123,4 +94,16 @@ Schema-attributes:
 
 ----
 
-Schema-info: 
+Instagram: https://www.instagram.com/grumpysroseville/?hl=en
+
+----
+
+Yelp: 
+
+----
+
+Untappd: 
+
+----
+
+Text: 

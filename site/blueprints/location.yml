@@ -99,14 +99,11 @@ fields:
             type: text
             help: (for SEO)
 
-  # COVID Stripe
-  covid_headline:
-    label: COVID-19
-    type: headline
-    help: While the world is shut down, use this space to put whatever text you want.
+  # INTRO (formerly Covid)
   text:
-    label: Text
+    label: Page Intro
     type: markdown
+    help: "**Optional**. This will show up before the sections."
   
   # SECTIONS
   section_headline:
