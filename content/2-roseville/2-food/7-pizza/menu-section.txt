@@ -6,7 +6,7 @@ Builder:
 
 - 
   name: Maui Waui
-  price: $13.99
+  price: $14.99
   text: >
     Alfredo sauce, chicken, pineapple,
     banana peppers, jalapenos and
@@ -14,21 +14,21 @@ Builder:
   _fieldset: menu_item
 - 
   name: Margarita Pizza
-  price: $13.99
+  price: $14.99
   text: >
     Tomato, basil, garlic and fresh
     mozzarella.
   _fieldset: menu_item
 - 
   name: Buffalo Chicken Pizza
-  price: $13.99
+  price: $14.99
   text: >
     Chicken, celery, bleu cheese crumbles,
     buffalo sauce and mozzarella.
   _fieldset: menu_item
 - 
   name: Thai Pizza
-  price: $13.99
+  price: $14.99
   text: >
     Chicken, pea pods, carrots, crushed red
     pepper, sweet chili sauce and
@@ -36,14 +36,14 @@ Builder:
   _fieldset: menu_item
 - 
   name: BBQ Chicken Pizza
-  price: $13.99
+  price: $14.99
   text: >
     Chicken, cheddar jack cheese, BBQ sauce,
     red onions and fresh cilantro.
   _fieldset: menu_item
 - 
   name: 'Build Yer Own #%@! Pizza'
-  price: $9.99
+  price: $11.99
   text: |
     Choose your sauce (marinara, alfredo, BBQ, sweet chili or Buffalo sauce). Add your toppings for $.99 each:
     Pepperoni, sausage, bacon, ham, chicken, mushrooms, sun dried tomatoes, banana peppers, cheddar, parmesan, bleu cheese crumbles, green peppers, black olives, green olives, red onions, jalapenos, red peppers, pepperoncinis, pineapple, fresh basil and garlic.

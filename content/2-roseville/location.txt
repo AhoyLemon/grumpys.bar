@@ -1,4 +1,4 @@
-Title: Roseville New
+Title: Roseville
 
 ----
 
@@ -7,6 +7,9 @@ Info-headline:
 ----
 
 Hours: 
+
+Tue - Sat: 11am till 1am
+Sun & Mon: 11 till Midnight
 
 ----
 
@@ -58,15 +61,15 @@ Email: leah@grumpys.bar
 
 ----
 
-Homeshot: _dsc6631.jpg
+Homeshot: roseville_ext.jpg
 
 ----
 
 Heroes: 
 
 - 
-  pic: _dsc6631.jpg
-  desc: "Grumpy's exterior with car parked outside"
+  pic: poster-hero.jpg
+  desc: "Grumpy's interior with posters"
   _fieldset: hero
 
 ----

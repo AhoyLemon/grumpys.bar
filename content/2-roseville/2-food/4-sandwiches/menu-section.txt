@@ -107,7 +107,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: B.L.T.
-  price: $10.99
+  price: $11.99
   text: >
     For the slower set out there, that means
     bacon, lettuce and tomato. We throw a
@@ -116,7 +116,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: French Dip
-  price: $12.99
+  price: $13.99
   text: >
     House smoked roast beef on a grilled
     French loaf that we dust in grated
@@ -156,4 +156,9 @@ Builder:
     our homemade beer batter and deep fry it
     to perfection! Topped with lettuce,
     tomato and mayo.
+  _fieldset: menu_item
+- 
+  name: Pulled Pork Sandwich
+  price: "12.99"
+  text: "Hand rubbed and slow smoked in our kitchen to tender perfection. We pile it high and slather it with Grumpy's BBQ sauce. Comes with coleslaw."
   _fieldset: menu_item

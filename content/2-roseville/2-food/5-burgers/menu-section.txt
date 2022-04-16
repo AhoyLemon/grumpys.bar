@@ -36,7 +36,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: Juicy Lucy
-  price: $13.99
+  price: $14.99
   text: "Sure we ain't the first to serve these inside out cheeseburgers up, but our version is one of the best out there. ***CAUTION! HOT CHEESE INSIDE!***"
   _fieldset: menu_item
 - 

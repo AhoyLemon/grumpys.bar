@@ -5,22 +5,13 @@ Title: Salads
 Builder: 
 
 - 
-  name: Strawberry Salad
-  price: $11.99
-  text: >
-    Baby spinach, strawberries, onions and
-    honey mustard dressing on the side. Add
-    a sliced chicken breast for $2.99 or
-    sauteed shrimp for $3.99.
-  _fieldset: menu_item
-- 
   name: Ty Cobb Salad
-  price: $14.99
+  price: $15.99
   text: 'A massive, powerhouse of a salad. Classic iceberg lettuce topped with turkey, ham, bacon, hard boiled eggs, avocado, diced tomatoes, bleu cheese crumbles and black olives. Choose yer dressing (bleu cheese, ranch, balsamic viniagrette, French,  Caesar, 1000 Island, Italian, oregano viniagrette or honey mustard.'
   _fieldset: menu_item
 - 
   name: Aztec Salad
-  price: $10.99
+  price: $11.99
   text: >
     Romaine lettuce tossed with kicky
     chipotle dressing, red peppers, black
@@ -31,7 +22,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: Bleu Bayou Salad
-  price: $10.99
+  price: $11.99
   text: >
     Iceberg lettuce tossed in bleu cheese
     dressing and topped with smoked bacon,
@@ -41,7 +32,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: Caesar A La Grumpy
-  price: $9.99
+  price: $11.99
   text: >
     Romaine lettuce and zippy Caesar
     dressing topped with homemade croutons
@@ -51,7 +42,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: Greek Salad
-  price: $10.99
+  price: $11.99
   text: >
     Mixed greens tossed in our oregano
     viniagrette with roma tomatoes,
@@ -61,13 +52,8 @@ Builder:
     $2.99 or sauteed shrimp for $3.99.
   _fieldset: menu_item
 - 
-  name: Picnic Salad
-  price: $14.99
-  text: "It's got BBQ chicken, straw onions, cucumbers, tomatoes, roasted corn and cheddar jack cheese all atop iceberg lettuce tossed in our homemade avocado ranch dressing."
-  _fieldset: menu_item
-- 
   name: Caprese Salad
-  price: $10.99
+  price: $11.99
   text: >
     We toss mixed greens with our balsamic
     viniagrette (not vegetarian), diced
@@ -78,17 +64,17 @@ Builder:
     sauteed shrimp for $3.99.
   _fieldset: menu_item
 - 
+  name: Taco Salad
+  price: "13.99"
+  text: >
+    Crispy flour tortilla chips mixed with
+    shredded lettuce, cheddar jack cheese,
+    tomatoes, jalapenos, onions and black
+    olive. Choice of spicy beef or chicken.
+    Served with salsa and cilanto sour cream
+  _fieldset: menu_item
+- 
   text: |
     **SALAD DRESSINGS**
     Ranch, Balsamic Vinaigrette (not vegetarian), Caesar, Buttermilk Bleu Cheese, French, Oregano Viniagrette, 1000 Island, Italian, Honey Mustard or Oil & Vinegar.
   _fieldset: menu_text
-- 
-  name: Spinach Flatbread Salad
-  price: $11.99
-  text: >
-    Baby spinach, roasted red peppers,
-    Kalamata olives, sun-dried tomatoes,
-    mozzarella and parmesan cheese. Served
-    with warm flatbread and a side of
-    balsamic viniagrette.
-  _fieldset: menu_item

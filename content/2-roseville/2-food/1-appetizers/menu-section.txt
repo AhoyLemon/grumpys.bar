@@ -44,7 +44,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: Tepanyaki Beef Tidbits
-  price: $12.99
+  price: $13.99
   text: >
     Asian marinated tenderloin chunks, pan
     seared to juicy perfection and served
@@ -53,26 +53,26 @@ Builder:
   _fieldset: menu_item
 - 
   name: Cheesy Garlic Bread
-  price: $7.99
+  price: $8.99
   text: >
     Oven toasted to ooey-gooey goodness and
     served with marinara dipping sauce.
   _fieldset: menu_item
 - 
   name: Nachos El Grumpy
-  price: $12.99
+  price: $14.99
   text: 'Tortilla chips smothered with your choice of spiced beef or chicken, melted cheddar jack cheese, tomatoes, jalapenos, black olives and green onions. Served with fresh salsa and cilantro sour cream.  Add guacamole for $1.49 or chili for $2.00'
   _fieldset: menu_item
 - 
   name: Onion Rings
-  price: $9.99
+  price: $10.99
   text: >
     Served with our chipotle mayo dipping
     sauce.
   _fieldset: menu_item
 - 
   name: "Grumpy's Sliders"
-  price: $10.99
+  price: $11.99
   text: 'Three adorable wee burgers  or hot roast beef sandwiches. Add cheese, lettuce, tomato, onion or pickles for no addtional cost.'
   _fieldset: menu_item
 - 
@@ -111,21 +111,16 @@ Builder:
     mullet on Cops!
   _fieldset: menu_item
 - 
-  name: Jalapeno Bottle Caps
-  price: $8.99
-  text: >
-    Battered, fried buttons of spicy sliced
-    jalapenos. Served with your choice of a
-    dipping sauce. Bleu cheese, ranch,
-    seasoned sour cream, cilantro sour
-    cream, or Thai chili cream cheese sauce.
-  _fieldset: menu_item
-- 
   name: Pepper Jack Spinach Dip
-  price: $11.99
+  price: $12.99
   text: >
     A zesty blend of spicy, melted pepper
     jack cheese and spinach served with oven
     toasted parmesan flatbread and tortilla
     chips.
+  _fieldset: menu_item
+- 
+  name: Pickle Fries
+  price: "11.99"
+  text: 'French Fry cut pickles battered and deep fried to a golden brown and served  with a side of sriracha aioli dipping sauce.'
   _fieldset: menu_item

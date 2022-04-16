@@ -11,7 +11,7 @@ Builder:
   _fieldset: menu_item
 - 
   name: Fettuccine Alfredo
-  price: $11.99
+  price: $12.99
   text: >
     Fettucini noodles tossed in a scratch
     made alfredo sauce and topped with
@@ -22,30 +22,23 @@ Builder:
     need should arise.
   _fieldset: menu_item
 - 
-  name: Angel Hair Shrimp Pasta
-  price: $14.99
-  text: >
-    Pan fried shrimp tossed in angel hair
-    pasta with butter, garlic, basil,
-    tomato, parsley and parmesan cheese.
-    Served with garlic toast. This can be
-    made gluten free with gluten free penne
-    noodles if the need should arise.
-  _fieldset: menu_item
-- 
-  name: Chicken Penne Carbonara
-  price: $14.99
-  text: >
-    Grilled chicken, bacon, mushrooms and
-    sweet peas tossed in our creamy alfredo
-    sauce, Served with garlic toast. This
-    can be made gluten free with gluten free
-    penne noodles if the need should arise.
+  name: Italian Pasta
+  price: "14.99"
+  text: |
+    Pepperoni, sausage, peppers, onion, marinara sauce and penne pasta tossed together and topped with oven melted mozzarella cheese.
+    Served with garlic toast.
   _fieldset: menu_item
 - 
   name: Beef Stroganoff
   price: $13.99
   text: 'Fettucini smothered in strips of beef sauteed in butter with onions, mushrooms and tossed with a sour cream and herb gravy. Served with garlic toast. This **can not** be made gluten free.'
+  _fieldset: menu_item
+- 
+  name: Cajun Shrimp Pasta
+  price: "14.99"
+  text: |
+    Pan fried shrimp, green peppers, onion, tomato and penne pasta tossed in a cajun cream sauce garnished with green onions.
+    Served with garlic toast
   _fieldset: menu_item
 - 
   name: Homemade Meatloaf
@@ -68,9 +61,13 @@ Builder:
     toast.
   _fieldset: menu_item
 - 
-  name: Pulled Pork Sandwich
-  price: $11.99
-  text: "Hand rubbed and slow smoked in our kitchen to tender perfection. We pile it high and slather it with Grumpy's BBQ sauce. Comes with coleslaw and yer choice of tater."
+  name: 'Chicken  Pot Pie'
+  price: "11.99"
+  text: >
+    Chicken, peas, carrots, potato, and
+    celery in a hearty creamy gravy that we
+    bake to perfection. Topped with a golden
+    flakey pastry crust.
   _fieldset: menu_item
 - 
   name: The Turkey Commercial
